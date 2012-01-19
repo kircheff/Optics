@@ -1,0 +1,12 @@
+C:\Users\Viko\Optics\Optics\bin\Debug\Optics.exe
+C:\Users\Viko\Optics\Optics\bin\Debug\Optics.pdb
+C:\Users\Viko\Optics\Optics\bin\Debug\Optics.xml
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.frmCalculator.resources
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.frmGeneral.resources
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.Resources.resources
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.exe
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.xml
+C:\Users\Viko\Optics\Optics\obj\x86\Debug\Optics.pdb
