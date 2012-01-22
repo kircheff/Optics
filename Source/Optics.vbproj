@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDatabase.Designer.vb">
+      <DependentUpon>frmDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCalculator.designer.vb">
       <DependentUpon>frmCalculator.vb</DependentUpon>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmDatabase.resx">
+      <DependentUpon>frmDatabase.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCalculator.resx">
       <DependentUpon>frmCalculator.vb</DependentUpon>
     </EmbeddedResource>
