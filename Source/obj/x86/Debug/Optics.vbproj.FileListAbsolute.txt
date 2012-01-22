@@ -23,3 +23,8 @@ C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmGeneral.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.Resources.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.exe.manifest
+C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.application
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmAdmin.resources
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.exe.manifest
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.application
