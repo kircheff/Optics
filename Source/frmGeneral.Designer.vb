@@ -24,6 +24,7 @@ Partial Class frmGeneral
     Private Sub InitializeComponent()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalc
@@ -44,11 +45,21 @@ Partial Class frmGeneral
         Me.Button1.Text = "Речник"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(192, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(84, 29)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Админ"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(386, 222)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCalc)
         Me.Name = "frmGeneral"
@@ -58,5 +69,6 @@ Partial Class frmGeneral
     End Sub
     Friend WithEvents btnCalc As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

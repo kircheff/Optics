@@ -64,7 +64,7 @@ Partial Class frmDatabase
         'lstWordsResults
         '
         Me.lstWordsResults.FormattingEnabled = True
-        Me.lstWordsResults.Location = New System.Drawing.Point(125, 58)
+        Me.lstWordsResults.Location = New System.Drawing.Point(134, 58)
         Me.lstWordsResults.Name = "lstWordsResults"
         Me.lstWordsResults.Size = New System.Drawing.Size(116, 225)
         Me.lstWordsResults.TabIndex = 4

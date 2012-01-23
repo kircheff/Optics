@@ -6,8 +6,6 @@
     Private Sub frmDatabase_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         con.Open()
 
-
-
         rs.Fill(dt)
         For indx = 0 To dt.Rows.Count - 1
             lstWords.Items.Add(dt.Rows(indx).Item("duma"))
