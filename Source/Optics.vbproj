@@ -100,6 +100,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCrossword.Designer.vb">
+      <DependentUpon>frmCrossword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrossword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAdmin.Designer.vb">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCrossword.resx">
+      <DependentUpon>frmCrossword.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>

@@ -24,6 +24,7 @@ Partial Class frmAdmin
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmdAdd = New System.Windows.Forms.Button()
         Me.txtAddMeaning = New System.Windows.Forms.TextBox()
@@ -36,7 +37,6 @@ Partial Class frmAdmin
         Me.txtMeaning = New System.Windows.Forms.TextBox()
         Me.txtWord = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.SuspendLayout()
@@ -45,10 +45,10 @@ Partial Class frmAdmin
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(3, 12)
+        Me.TabControl1.Location = New System.Drawing.Point(4, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(508, 316)
+        Me.TabControl1.Size = New System.Drawing.Size(516, 379)
         Me.TabControl1.TabIndex = 6
         '
         'TabPage1
@@ -68,16 +68,25 @@ Partial Class frmAdmin
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(500, 290)
+        Me.TabPage1.Size = New System.Drawing.Size(508, 353)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "la"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(162, 265)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(318, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Изтрий избраната дума от речника"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label3.Location = New System.Drawing.Point(324, 62)
+        Me.Label3.Location = New System.Drawing.Point(320, 67)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(148, 20)
         Me.Label3.TabIndex = 15
@@ -85,7 +94,7 @@ Partial Class frmAdmin
         '
         'cmdAdd
         '
-        Me.cmdAdd.Location = New System.Drawing.Point(328, 175)
+        Me.cmdAdd.Location = New System.Drawing.Point(324, 180)
         Me.cmdAdd.Name = "cmdAdd"
         Me.cmdAdd.Size = New System.Drawing.Size(156, 23)
         Me.cmdAdd.TabIndex = 13
@@ -94,7 +103,7 @@ Partial Class frmAdmin
         '
         'txtAddMeaning
         '
-        Me.txtAddMeaning.Location = New System.Drawing.Point(328, 111)
+        Me.txtAddMeaning.Location = New System.Drawing.Point(324, 116)
         Me.txtAddMeaning.Multiline = True
         Me.txtAddMeaning.Name = "txtAddMeaning"
         Me.txtAddMeaning.Size = New System.Drawing.Size(156, 58)
@@ -103,7 +112,7 @@ Partial Class frmAdmin
         '
         'txtAddWord
         '
-        Me.txtAddWord.Location = New System.Drawing.Point(328, 85)
+        Me.txtAddWord.Location = New System.Drawing.Point(324, 90)
         Me.txtAddWord.Name = "txtAddWord"
         Me.txtAddWord.Size = New System.Drawing.Size(156, 20)
         Me.txtAddWord.TabIndex = 11
@@ -113,7 +122,7 @@ Partial Class frmAdmin
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label2.Location = New System.Drawing.Point(162, 62)
+        Me.Label2.Location = New System.Drawing.Point(158, 67)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(141, 20)
         Me.Label2.TabIndex = 10
@@ -123,7 +132,7 @@ Partial Class frmAdmin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label1.Location = New System.Drawing.Point(11, 12)
+        Me.Label1.Location = New System.Drawing.Point(14, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 25)
         Me.Label1.TabIndex = 9
@@ -131,7 +140,7 @@ Partial Class frmAdmin
         '
         'cmdChange
         '
-        Me.cmdChange.Location = New System.Drawing.Point(166, 175)
+        Me.cmdChange.Location = New System.Drawing.Point(162, 180)
         Me.cmdChange.Name = "cmdChange"
         Me.cmdChange.Size = New System.Drawing.Size(75, 23)
         Me.cmdChange.TabIndex = 8
@@ -141,14 +150,14 @@ Partial Class frmAdmin
         'lstWords
         '
         Me.lstWords.FormattingEnabled = True
-        Me.lstWords.Location = New System.Drawing.Point(16, 40)
+        Me.lstWords.Location = New System.Drawing.Point(19, 67)
         Me.lstWords.Name = "lstWords"
         Me.lstWords.Size = New System.Drawing.Size(133, 225)
         Me.lstWords.TabIndex = 7
         '
         'cmdSave
         '
-        Me.cmdSave.Location = New System.Drawing.Point(247, 175)
+        Me.cmdSave.Location = New System.Drawing.Point(243, 180)
         Me.cmdSave.Name = "cmdSave"
         Me.cmdSave.Size = New System.Drawing.Size(75, 23)
         Me.cmdSave.TabIndex = 6
@@ -158,7 +167,7 @@ Partial Class frmAdmin
         'txtMeaning
         '
         Me.txtMeaning.Enabled = False
-        Me.txtMeaning.Location = New System.Drawing.Point(166, 111)
+        Me.txtMeaning.Location = New System.Drawing.Point(162, 116)
         Me.txtMeaning.Multiline = True
         Me.txtMeaning.Name = "txtMeaning"
         Me.txtMeaning.Size = New System.Drawing.Size(156, 58)
@@ -167,7 +176,7 @@ Partial Class frmAdmin
         'txtWord
         '
         Me.txtWord.Enabled = False
-        Me.txtWord.Location = New System.Drawing.Point(166, 85)
+        Me.txtWord.Location = New System.Drawing.Point(162, 90)
         Me.txtWord.Name = "txtWord"
         Me.txtWord.Size = New System.Drawing.Size(156, 20)
         Me.txtWord.TabIndex = 3
@@ -177,19 +186,10 @@ Partial Class frmAdmin
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(500, 290)
+        Me.TabPage2.Size = New System.Drawing.Size(508, 290)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(166, 204)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(318, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Изтрий избраната дума от речника"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmAdmin
         '
