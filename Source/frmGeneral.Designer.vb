@@ -48,7 +48,7 @@ Partial Class frmGeneral
         '
         'btnAdmin
         '
-        Me.btnAdmin.Location = New System.Drawing.Point(192, 12)
+        Me.btnAdmin.Location = New System.Drawing.Point(296, 12)
         Me.btnAdmin.Name = "btnAdmin"
         Me.btnAdmin.Size = New System.Drawing.Size(84, 29)
         Me.btnAdmin.TabIndex = 2
@@ -57,7 +57,7 @@ Partial Class frmGeneral
         '
         'btnCrossword
         '
-        Me.btnCrossword.Location = New System.Drawing.Point(282, 12)
+        Me.btnCrossword.Location = New System.Drawing.Point(192, 12)
         Me.btnCrossword.Name = "btnCrossword"
         Me.btnCrossword.Size = New System.Drawing.Size(98, 29)
         Me.btnCrossword.TabIndex = 3

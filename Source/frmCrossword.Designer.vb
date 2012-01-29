@@ -23,6 +23,7 @@ Partial Class frmCrossword
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstWords = New System.Windows.Forms.ListBox()
+        Me.txt_cross = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lstWords
@@ -33,16 +34,27 @@ Partial Class frmCrossword
         Me.lstWords.Size = New System.Drawing.Size(133, 225)
         Me.lstWords.TabIndex = 8
         '
+        'txt_cross
+        '
+        Me.txt_cross.Location = New System.Drawing.Point(190, 41)
+        Me.txt_cross.Multiline = True
+        Me.txt_cross.Name = "txt_cross"
+        Me.txt_cross.Size = New System.Drawing.Size(27, 27)
+        Me.txt_cross.TabIndex = 9
+        '
         'frmCrossword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(541, 313)
+        Me.ClientSize = New System.Drawing.Size(629, 398)
+        Me.Controls.Add(Me.txt_cross)
         Me.Controls.Add(Me.lstWords)
         Me.Name = "frmCrossword"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lstWords As System.Windows.Forms.ListBox
+    Friend WithEvents txt_cross As System.Windows.Forms.TextBox
 End Class
