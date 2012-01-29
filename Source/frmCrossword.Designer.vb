@@ -23,31 +23,32 @@ Partial Class frmCrossword
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstWords = New System.Windows.Forms.ListBox()
-        Me.txt_cross = New System.Windows.Forms.TextBox()
+        Me.lbl_word_general = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lstWords
         '
         Me.lstWords.FormattingEnabled = True
-        Me.lstWords.Location = New System.Drawing.Point(27, 41)
+        Me.lstWords.Location = New System.Drawing.Point(484, 12)
         Me.lstWords.Name = "lstWords"
-        Me.lstWords.Size = New System.Drawing.Size(133, 225)
+        Me.lstWords.Size = New System.Drawing.Size(133, 316)
         Me.lstWords.TabIndex = 8
         '
-        'txt_cross
+        'lbl_word_general
         '
-        Me.txt_cross.Location = New System.Drawing.Point(190, 41)
-        Me.txt_cross.Multiline = True
-        Me.txt_cross.Name = "txt_cross"
-        Me.txt_cross.Size = New System.Drawing.Size(27, 27)
-        Me.txt_cross.TabIndex = 9
+        Me.lbl_word_general.AutoSize = True
+        Me.lbl_word_general.Location = New System.Drawing.Point(439, 13)
+        Me.lbl_word_general.Name = "lbl_word_general"
+        Me.lbl_word_general.Size = New System.Drawing.Size(13, 13)
+        Me.lbl_word_general.TabIndex = 9
+        Me.lbl_word_general.Text = "?"
         '
         'frmCrossword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(629, 398)
-        Me.Controls.Add(Me.txt_cross)
+        Me.ClientSize = New System.Drawing.Size(629, 347)
+        Me.Controls.Add(Me.lbl_word_general)
         Me.Controls.Add(Me.lstWords)
         Me.Name = "frmCrossword"
         Me.Text = "Form1"
@@ -56,5 +57,5 @@ Partial Class frmCrossword
 
     End Sub
     Friend WithEvents lstWords As System.Windows.Forms.ListBox
-    Friend WithEvents txt_cross As System.Windows.Forms.TextBox
+    Friend WithEvents lbl_word_general As System.Windows.Forms.Label
 End Class
