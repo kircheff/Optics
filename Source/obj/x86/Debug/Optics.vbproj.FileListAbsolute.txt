@@ -47,3 +47,4 @@ C:\Users\Viko\Optics\Source\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.exe.manifest
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.application
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmCrossword.resources
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmCrosswordSplash.resources

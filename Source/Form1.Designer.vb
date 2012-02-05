@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCrossword
+Partial Class frmCrosswordSplash
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,61 +23,62 @@ Partial Class frmCrossword
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstWords = New System.Windows.Forms.ListBox()
-        Me.lbl_word_general = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.txt_1 = New System.Windows.Forms.TextBox()
+        Me.lst_words_vis = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'lstWords
         '
         Me.lstWords.FormattingEnabled = True
-        Me.lstWords.Location = New System.Drawing.Point(484, 12)
+        Me.lstWords.Location = New System.Drawing.Point(12, 25)
         Me.lstWords.Name = "lstWords"
         Me.lstWords.Size = New System.Drawing.Size(133, 160)
-        Me.lstWords.TabIndex = 8
+        Me.lstWords.TabIndex = 9
         '
-        'lbl_word_general
+        'Label1
         '
-        Me.lbl_word_general.AutoSize = True
-        Me.lbl_word_general.Location = New System.Drawing.Point(439, 13)
-        Me.lbl_word_general.Name = "lbl_word_general"
-        Me.lbl_word_general.Size = New System.Drawing.Size(13, 13)
-        Me.lbl_word_general.TabIndex = 9
-        Me.lbl_word_general.Text = "?"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(229, 13)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Моля изберете ключова дума по вертикала"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(484, 188)
+        Me.Button1.Location = New System.Drawing.Point(12, 191)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
+        Me.Button1.Size = New System.Drawing.Size(133, 28)
+        Me.Button1.TabIndex = 11
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'txt_1
+        'lst_words_vis
         '
-        Me.txt_1.Location = New System.Drawing.Point(484, 228)
-        Me.txt_1.Name = "txt_1"
-        Me.txt_1.Size = New System.Drawing.Size(100, 20)
-        Me.txt_1.TabIndex = 11
+        Me.lst_words_vis.FormattingEnabled = True
+        Me.lst_words_vis.Location = New System.Drawing.Point(151, 25)
+        Me.lst_words_vis.Name = "lst_words_vis"
+        Me.lst_words_vis.Size = New System.Drawing.Size(120, 160)
+        Me.lst_words_vis.TabIndex = 12
         '
-        'frmCrossword
+        'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(629, 347)
-        Me.Controls.Add(Me.txt_1)
+        Me.ClientSize = New System.Drawing.Size(509, 417)
+        Me.Controls.Add(Me.lst_words_vis)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.lbl_word_general)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lstWords)
-        Me.Name = "frmCrossword"
-        Me.Text = "Form1"
+        Me.Name = "frmCrosswordSplash"
+        Me.Text = "CrosswordSplash"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents lstWords As System.Windows.Forms.ListBox
-    Friend WithEvents lbl_word_general As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents txt_1 As System.Windows.Forms.TextBox
+    Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
 End Class
