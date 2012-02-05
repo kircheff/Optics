@@ -59,14 +59,14 @@ Partial Class frmCrosswordSplash
         Me.lst_words_vis.FormattingEnabled = True
         Me.lst_words_vis.Location = New System.Drawing.Point(151, 25)
         Me.lst_words_vis.Name = "lst_words_vis"
-        Me.lst_words_vis.Size = New System.Drawing.Size(120, 160)
+        Me.lst_words_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_words_vis.TabIndex = 12
         '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 417)
+        Me.ClientSize = New System.Drawing.Size(672, 376)
         Me.Controls.Add(Me.lst_words_vis)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
