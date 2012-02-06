@@ -26,6 +26,8 @@ Partial Class frmCrosswordSplash
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
+        Me.lst_pos_vis = New System.Windows.Forms.ListBox()
+        Me.lst_izbrani_vis = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'lstWords
@@ -62,11 +64,29 @@ Partial Class frmCrosswordSplash
         Me.lst_words_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_words_vis.TabIndex = 12
         '
+        'lst_pos_vis
+        '
+        Me.lst_pos_vis.FormattingEnabled = True
+        Me.lst_pos_vis.Location = New System.Drawing.Point(295, 25)
+        Me.lst_pos_vis.Name = "lst_pos_vis"
+        Me.lst_pos_vis.Size = New System.Drawing.Size(138, 160)
+        Me.lst_pos_vis.TabIndex = 13
+        '
+        'lst_izbrani_vis
+        '
+        Me.lst_izbrani_vis.FormattingEnabled = True
+        Me.lst_izbrani_vis.Location = New System.Drawing.Point(439, 25)
+        Me.lst_izbrani_vis.Name = "lst_izbrani_vis"
+        Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
+        Me.lst_izbrani_vis.TabIndex = 14
+        '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(672, 376)
+        Me.Controls.Add(Me.lst_izbrani_vis)
+        Me.Controls.Add(Me.lst_pos_vis)
         Me.Controls.Add(Me.lst_words_vis)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -81,4 +101,6 @@ Partial Class frmCrosswordSplash
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
+    Friend WithEvents lst_pos_vis As System.Windows.Forms.ListBox
+    Friend WithEvents lst_izbrani_vis As System.Windows.Forms.ListBox
 End Class
