@@ -41,7 +41,7 @@
                     pos_start(i) = InStr(lst_words_vis.Items(rand), masiv(i))
 
                     izbrani_dumi(i) = lst_words_vis.Items(rand).ToString
-                    lst_words_vis.Items.Remove(rand)
+                    lst_words_vis.Items.RemoveAt(rand)
                     found = True
                     rand = RandomNumber(lst_words_vis.Items.Count - 1)
                 Else
