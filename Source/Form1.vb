@@ -30,15 +30,22 @@
             masiv = v_duma.ToCharArray
             Dim pos_start(masiv.Length - 1) As Integer
             Dim izbrani_dumi(masiv.Length - 1) As String
-            For i = 0 To lstWords.Items.Count - 1
-                For j = 0 To masiv.Count - 1
+            For j = 0 To masiv.Count - 1
+                Dim check As Integer = 0
+                For i = 0 To lstWords.Items.Count - 1
+
                     If InStr(lstWords.Items(i), masiv(j)) Then
                         lst_words_vis.Items.Add(lstWords.Items(i))
+                    Else
+                        check = check + 1
                     End If
-                Next j
-            Next i
 
-            RemoveDuplicateItem(lst_words_vis)
+                Next i
+                If check = lstWords.Items.Count - 1 Then
+                    Exit Sub
+                End If
+            Next j
+            'RemoveDuplicateItem(lst_words_vis)
             Dim rand As Integer
             Dim found As Boolean
             For i = 0 To masiv.Count - 1
@@ -68,7 +75,11 @@
             For i = 0 To izbrani_dumi.Count - 1
                 lst_izbrani_vis.Items.Add(izbrani_dumi(i))
             Next i
+            Array.Clear(pos_start, pos_start.GetLowerBound(0), pos_start.Length)
+            Array.Clear(izbrani_dumi, izbrani_dumi.GetLowerBound(0), izbrani_dumi.Length)
+
         End If
+
     End Sub
 
 
