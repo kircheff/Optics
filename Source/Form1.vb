@@ -34,7 +34,7 @@
                 Dim check As Integer = 0
                 For i = 0 To lstWords.Items.Count - 1
 
-                    If InStr(lstWords.Items(i), masiv(j)) Then
+                    If InStr(lstWords.Items(i), masiv(j)) And lstWords.Items(i) <> lstWords.Items(lstWords.SelectedIndex) Then
                         lst_words_vis.Items.Add(lstWords.Items(i))
                     Else
                         check = check + 1
@@ -42,16 +42,49 @@
 
                 Next i
                 If check = lstWords.Items.Count - 1 Then
+                    MsgBox("В речника няма дума с буквата " & masiv(j) & ".")
                     Exit Sub
                 End If
             Next j
-            'RemoveDuplicateItem(lst_words_vis)
+            RemoveDuplicateItem(lst_words_vis)
+            'Dim rand As Integer = RandomNumber(lst_words_vis.Items.Count - 1)
+            'Dim found As Boolean
+            'For i = 0 To masiv.Count - 1
+            '    found = False
+            '    Dim CountOfTries As Integer = 0
+            '    Do While found = False Or CountOfTries <> lst_words_vis.Items.Count
+
+            '        If InStr(lst_words_vis.Items(rand), masiv(i)) Then
+            '            pos_start(i) = InStr(lst_words_vis.Items(rand), masiv(i))
+
+            '            izbrani_dumi(i) = lst_words_vis.Items(rand).ToString
+
+            '            found = True
+            '            If rand = lst_words_vis.Items.Count - 1 Then
+            '                rand = -1
+            '            End If
+            '            rand = rand + 1
+            '        Else
+            '            found = False
+            '            If rand = lst_words_vis.Items.Count - 1 Then
+            '                rand = -1
+            '            End If
+            '            rand = rand + 1
+            '            CountOfTries = CountOfTries + 1
+
+            '        End If
+            '        If found = False Then
+            '            Exit Sub
+            '        End If
+            '    Loop
+            'Next
             Dim rand As Integer
             Dim found As Boolean
             For i = 0 To masiv.Count - 1
                 found = False
-                'rand = RandomNumber(lst_words_vis.Items.Count - 1)
-                Do While found = False
+                rand = RandomNumber(lst_words_vis.Items.Count - 1)
+                Dim tries As Integer = 0
+                Do While found = False And tries < 10000
                     rand = RandomNumber(lst_words_vis.Items.Count - 1)
                     If InStr(lst_words_vis.Items(rand), masiv(i)) Then
                         pos_start(i) = InStr(lst_words_vis.Items(rand), masiv(i))
@@ -62,8 +95,11 @@
                         rand = RandomNumber(lst_words_vis.Items.Count - 1)
                     Else
                         found = False
+                        tries = tries + 1
                     End If
-
+                    If tries = 10000 Then
+                        Exit Sub
+                    End If
                 Loop
             Next
 
