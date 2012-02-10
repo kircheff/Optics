@@ -28,6 +28,7 @@ Partial Class frmCrosswordSplash
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
         Me.lst_pos_vis = New System.Windows.Forms.ListBox()
         Me.lst_izbrani_vis = New System.Windows.Forms.ListBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'lstWords
@@ -80,11 +81,20 @@ Partial Class frmCrosswordSplash
         Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_izbrani_vis.TabIndex = 14
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(151, 191)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(426, 160)
+        Me.ListBox1.TabIndex = 15
+        '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(672, 376)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.lst_izbrani_vis)
         Me.Controls.Add(Me.lst_pos_vis)
         Me.Controls.Add(Me.lst_words_vis)
@@ -103,4 +113,5 @@ Partial Class frmCrosswordSplash
     Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_pos_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_izbrani_vis As System.Windows.Forms.ListBox
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 End Class
