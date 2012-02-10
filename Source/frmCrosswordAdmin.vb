@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub cmdMakeCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdMakeCrossword.Click
         If lstWords.SelectedIndex = -1 Then
 
             MsgBox("Моля, изберете елемент")
@@ -25,7 +25,7 @@
             lst_words_vis.Items.Clear()
             lst_pos_vis.Items.Clear()
             lst_izbrani_vis.Items.Clear()
-            ListBox1.Items.Clear()
+            lst_meanings_vis.Items.Clear()
 
             Dim masiv As String
             masiv = v_duma.ToCharArray
@@ -118,13 +118,34 @@
             For i = 0 To ds.Tables("rechnik").Rows.Count - 1
                 For j = 0 To izbrani_dumi.Count - 1
                     If izbrani_dumi(j) = ds.Tables("rechnik").Rows(i).Item("duma") Then
-                        meanings(j) = ds.Tables("rechnik").Rows(i).Item("znachenie")                        
+                        meanings(j) = ds.Tables("rechnik").Rows(i).Item("znachenie")
                     End If
                 Next
             Next
             For i = 0 To meanings.Count - 1
-                ListBox1.Items.Add(meanings(i))
+                lst_meanings_vis.Items.Add(meanings(i))
             Next
+            Dim maxLeft As Byte = pos_start(0) - 1
+            Dim maxRight As Byte = Len(izbrani_dumi(0)) - pos_start(0)
+            For i = 1 To pos_start.Count - 1
+                If maxLeft < pos_start(i) - 1 Then
+                    maxLeft = pos_start(i) - 1
+                End If
+                If maxRight < Len(izbrani_dumi(i)) - pos_start(i) Then
+                    maxRight = Len(izbrani_dumi(i)) - pos_start(i)
+                End If
+            Next
+            txtMax.Text = maxRight
+            txtMin.Text = maxLeft
+
+            Dim crossword(1 + maxLeft + maxRight, Len(masiv)) As Char
+
+            For i = 0 To maxLeft + maxRight
+                For j = 0 To Len(masiv) - 1
+                    crossword(i, j) = "*"
+                Next
+            Next
+
             Array.Clear(pos_start, pos_start.GetLowerBound(0), pos_start.Length)
             Array.Clear(izbrani_dumi, izbrani_dumi.GetLowerBound(0), izbrani_dumi.Length)
 

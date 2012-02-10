@@ -1,4 +1,4 @@
-﻿Public Class frmDatabase
+﻿Public Class frmDictionary
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Base.accdb")
     Dim dt As New DataTable("rechnik")
     Dim rs As New OleDb.OleDbDataAdapter("SELECT * FROM rechnik", con)

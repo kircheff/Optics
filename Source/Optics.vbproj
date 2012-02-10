@@ -100,10 +100,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmCrosswordAdmin.Designer.vb">
+      <DependentUpon>frmCrosswordAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="frmCrosswordAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCrossword.Designer.vb">
@@ -112,16 +112,16 @@
     <Compile Include="frmCrossword.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdmin.Designer.vb">
-      <DependentUpon>frmAdmin.vb</DependentUpon>
+    <Compile Include="frmDictionaryAdmin.Designer.vb">
+      <DependentUpon>frmDictionaryAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmAdmin.vb">
+    <Compile Include="frmDictionaryAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDatabase.Designer.vb">
-      <DependentUpon>frmDatabase.vb</DependentUpon>
+    <Compile Include="frmDictionary.Designer.vb">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmDatabase.vb">
+    <Compile Include="frmDictionary.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCalculator.designer.vb">
@@ -154,17 +154,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="frmCrosswordAdmin.resx">
+      <DependentUpon>frmCrosswordAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCrossword.resx">
       <DependentUpon>frmCrossword.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdmin.resx">
-      <DependentUpon>frmAdmin.vb</DependentUpon>
+    <EmbeddedResource Include="frmDictionaryAdmin.resx">
+      <DependentUpon>frmDictionaryAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDatabase.resx">
-      <DependentUpon>frmDatabase.vb</DependentUpon>
+    <EmbeddedResource Include="frmDictionary.resx">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCalculator.resx">
       <DependentUpon>frmCalculator.vb</DependentUpon>
@@ -189,7 +189,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="Optics_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

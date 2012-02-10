@@ -24,11 +24,13 @@ Partial Class frmCrosswordSplash
     Private Sub InitializeComponent()
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmdMakeCrossword = New System.Windows.Forms.Button()
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
         Me.lst_pos_vis = New System.Windows.Forms.ListBox()
         Me.lst_izbrani_vis = New System.Windows.Forms.ListBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lst_meanings_vis = New System.Windows.Forms.ListBox()
+        Me.txtMax = New System.Windows.Forms.TextBox()
+        Me.txtMin = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lstWords
@@ -48,14 +50,14 @@ Partial Class frmCrosswordSplash
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Моля изберете ключова дума по вертикала"
         '
-        'Button1
+        'cmdMakeCrossword
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 191)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(133, 28)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmdMakeCrossword.Location = New System.Drawing.Point(12, 191)
+        Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
+        Me.cmdMakeCrossword.Size = New System.Drawing.Size(133, 55)
+        Me.cmdMakeCrossword.TabIndex = 11
+        Me.cmdMakeCrossword.Text = "Генерирай кръстословица"
+        Me.cmdMakeCrossword.UseVisualStyleBackColor = True
         '
         'lst_words_vis
         '
@@ -81,24 +83,40 @@ Partial Class frmCrosswordSplash
         Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_izbrani_vis.TabIndex = 14
         '
-        'ListBox1
+        'lst_meanings_vis
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(151, 191)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(426, 160)
-        Me.ListBox1.TabIndex = 15
+        Me.lst_meanings_vis.FormattingEnabled = True
+        Me.lst_meanings_vis.Location = New System.Drawing.Point(151, 191)
+        Me.lst_meanings_vis.Name = "lst_meanings_vis"
+        Me.lst_meanings_vis.Size = New System.Drawing.Size(426, 160)
+        Me.lst_meanings_vis.TabIndex = 15
+        '
+        'txtMax
+        '
+        Me.txtMax.Location = New System.Drawing.Point(15, 252)
+        Me.txtMax.Name = "txtMax"
+        Me.txtMax.Size = New System.Drawing.Size(100, 20)
+        Me.txtMax.TabIndex = 16
+        '
+        'txtMin
+        '
+        Me.txtMin.Location = New System.Drawing.Point(15, 278)
+        Me.txtMin.Name = "txtMin"
+        Me.txtMin.Size = New System.Drawing.Size(100, 20)
+        Me.txtMin.TabIndex = 17
         '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(672, 376)
-        Me.Controls.Add(Me.ListBox1)
+        Me.ClientSize = New System.Drawing.Size(599, 361)
+        Me.Controls.Add(Me.txtMin)
+        Me.Controls.Add(Me.txtMax)
+        Me.Controls.Add(Me.lst_meanings_vis)
         Me.Controls.Add(Me.lst_izbrani_vis)
         Me.Controls.Add(Me.lst_pos_vis)
         Me.Controls.Add(Me.lst_words_vis)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.cmdMakeCrossword)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lstWords)
         Me.Name = "frmCrosswordSplash"
@@ -109,9 +127,11 @@ Partial Class frmCrosswordSplash
     End Sub
     Friend WithEvents lstWords As System.Windows.Forms.ListBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmdMakeCrossword As System.Windows.Forms.Button
     Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_pos_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_izbrani_vis As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents lst_meanings_vis As System.Windows.Forms.ListBox
+    Friend WithEvents txtMax As System.Windows.Forms.TextBox
+    Friend WithEvents txtMin As System.Windows.Forms.TextBox
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class frmAdmin
+﻿Public Class frmDictionaryAdmin
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Base.accdb")
     Dim ds As New DataSet
     Dim rs As New OleDb.OleDbDataAdapter("SELECT * FROM rechnik", con)
@@ -31,7 +31,7 @@
         Next i
 
         MsgBox("Информацията е обновена.", , "Честито!")
-       
+
         txtWord.Enabled = False
         txtMeaning.Enabled = False
     End Sub

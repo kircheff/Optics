@@ -6,12 +6,12 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDiction.Click
-        frmDatabase.Show()
+        frmDictionary.Show()
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdmin.Click
-        frmAdmin.Show()
+        frmDictionaryAdmin.Show()
 
     End Sub
 
