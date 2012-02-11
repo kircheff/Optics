@@ -170,6 +170,14 @@
                     TextBoxes(i, j).Text = crossword(i, j)
                 Next j
             Next i
+            For i = 0 To Len(masiv) - 1
+                For j = 0 To maxLeft + maxRight
+                    If TextBoxes(i, j).Text = "*" Then
+                        TextBoxes(i, j).Visible = False
+                    End If
+
+                Next j
+            Next i
             Array.Clear(pos_start, pos_start.GetLowerBound(0), pos_start.Length)
             Array.Clear(izbrani_dumi, izbrani_dumi.GetLowerBound(0), izbrani_dumi.Length)
 
