@@ -36,7 +36,7 @@ Partial Class frmCrosswordSplash
         'lstWords
         '
         Me.lstWords.FormattingEnabled = True
-        Me.lstWords.Location = New System.Drawing.Point(12, 25)
+        Me.lstWords.Location = New System.Drawing.Point(509, 23)
         Me.lstWords.Name = "lstWords"
         Me.lstWords.Size = New System.Drawing.Size(133, 160)
         Me.lstWords.TabIndex = 9
@@ -44,7 +44,7 @@ Partial Class frmCrosswordSplash
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(509, 7)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(229, 13)
         Me.Label1.TabIndex = 10
@@ -52,7 +52,7 @@ Partial Class frmCrosswordSplash
         '
         'cmdMakeCrossword
         '
-        Me.cmdMakeCrossword.Location = New System.Drawing.Point(12, 191)
+        Me.cmdMakeCrossword.Location = New System.Drawing.Point(509, 189)
         Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
         Me.cmdMakeCrossword.Size = New System.Drawing.Size(133, 55)
         Me.cmdMakeCrossword.TabIndex = 11
@@ -62,7 +62,7 @@ Partial Class frmCrosswordSplash
         'lst_words_vis
         '
         Me.lst_words_vis.FormattingEnabled = True
-        Me.lst_words_vis.Location = New System.Drawing.Point(151, 25)
+        Me.lst_words_vis.Location = New System.Drawing.Point(648, 23)
         Me.lst_words_vis.Name = "lst_words_vis"
         Me.lst_words_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_words_vis.TabIndex = 12
@@ -70,7 +70,7 @@ Partial Class frmCrosswordSplash
         'lst_pos_vis
         '
         Me.lst_pos_vis.FormattingEnabled = True
-        Me.lst_pos_vis.Location = New System.Drawing.Point(295, 25)
+        Me.lst_pos_vis.Location = New System.Drawing.Point(792, 23)
         Me.lst_pos_vis.Name = "lst_pos_vis"
         Me.lst_pos_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_pos_vis.TabIndex = 13
@@ -78,7 +78,7 @@ Partial Class frmCrosswordSplash
         'lst_izbrani_vis
         '
         Me.lst_izbrani_vis.FormattingEnabled = True
-        Me.lst_izbrani_vis.Location = New System.Drawing.Point(439, 25)
+        Me.lst_izbrani_vis.Location = New System.Drawing.Point(936, 23)
         Me.lst_izbrani_vis.Name = "lst_izbrani_vis"
         Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_izbrani_vis.TabIndex = 14
@@ -86,21 +86,21 @@ Partial Class frmCrosswordSplash
         'lst_meanings_vis
         '
         Me.lst_meanings_vis.FormattingEnabled = True
-        Me.lst_meanings_vis.Location = New System.Drawing.Point(151, 191)
+        Me.lst_meanings_vis.Location = New System.Drawing.Point(648, 189)
         Me.lst_meanings_vis.Name = "lst_meanings_vis"
         Me.lst_meanings_vis.Size = New System.Drawing.Size(426, 160)
         Me.lst_meanings_vis.TabIndex = 15
         '
         'txtMax
         '
-        Me.txtMax.Location = New System.Drawing.Point(15, 252)
+        Me.txtMax.Location = New System.Drawing.Point(512, 250)
         Me.txtMax.Name = "txtMax"
         Me.txtMax.Size = New System.Drawing.Size(100, 20)
         Me.txtMax.TabIndex = 16
         '
         'txtMin
         '
-        Me.txtMin.Location = New System.Drawing.Point(15, 278)
+        Me.txtMin.Location = New System.Drawing.Point(512, 276)
         Me.txtMin.Name = "txtMin"
         Me.txtMin.Size = New System.Drawing.Size(100, 20)
         Me.txtMin.TabIndex = 17
@@ -109,7 +109,7 @@ Partial Class frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(599, 361)
+        Me.ClientSize = New System.Drawing.Size(1086, 361)
         Me.Controls.Add(Me.txtMin)
         Me.Controls.Add(Me.txtMax)
         Me.Controls.Add(Me.lst_meanings_vis)

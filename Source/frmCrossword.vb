@@ -26,7 +26,6 @@
                 TextBoxes(i, j).Left = j * TextBoxes(i, j).Width
                 Controls.Add(TextBoxes(i, j))
             Next j
-
         Next i
     End Sub
 

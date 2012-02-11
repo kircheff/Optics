@@ -13,6 +13,7 @@
             End If
         Next i
 
+       
     End Sub
 
     Private Sub cmdMakeCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdMakeCrossword.Click
@@ -112,9 +113,7 @@
                 lst_pos_vis.Items.Add(pos_start(i))
             Next i
 
-            For i = 0 To izbrani_dumi.Count - 1
-                lst_izbrani_vis.Items.Add(izbrani_dumi(i))
-            Next i
+          
             For i = 0 To ds.Tables("rechnik").Rows.Count - 1
                 For j = 0 To izbrani_dumi.Count - 1
                     If izbrani_dumi(j) = ds.Tables("rechnik").Rows(i).Item("duma") Then
@@ -138,14 +137,39 @@
             txtMax.Text = maxRight
             txtMin.Text = maxLeft
 
-            Dim crossword(1 + maxLeft + maxRight, Len(masiv)) As Char
+            Dim crossword(Len(masiv), 1 + maxLeft + maxRight) As Char
+            Dim TextBoxes(Len(masiv), 1 + maxLeft + maxRight) As TextBox
+            
+            For i = 0 To Len(masiv) - 1
+                For j = 0 To maxLeft + maxRight
+                    TextBoxes(i, j) = New TextBox
+                    TextBoxes(i, j).Height = 27
+                    TextBoxes(i, j).Width = 27
+                    TextBoxes(i, j).Top = i * TextBoxes(i, j).Height
+                    TextBoxes(i, j).Left = j * TextBoxes(i, j).Width
+                    Controls.Add(TextBoxes(i, j))
+                Next j
+            Next i
+            For i = 0 To Len(masiv) - 1
+                izbrani_dumi(i) = AddStars(maxLeft - pos_start(i) + 1, izbrani_dumi(i), "Left")
+                izbrani_dumi(i) = AddStars(maxRight + maxLeft + 1 - Len(izbrani_dumi(i)), izbrani_dumi(i), "Right")
 
-            For i = 0 To maxLeft + maxRight
-                For j = 0 To Len(masiv) - 1
-                    crossword(i, j) = "*"
+            Next
+            For i = 0 To izbrani_dumi.Count - 1
+                lst_izbrani_vis.Items.Add(izbrani_dumi(i))
+            Next i
+            Dim helpStr As String
+            For i = 0 To Len(masiv) - 1
+                helpStr = izbrani_dumi(i)
+                For j = 0 To maxLeft + maxRight
+                    crossword(i, j) = helpStr(j)
                 Next
             Next
-
+            For i = 0 To Len(masiv) - 1
+                For j = 0 To maxLeft + maxRight
+                    TextBoxes(i, j).Text = crossword(i, j)
+                Next j
+            Next i
             Array.Clear(pos_start, pos_start.GetLowerBound(0), pos_start.Length)
             Array.Clear(izbrani_dumi, izbrani_dumi.GetLowerBound(0), izbrani_dumi.Length)
 
@@ -153,7 +177,18 @@
 
     End Sub
 
-
+    Function AddStars(ByVal numberOfStars As Byte, ByVal stringToAdd As String, ByVal side As String) As String
+        If side = "Left" Then
+            For i = 1 To numberOfStars
+                stringToAdd = "*" & stringToAdd
+            Next
+        ElseIf side = "Right" Then
+            For i = 1 To numberOfStars
+                stringToAdd = stringToAdd & "*"
+            Next
+        End If
+        AddStars = stringToAdd
+    End Function
     Sub RemoveDuplicateItem(ByVal listboxName As ListBox)
         listboxName.Sorted = True
         listboxName.Refresh()
