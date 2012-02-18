@@ -17,7 +17,6 @@ C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.exe
 C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.pdb
 C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.xml
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmDatabase.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmCalculator.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmGeneral.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.Resources.resources
@@ -25,7 +24,6 @@ C:\Users\petri4kov\Optics\Source\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.exe.manifest
 C:\Users\petri4kov\Optics\Source\bin\Debug\Optics.application
-C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmAdmin.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.exe.manifest
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.application
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.exe
@@ -50,3 +48,6 @@ C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmCrosswordSplash.resources
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmCrossword.resources
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmDictionaryAdmin.resources
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmDictionary.resources
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmDictionaryAdmin.resources
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmDictionary.resources
+C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTest.resources

@@ -27,6 +27,7 @@ Partial Class frmGeneral
         Me.btnAdmin = New System.Windows.Forms.Button()
         Me.btnCrossword = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalc
@@ -74,11 +75,21 @@ Partial Class frmGeneral
         Me.Button1.Text = "Кръстословица 1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(144, 47)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(126, 29)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Тест"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(390, 222)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCrossword)
         Me.Controls.Add(Me.btnAdmin)
@@ -94,5 +105,6 @@ Partial Class frmGeneral
     Friend WithEvents btnAdmin As System.Windows.Forms.Button
     Friend WithEvents btnCrossword As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
