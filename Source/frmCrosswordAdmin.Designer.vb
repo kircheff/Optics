@@ -28,9 +28,10 @@ Partial Class frmCrosswordSplash
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
         Me.lst_pos_vis = New System.Windows.Forms.ListBox()
         Me.lst_izbrani_vis = New System.Windows.Forms.ListBox()
-        Me.lst_meanings_vis = New System.Windows.Forms.ListBox()
         Me.txtMax = New System.Windows.Forms.TextBox()
         Me.txtMin = New System.Windows.Forms.TextBox()
+        Me.cmdClearCrossword = New System.Windows.Forms.Button()
+        Me.txtMeanings = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lstWords
@@ -54,7 +55,7 @@ Partial Class frmCrosswordSplash
         '
         Me.cmdMakeCrossword.Location = New System.Drawing.Point(509, 189)
         Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
-        Me.cmdMakeCrossword.Size = New System.Drawing.Size(133, 55)
+        Me.cmdMakeCrossword.Size = New System.Drawing.Size(133, 45)
         Me.cmdMakeCrossword.TabIndex = 11
         Me.cmdMakeCrossword.Text = "Генерирай кръстословица"
         Me.cmdMakeCrossword.UseVisualStyleBackColor = True
@@ -83,36 +84,48 @@ Partial Class frmCrosswordSplash
         Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_izbrani_vis.TabIndex = 14
         '
-        'lst_meanings_vis
-        '
-        Me.lst_meanings_vis.FormattingEnabled = True
-        Me.lst_meanings_vis.Location = New System.Drawing.Point(648, 189)
-        Me.lst_meanings_vis.Name = "lst_meanings_vis"
-        Me.lst_meanings_vis.Size = New System.Drawing.Size(426, 160)
-        Me.lst_meanings_vis.TabIndex = 15
-        '
         'txtMax
         '
-        Me.txtMax.Location = New System.Drawing.Point(512, 250)
+        Me.txtMax.Location = New System.Drawing.Point(512, 291)
         Me.txtMax.Name = "txtMax"
         Me.txtMax.Size = New System.Drawing.Size(100, 20)
         Me.txtMax.TabIndex = 16
         '
         'txtMin
         '
-        Me.txtMin.Location = New System.Drawing.Point(512, 276)
+        Me.txtMin.Location = New System.Drawing.Point(512, 317)
         Me.txtMin.Name = "txtMin"
         Me.txtMin.Size = New System.Drawing.Size(100, 20)
         Me.txtMin.TabIndex = 17
+        '
+        'cmdClearCrossword
+        '
+        Me.cmdClearCrossword.Location = New System.Drawing.Point(509, 240)
+        Me.cmdClearCrossword.Name = "cmdClearCrossword"
+        Me.cmdClearCrossword.Size = New System.Drawing.Size(133, 45)
+        Me.cmdClearCrossword.TabIndex = 18
+        Me.cmdClearCrossword.Text = "Изчисти кръстословица"
+        Me.cmdClearCrossword.UseVisualStyleBackColor = True
+        '
+        'txtMeanings
+        '
+        Me.txtMeanings.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtMeanings.Location = New System.Drawing.Point(648, 189)
+        Me.txtMeanings.Multiline = True
+        Me.txtMeanings.Name = "txtMeanings"
+        Me.txtMeanings.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtMeanings.Size = New System.Drawing.Size(426, 148)
+        Me.txtMeanings.TabIndex = 19
         '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 361)
+        Me.Controls.Add(Me.txtMeanings)
+        Me.Controls.Add(Me.cmdClearCrossword)
         Me.Controls.Add(Me.txtMin)
         Me.Controls.Add(Me.txtMax)
-        Me.Controls.Add(Me.lst_meanings_vis)
         Me.Controls.Add(Me.lst_izbrani_vis)
         Me.Controls.Add(Me.lst_pos_vis)
         Me.Controls.Add(Me.lst_words_vis)
@@ -131,7 +144,8 @@ Partial Class frmCrosswordSplash
     Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_pos_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_izbrani_vis As System.Windows.Forms.ListBox
-    Friend WithEvents lst_meanings_vis As System.Windows.Forms.ListBox
     Friend WithEvents txtMax As System.Windows.Forms.TextBox
     Friend WithEvents txtMin As System.Windows.Forms.TextBox
+    Friend WithEvents cmdClearCrossword As System.Windows.Forms.Button
+    Friend WithEvents txtMeanings As System.Windows.Forms.TextBox
 End Class

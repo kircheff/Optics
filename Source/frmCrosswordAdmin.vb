@@ -2,7 +2,7 @@
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Base.accdb")
     Dim ds As New DataSet
     Dim rs As New OleDb.OleDbDataAdapter("SELECT * FROM rechnik", con)
-
+    Dim num_h, num_v As Byte
     Dim v_duma As String
     Dim pos_start() As Integer
     Private Sub frmCrosswordSplash_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -26,7 +26,7 @@
             lst_words_vis.Items.Clear()
             lst_pos_vis.Items.Clear()
             lst_izbrani_vis.Items.Clear()
-            lst_meanings_vis.Items.Clear()
+            txtMeanings.Text = ""
 
             Dim masiv As String
             masiv = v_duma.ToCharArray
@@ -122,7 +122,7 @@
                 Next
             Next
             For i = 0 To meanings.Count - 1
-                lst_meanings_vis.Items.Add(meanings(i))
+                txtMeanings.Text = txtMeanings.Text & i + 1 & ". " & meanings(i) & Environment.NewLine
             Next
             Dim maxLeft As Byte = pos_start(0) - 1
             Dim maxRight As Byte = Len(izbrani_dumi(0)) - pos_start(0)
@@ -137,18 +137,40 @@
             txtMax.Text = maxRight
             txtMin.Text = maxLeft
 
+            num_v = Len(masiv)
+            num_h = 1 + maxLeft + maxRight
+
             Dim crossword(Len(masiv), 1 + maxLeft + maxRight) As Char
-            Dim TextBoxes(Len(masiv), 1 + maxLeft + maxRight) As TextBox
+            Dim TextBoxes(num_v, num_h) As TextBox
             
             For i = 0 To Len(masiv) - 1
                 For j = 0 To maxLeft + maxRight
                     TextBoxes(i, j) = New TextBox
-                    TextBoxes(i, j).Height = 27
-                    TextBoxes(i, j).Width = 27
-                    TextBoxes(i, j).Top = i * TextBoxes(i, j).Height
-                    TextBoxes(i, j).Left = j * TextBoxes(i, j).Width
+                    TextBoxes(i, j).Height = 25
+                    TextBoxes(i, j).MaxLength = 1
+                    TextBoxes(i, j).Width = 28
+                    TextBoxes(i, j).TextAlign = HorizontalAlignment.Center
+                    TextBoxes(i, j).Font = New Font("Times New Roman", 14)
+                    TextBoxes(i, j).Multiline = True
+                    TextBoxes(i, j).Top = i * TextBoxes(i, j).Height + 20
+                    TextBoxes(i, j).Left = j * TextBoxes(i, j).Width + 60
+                    TextBoxes(i, j).Name = "txtBox" & i & j
                     Controls.Add(TextBoxes(i, j))
                 Next j
+            Next i
+            Dim NumBoxes(num_v) As Label
+            For i = 0 To Len(masiv) - 1
+
+                NumBoxes(i) = New Label
+                NumBoxes(i).Height = 26.3
+                NumBoxes(i).Width = 28
+                NumBoxes(i).Top = i * NumBoxes(i).Height + 20
+                NumBoxes(i).Left = NumBoxes(i).Width
+                NumBoxes(i).Name = "NumBox" & i
+                NumBoxes(i).Text = i + 1
+                NumBoxes(i).Font = New Font("Times New Roman", 14)
+                Controls.Add(NumBoxes(i))
+
             Next i
             For i = 0 To Len(masiv) - 1
                 izbrani_dumi(i) = AddStars(maxLeft - pos_start(i) + 1, izbrani_dumi(i), "Left")
@@ -165,8 +187,12 @@
                     crossword(i, j) = helpStr(j)
                 Next
             Next
+
             For i = 0 To Len(masiv) - 1
                 For j = 0 To maxLeft + maxRight
+                    If j = maxLeft Then
+                        TextBoxes(i, j).BackColor = Color.Cyan
+                    End If
                     TextBoxes(i, j).Text = crossword(i, j)
                 Next j
             Next i
@@ -235,4 +261,17 @@
     End Function
 
 
+
+    Private Sub cmdClearCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClearCrossword.Click
+
+
+        For i = 0 To num_v - 1
+            For j = 0 To num_h - 1
+                Controls.RemoveByKey("txtBox" & i & j)
+            Next j
+        Next i
+        For i = 0 To num_v - 1
+            Controls.RemoveByKey("NumBox" & i)
+        Next i
+    End Sub
 End Class
