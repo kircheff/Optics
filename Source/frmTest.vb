@@ -2,6 +2,8 @@
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Base.accdb")
     Dim ds As New DataSet
     Dim rs As New OleDb.OleDbDataAdapter("SELECT * FROM test", con)
+    Dim rs_users As New OleDb.OleDbDataAdapter("SELECT * FROM potrebiteli", con)
+    Dim cb As New OleDb.OleDbCommandBuilder(rs_users)
 
     Dim seconds As Byte 'Секунди
     Dim question As String 'Текущ въпрос
@@ -11,11 +13,21 @@
     Dim points As Byte 'Текущи точки на потребителя
     Dim answer_points As Byte 'Колко точки е текущят въпрос
     Dim user_answer As Byte 'Избран отговор от потребителя
-    Dim questons_answered As Byte 'На колко въпроса е отговорил потребителя досега
+    Dim questions_answered As Byte = 1 'На колко въпроса е отговорил потребителя досега
     Private Sub frmTest_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         con.Open()
 
         rs.Fill(ds, "Test")
+        rs_users.Fill(ds, "potrebiteli")
+
+        lbl_name.Text = user
+
+        ds.Tables("potrebiteli").Rows.Add(ds.Tables("potrebiteli").NewRow())
+        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("username") = user
+        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("klas") = user_class
+        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ID") = ds.Tables("potrebiteli").Rows.Count - 1
+        rs_users.Update(ds, "Potrebiteli")
 
         NextQuestion()
 
@@ -29,8 +41,13 @@
     End Sub
 
     Private Sub NextQuestion()
-        If questons_answered = 10 Then
+       
+
+        UncheckRadioButtons(Me)
+
+        If questions_answered = 10 Then
             'frmEdikakvo si .show
+            questions_answered = 1
             End
         End If
 
@@ -54,6 +71,8 @@
         correct_answer = ds.Tables("test").Rows(rand).Item("correct")
         answer_points = ds.Tables("test").Rows(rand).Item("points")
 
+       
+
         If opt_answ1.Checked = True Then user_answer = 1
         If opt_answ2.Checked = True Then user_answer = 2
         If opt_answ3.Checked = True Then user_answer = 3
@@ -69,6 +88,9 @@
 
         lblQuestion.Text = question
 
+        lbl_question_number.Text = questions_answered & "/10 въпроса"
+
+        questions_answered = questions_answered + 1
 
 
     End Sub
@@ -92,12 +114,29 @@
     End Function
 
     Private Sub cmd_next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_next.Click
+        If opt_answ1.Checked = False And opt_answ2.Checked = False And opt_answ3.Checked = False Then
+            MsgBox("Моля изберете отговор на въпроса!", , "Не е избран отговор")
+            Exit Sub
+        End If
+
         NextQuestion()
         TextBox1.Text = points
 
+       
     End Sub
 
     Private Sub Clear_array(ByVal array As Array)
         array.Clear(array, array.GetLowerBound(0), array.Length)
+    End Sub
+    Private Sub UncheckRadioButtons(ByVal ctrl As Control)
+
+        For Each c As Control In ctrl.Controls
+            If TypeOf c Is RadioButton Then
+                CType(c, RadioButton).Checked = False
+            Else
+                If c.HasChildren Then UncheckRadioButtons(c)
+            End If
+        Next
+
     End Sub
 End Class

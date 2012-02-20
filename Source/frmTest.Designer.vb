@@ -31,6 +31,9 @@ Partial Class frmTest
         Me.lbl_seconds = New System.Windows.Forms.Label()
         Me.cmd_next = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lbl_question_number = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.lbl_name = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblQuestion
@@ -49,7 +52,6 @@ Partial Class frmTest
         Me.opt_answ1.Name = "opt_answ1"
         Me.opt_answ1.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ1.TabIndex = 1
-        Me.opt_answ1.TabStop = True
         Me.opt_answ1.Text = "Отговор 1"
         Me.opt_answ1.UseVisualStyleBackColor = True
         '
@@ -60,7 +62,6 @@ Partial Class frmTest
         Me.opt_answ2.Name = "opt_answ2"
         Me.opt_answ2.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ2.TabIndex = 2
-        Me.opt_answ2.TabStop = True
         Me.opt_answ2.Text = "Отговор 1"
         Me.opt_answ2.UseVisualStyleBackColor = True
         '
@@ -71,7 +72,6 @@ Partial Class frmTest
         Me.opt_answ3.Name = "opt_answ3"
         Me.opt_answ3.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ3.TabIndex = 3
-        Me.opt_answ3.TabStop = True
         Me.opt_answ3.Text = "Отговор 1"
         Me.opt_answ3.UseVisualStyleBackColor = True
         '
@@ -85,13 +85,13 @@ Partial Class frmTest
         Me.lbl_seconds.AutoSize = True
         Me.lbl_seconds.Location = New System.Drawing.Point(528, 9)
         Me.lbl_seconds.Name = "lbl_seconds"
-        Me.lbl_seconds.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_seconds.Size = New System.Drawing.Size(49, 13)
         Me.lbl_seconds.TabIndex = 4
-        Me.lbl_seconds.Text = "Въпрос"
+        Me.lbl_seconds.Text = "Секунди"
         '
         'cmd_next
         '
-        Me.cmd_next.Location = New System.Drawing.Point(417, 312)
+        Me.cmd_next.Location = New System.Drawing.Point(373, 252)
         Me.cmd_next.Name = "cmd_next"
         Me.cmd_next.Size = New System.Drawing.Size(75, 23)
         Me.cmd_next.TabIndex = 5
@@ -100,16 +100,50 @@ Partial Class frmTest
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(13, 13)
+        Me.TextBox1.Location = New System.Drawing.Point(373, 281)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 6
+        '
+        'lbl_question_number
+        '
+        Me.lbl_question_number.AutoSize = True
+        Me.lbl_question_number.Location = New System.Drawing.Point(500, 22)
+        Me.lbl_question_number.Name = "lbl_question_number"
+        Me.lbl_question_number.Size = New System.Drawing.Size(30, 13)
+        Me.lbl_question_number.TabIndex = 7
+        Me.lbl_question_number.Text = "1/10"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.Location = New System.Drawing.Point(167, 110)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(76, 17)
+        Me.RadioButton1.TabIndex = 8
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Отговор 1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioButton1.Visible = False
+        '
+        'lbl_name
+        '
+        Me.lbl_name.AutoSize = True
+        Me.lbl_name.Location = New System.Drawing.Point(12, 9)
+        Me.lbl_name.Name = "lbl_name"
+        Me.lbl_name.Size = New System.Drawing.Size(29, 13)
+        Me.lbl_name.TabIndex = 9
+        Me.lbl_name.Text = "Име"
         '
         'frmTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(585, 390)
+        Me.ClientSize = New System.Drawing.Size(508, 338)
+        Me.Controls.Add(Me.lbl_name)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.lbl_question_number)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.cmd_next)
         Me.Controls.Add(Me.lbl_seconds)
@@ -131,4 +165,7 @@ Partial Class frmTest
     Friend WithEvents lbl_seconds As System.Windows.Forms.Label
     Friend WithEvents cmd_next As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents lbl_question_number As System.Windows.Forms.Label
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents lbl_name As System.Windows.Forms.Label
 End Class
