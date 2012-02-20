@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCrosswordSplash
+Partial Class frmCrossword
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -129,6 +129,7 @@ Partial Class frmCrosswordSplash
         '
         'txtHints
         '
+        Me.txtHints.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.txtHints.Location = New System.Drawing.Point(29, 78)
         Me.txtHints.Multiline = True
         Me.txtHints.Name = "txtHints"
@@ -162,7 +163,7 @@ Partial Class frmCrosswordSplash
         Me.MaximizeBox = False
         Me.Name = "frmCrosswordSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "CrosswordSplash"
+        Me.Text = "Кръстословица"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

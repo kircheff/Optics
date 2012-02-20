@@ -112,12 +112,6 @@
     <Compile Include="frmCrosswordAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCrossword.Designer.vb">
-      <DependentUpon>frmCrossword.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmCrossword.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmDictionaryAdmin.Designer.vb">
       <DependentUpon>frmDictionaryAdmin.vb</DependentUpon>
     </Compile>
@@ -172,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCrosswordAdmin.resx">
       <DependentUpon>frmCrosswordAdmin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCrossword.resx">
-      <DependentUpon>frmCrossword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDictionaryAdmin.resx">
       <DependentUpon>frmDictionaryAdmin.vb</DependentUpon>
