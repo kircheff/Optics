@@ -39,7 +39,8 @@ Partial Class frmTest
         'lblQuestion
         '
         Me.lblQuestion.AutoSize = True
-        Me.lblQuestion.Location = New System.Drawing.Point(164, 78)
+        Me.lblQuestion.Location = New System.Drawing.Point(12, 60)
+        Me.lblQuestion.MaximumSize = New System.Drawing.Size(450, 0)
         Me.lblQuestion.Name = "lblQuestion"
         Me.lblQuestion.Size = New System.Drawing.Size(45, 13)
         Me.lblQuestion.TabIndex = 0
@@ -48,7 +49,8 @@ Partial Class frmTest
         'opt_answ1
         '
         Me.opt_answ1.AutoSize = True
-        Me.opt_answ1.Location = New System.Drawing.Point(164, 133)
+        Me.opt_answ1.Location = New System.Drawing.Point(15, 142)
+        Me.opt_answ1.MaximumSize = New System.Drawing.Size(400, 0)
         Me.opt_answ1.Name = "opt_answ1"
         Me.opt_answ1.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ1.TabIndex = 1
@@ -58,7 +60,8 @@ Partial Class frmTest
         'opt_answ2
         '
         Me.opt_answ2.AutoSize = True
-        Me.opt_answ2.Location = New System.Drawing.Point(164, 156)
+        Me.opt_answ2.Location = New System.Drawing.Point(15, 165)
+        Me.opt_answ2.MaximumSize = New System.Drawing.Size(400, 0)
         Me.opt_answ2.Name = "opt_answ2"
         Me.opt_answ2.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ2.TabIndex = 2
@@ -68,7 +71,8 @@ Partial Class frmTest
         'opt_answ3
         '
         Me.opt_answ3.AutoSize = True
-        Me.opt_answ3.Location = New System.Drawing.Point(164, 179)
+        Me.opt_answ3.Location = New System.Drawing.Point(15, 188)
+        Me.opt_answ3.MaximumSize = New System.Drawing.Size(400, 0)
         Me.opt_answ3.Name = "opt_answ3"
         Me.opt_answ3.Size = New System.Drawing.Size(76, 17)
         Me.opt_answ3.TabIndex = 3
@@ -83,7 +87,7 @@ Partial Class frmTest
         'lbl_seconds
         '
         Me.lbl_seconds.AutoSize = True
-        Me.lbl_seconds.Location = New System.Drawing.Point(528, 9)
+        Me.lbl_seconds.Location = New System.Drawing.Point(318, 9)
         Me.lbl_seconds.Name = "lbl_seconds"
         Me.lbl_seconds.Size = New System.Drawing.Size(49, 13)
         Me.lbl_seconds.TabIndex = 4
@@ -108,7 +112,7 @@ Partial Class frmTest
         'lbl_question_number
         '
         Me.lbl_question_number.AutoSize = True
-        Me.lbl_question_number.Location = New System.Drawing.Point(500, 22)
+        Me.lbl_question_number.Location = New System.Drawing.Point(290, 22)
         Me.lbl_question_number.Name = "lbl_question_number"
         Me.lbl_question_number.Size = New System.Drawing.Size(30, 13)
         Me.lbl_question_number.TabIndex = 7
@@ -118,7 +122,7 @@ Partial Class frmTest
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(167, 110)
+        Me.RadioButton1.Location = New System.Drawing.Point(15, 119)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(76, 17)
         Me.RadioButton1.TabIndex = 8
@@ -140,7 +144,7 @@ Partial Class frmTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(508, 338)
+        Me.ClientSize = New System.Drawing.Size(482, 312)
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.lbl_question_number)

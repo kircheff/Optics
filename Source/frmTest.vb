@@ -11,10 +11,12 @@
     Dim answers(2) As String 'Възможни отговори на текущия въпрос
     Dim correct_answer As Byte 'Верен отговор на текущия въпрос
     Dim points As Byte 'Текущи точки на потребителя
-    Dim answer_points As Byte 'Колко точки е текущят въпрос
+    Dim points_max As Byte 'Максимален брой точки, които потребителя може да получи
+    Dim answer_points As Byte 'Колко точки е текущият въпрос
     Dim user_answer As Byte 'Избран отговор от потребителя
     Dim questions_answered As Byte = 1 'На колко въпроса е отговорил потребителя досега
     Dim questions_order As String = "" 'Последователността от въпроси които са се паднали на произволен принцип
+    Dim mark As Double 'Оценка на потребителя
 
     Private Sub frmTest_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -29,6 +31,8 @@
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("username") = user
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("klas") = user_class
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ID") = ds.Tables("potrebiteli").Rows.Count - 1
+        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("data_zap") = System.DateTime.Now
+        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("points") = points
         'rs_users.Update(ds, "Potrebiteli")
 
         NextQuestion()
@@ -43,15 +47,21 @@
     End Sub
 
     Private Sub NextQuestion()
-       
-        questions_order = questions_order & questionID & ","
+        TextBox1.Text = points
+
         UncheckRadioButtons(Me)
 
         If questions_answered = 10 Then
-            'frmEdikakvo si .show
+
             questions_answered = 1
 
+            mark = Math.Round(2 + 4 * points / points_max, 2)
+
+            MsgBox("Вашата оценка е: " & mark, , "Оценка")
+
+
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("test") = questions_order
+            ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ocenka") = mark
             rs_users.Update(ds, "Potrebiteli")
 
             End
@@ -62,9 +72,10 @@
         seconds = 0
         rand = RandomNumber(ds.Tables("test").Rows.Count, 0)
 
-        If rand = questionID Then
+        'Подсигуряваме се че в текущия тест няма да се паднат 2 еднакви въпроса
+        Do While InStr(questions_order, rand.ToString)
             rand = RandomNumber(ds.Tables("test").Rows.Count, 0)
-        End If
+        Loop
 
         questionID = rand
         question = ds.Tables("test").Rows(rand).Item("question")
@@ -77,7 +88,7 @@
         correct_answer = ds.Tables("test").Rows(rand).Item("correct")
         answer_points = ds.Tables("test").Rows(rand).Item("points")
 
-       
+
 
         If opt_answ1.Checked = True Then user_answer = 1
         If opt_answ2.Checked = True Then user_answer = 2
@@ -87,6 +98,8 @@
 
             points = points + answer_points
         End If
+
+        points_max = points_max + answer_points
 
         opt_answ1.Text = answers(0).ToString
         opt_answ2.Text = answers(1).ToString
@@ -98,7 +111,7 @@
 
         questions_answered = questions_answered + 1
 
-
+        questions_order = questions_order & questionID & ","
 
 
     End Sub
