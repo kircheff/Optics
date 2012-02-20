@@ -23,7 +23,6 @@ Partial Class frmCrosswordSplash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstWords = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdMakeCrossword = New System.Windows.Forms.Button()
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
         Me.lst_pos_vis = New System.Windows.Forms.ListBox()
@@ -32,6 +31,7 @@ Partial Class frmCrosswordSplash
         Me.txtMin = New System.Windows.Forms.TextBox()
         Me.cmdClearCrossword = New System.Windows.Forms.Button()
         Me.txtMeanings = New System.Windows.Forms.TextBox()
+        Me.cmdCheckCrossword = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lstWords
@@ -41,23 +41,15 @@ Partial Class frmCrosswordSplash
         Me.lstWords.Name = "lstWords"
         Me.lstWords.Size = New System.Drawing.Size(133, 160)
         Me.lstWords.TabIndex = 9
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(509, 7)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(229, 13)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Моля изберете ключова дума по вертикала"
+        Me.lstWords.Visible = False
         '
         'cmdMakeCrossword
         '
-        Me.cmdMakeCrossword.Location = New System.Drawing.Point(509, 189)
+        Me.cmdMakeCrossword.Location = New System.Drawing.Point(29, 23)
         Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
-        Me.cmdMakeCrossword.Size = New System.Drawing.Size(133, 45)
+        Me.cmdMakeCrossword.Size = New System.Drawing.Size(186, 31)
         Me.cmdMakeCrossword.TabIndex = 11
-        Me.cmdMakeCrossword.Text = "Генерирай кръстословица"
+        Me.cmdMakeCrossword.Text = "Генерирай нова кръстословица"
         Me.cmdMakeCrossword.UseVisualStyleBackColor = True
         '
         'lst_words_vis
@@ -67,6 +59,7 @@ Partial Class frmCrosswordSplash
         Me.lst_words_vis.Name = "lst_words_vis"
         Me.lst_words_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_words_vis.TabIndex = 12
+        Me.lst_words_vis.Visible = False
         '
         'lst_pos_vis
         '
@@ -75,6 +68,7 @@ Partial Class frmCrosswordSplash
         Me.lst_pos_vis.Name = "lst_pos_vis"
         Me.lst_pos_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_pos_vis.TabIndex = 13
+        Me.lst_pos_vis.Visible = False
         '
         'lst_izbrani_vis
         '
@@ -83,6 +77,7 @@ Partial Class frmCrosswordSplash
         Me.lst_izbrani_vis.Name = "lst_izbrani_vis"
         Me.lst_izbrani_vis.Size = New System.Drawing.Size(138, 160)
         Me.lst_izbrani_vis.TabIndex = 14
+        Me.lst_izbrani_vis.Visible = False
         '
         'txtMax
         '
@@ -90,6 +85,7 @@ Partial Class frmCrosswordSplash
         Me.txtMax.Name = "txtMax"
         Me.txtMax.Size = New System.Drawing.Size(100, 20)
         Me.txtMax.TabIndex = 16
+        Me.txtMax.Visible = False
         '
         'txtMin
         '
@@ -97,31 +93,43 @@ Partial Class frmCrosswordSplash
         Me.txtMin.Name = "txtMin"
         Me.txtMin.Size = New System.Drawing.Size(100, 20)
         Me.txtMin.TabIndex = 17
+        Me.txtMin.Visible = False
         '
         'cmdClearCrossword
         '
-        Me.cmdClearCrossword.Location = New System.Drawing.Point(509, 240)
+        Me.cmdClearCrossword.Location = New System.Drawing.Point(77, 402)
         Me.cmdClearCrossword.Name = "cmdClearCrossword"
-        Me.cmdClearCrossword.Size = New System.Drawing.Size(133, 45)
+        Me.cmdClearCrossword.Size = New System.Drawing.Size(388, 31)
         Me.cmdClearCrossword.TabIndex = 18
         Me.cmdClearCrossword.Text = "Изчисти кръстословица"
         Me.cmdClearCrossword.UseVisualStyleBackColor = True
+        Me.cmdClearCrossword.Visible = False
         '
         'txtMeanings
         '
         Me.txtMeanings.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtMeanings.Location = New System.Drawing.Point(648, 189)
+        Me.txtMeanings.Location = New System.Drawing.Point(524, 21)
         Me.txtMeanings.Multiline = True
         Me.txtMeanings.Name = "txtMeanings"
         Me.txtMeanings.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtMeanings.Size = New System.Drawing.Size(426, 148)
+        Me.txtMeanings.Size = New System.Drawing.Size(313, 431)
         Me.txtMeanings.TabIndex = 19
+        '
+        'cmdCheckCrossword
+        '
+        Me.cmdCheckCrossword.Location = New System.Drawing.Point(221, 23)
+        Me.cmdCheckCrossword.Name = "cmdCheckCrossword"
+        Me.cmdCheckCrossword.Size = New System.Drawing.Size(182, 31)
+        Me.cmdCheckCrossword.TabIndex = 20
+        Me.cmdCheckCrossword.Text = "Провери кръстословица"
+        Me.cmdCheckCrossword.UseVisualStyleBackColor = True
         '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1086, 361)
+        Me.ClientSize = New System.Drawing.Size(849, 466)
+        Me.Controls.Add(Me.cmdCheckCrossword)
         Me.Controls.Add(Me.txtMeanings)
         Me.Controls.Add(Me.cmdClearCrossword)
         Me.Controls.Add(Me.txtMin)
@@ -130,16 +138,17 @@ Partial Class frmCrosswordSplash
         Me.Controls.Add(Me.lst_pos_vis)
         Me.Controls.Add(Me.lst_words_vis)
         Me.Controls.Add(Me.cmdMakeCrossword)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lstWords)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmCrosswordSplash"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "CrosswordSplash"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents lstWords As System.Windows.Forms.ListBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmdMakeCrossword As System.Windows.Forms.Button
     Friend WithEvents lst_words_vis As System.Windows.Forms.ListBox
     Friend WithEvents lst_pos_vis As System.Windows.Forms.ListBox
@@ -148,4 +157,5 @@ Partial Class frmCrosswordSplash
     Friend WithEvents txtMin As System.Windows.Forms.TextBox
     Friend WithEvents cmdClearCrossword As System.Windows.Forms.Button
     Friend WithEvents txtMeanings As System.Windows.Forms.TextBox
+    Friend WithEvents cmdCheckCrossword As System.Windows.Forms.Button
 End Class

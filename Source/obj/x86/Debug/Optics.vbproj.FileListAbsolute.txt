@@ -53,3 +53,4 @@ C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmDictionary.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTest.resources
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTest.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTestSplash.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTestSplash.resources
