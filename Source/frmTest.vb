@@ -14,6 +14,8 @@
     Dim answer_points As Byte 'Колко точки е текущят въпрос
     Dim user_answer As Byte 'Избран отговор от потребителя
     Dim questions_answered As Byte = 1 'На колко въпроса е отговорил потребителя досега
+    Dim questions_order As String = "" 'Последователността от въпроси които са се паднали на произволен принцип
+
     Private Sub frmTest_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         con.Open()
@@ -27,7 +29,7 @@
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("username") = user
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("klas") = user_class
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ID") = ds.Tables("potrebiteli").Rows.Count - 1
-        rs_users.Update(ds, "Potrebiteli")
+        'rs_users.Update(ds, "Potrebiteli")
 
         NextQuestion()
 
@@ -42,12 +44,16 @@
 
     Private Sub NextQuestion()
        
-
+        questions_order = questions_order & questionID & ","
         UncheckRadioButtons(Me)
 
         If questions_answered = 10 Then
             'frmEdikakvo si .show
             questions_answered = 1
+
+            ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("test") = questions_order
+            rs_users.Update(ds, "Potrebiteli")
+
             End
         End If
 
@@ -91,6 +97,8 @@
         lbl_question_number.Text = questions_answered & "/10 въпроса"
 
         questions_answered = questions_answered + 1
+
+
 
 
     End Sub
