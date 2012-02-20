@@ -22,6 +22,7 @@ Partial Class frmCrosswordSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.cmdMakeCrossword = New System.Windows.Forms.Button()
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
@@ -32,6 +33,8 @@ Partial Class frmCrosswordSplash
         Me.cmdClearCrossword = New System.Windows.Forms.Button()
         Me.txtMeanings = New System.Windows.Forms.TextBox()
         Me.cmdCheckCrossword = New System.Windows.Forms.Button()
+        Me.txtHints = New System.Windows.Forms.TextBox()
+        Me.tmrCombo = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'lstWords
@@ -124,11 +127,27 @@ Partial Class frmCrosswordSplash
         Me.cmdCheckCrossword.Text = "Провери кръстословица"
         Me.cmdCheckCrossword.UseVisualStyleBackColor = True
         '
+        'txtHints
+        '
+        Me.txtHints.Location = New System.Drawing.Point(29, 78)
+        Me.txtHints.Multiline = True
+        Me.txtHints.Name = "txtHints"
+        Me.txtHints.Size = New System.Drawing.Size(374, 180)
+        Me.txtHints.TabIndex = 21
+        Me.txtHints.Text = " "
+        Me.txtHints.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtHints.Visible = False
+        '
+        'tmrCombo
+        '
+        Me.tmrCombo.Interval = 1
+        '
         'frmCrosswordSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(849, 466)
+        Me.Controls.Add(Me.txtHints)
         Me.Controls.Add(Me.cmdCheckCrossword)
         Me.Controls.Add(Me.txtMeanings)
         Me.Controls.Add(Me.cmdClearCrossword)
@@ -158,4 +177,6 @@ Partial Class frmCrosswordSplash
     Friend WithEvents cmdClearCrossword As System.Windows.Forms.Button
     Friend WithEvents txtMeanings As System.Windows.Forms.TextBox
     Friend WithEvents cmdCheckCrossword As System.Windows.Forms.Button
+    Friend WithEvents txtHints As System.Windows.Forms.TextBox
+    Friend WithEvents tmrCombo As System.Windows.Forms.Timer
 End Class

@@ -17,6 +17,7 @@
         cmdMakeCrossword.Visible = False
         cmdMakeCrossword_Click()
         cmdMakeCrossword.Visible = True
+
     End Sub
 
     Private Sub cmdMakeCrossword_Click() Handles cmdMakeCrossword.Click
@@ -25,6 +26,7 @@
         '    MsgBox("Моля, изберете елемент")
         'Else
 Beginning:
+        tmrCombo.Enabled = False
         cmdMakeCrossword.Enabled = False
         cmdCheckCrossword.Enabled = False
         cmdClearCrossword_Click()
@@ -35,7 +37,7 @@ Beginning:
         lst_pos_vis.Items.Clear()
         lst_izbrani_vis.Items.Clear()
         txtMeanings.Text = ""
-
+        txtHints.Text = ""
         Dim masiv As String
         masiv = v_duma.ToCharArray
         If masiv.Length > 13 Then
@@ -138,6 +140,9 @@ Beginning:
                     meanings(j) = ds.Tables("rechnik").Rows(i).Item("znachenie")
                 End If
             Next
+        Next
+        For i = 0 To izbrani_dumi.Count - 1
+            txtHints.Text = txtHints.Text & izbrani_dumi(i) & Environment.NewLine
         Next
         For i = 0 To meanings.Count - 1
             txtMeanings.Text = txtMeanings.Text & i + 1 & ". " & meanings(i) & Environment.NewLine
@@ -246,10 +251,14 @@ Beginning:
             txtMeanings.Left = cmdCheckCrossword.Left + cmdCheckCrossword.Width + 40
         End If
         txtMeanings.Height = num_v * 28 + 60
+        txtHints.Height = num_v * 26
+        txtHints.Width = (num_h + 1) * 28.2
         Me.Width = txtMeanings.Left + txtMeanings.Width + 30
         Me.Height = txtMeanings.Height + 60
         cmdMakeCrossword.Enabled = True
         cmdCheckCrossword.Enabled = True
+        tmrCombo.Enabled = True
+        tmrCombo.Start()
         Array.Clear(pos_start, pos_start.GetLowerBound(0), pos_start.Length)
         Array.Clear(izbrani_dumi, izbrani_dumi.GetLowerBound(0), izbrani_dumi.Length)
 
@@ -356,10 +365,28 @@ Beginning:
                 End If
             Next
             If mistake = True Then
-                numOfMistakes = numOfMistakes & (i + 1) & " "
+                numOfMistakes = numOfMistakes & (i + 1) & ", "
             End If
         Next
-        MsgBox(numOfMistakes)
+
+        If numOfMistakes = "" Then
+            MsgBox("Вие попълнихте кръстословицата правилно!!", , "Честито!")
+        Else
+            numOfMistakes = numOfMistakes.Substring(0, numOfMistakes.Length - 2)
+            MsgBox("Вие имате грешки във въпросите - " & numOfMistakes & ".", , "Опааа!")
+        End If
+
     End Sub
 
+    Private Sub tmrCombo_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrCombo.Tick
+
+        If My.Computer.Keyboard.AltKeyDown And My.Computer.Keyboard.CtrlKeyDown And My.Computer.Keyboard.ShiftKeyDown Then
+            txtHints.Visible = True
+
+
+        Else
+            txtHints.Visible = False
+        End If
+
+    End Sub
 End Class
