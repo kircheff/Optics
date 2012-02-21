@@ -9,12 +9,12 @@
     Dim question As String 'Текущ въпрос
     Dim questionID As Integer 'Номер на текущия въпрос
     Dim answers(2) As String 'Възможни отговори на текущия въпрос
-    Dim correct_answer As Byte 'Верен отговор на текущия въпрос
-    Dim points As Byte 'Текущи точки на потребителя
-    Dim points_max As Byte 'Максимален брой точки, които потребителя може да получи
+    Dim correct_answer As String 'Верен отговор на текущия въпрос
+    Dim points As Byte = 0 'Текущи точки на потребителя
+    Dim points_max As Byte = 0 'Максимален брой точки, които потребителя може да получи
     Dim answer_points As Byte 'Колко точки е текущият въпрос
-    Dim user_answer As Byte 'Избран отговор от потребителя
-    Dim questions_answered As Byte = 1 'На колко въпроса е отговорил потребителя досега
+    Dim user_answer As String 'Избран отговор от потребителя
+    Dim questions_answered As Byte = 0 'На колко въпроса е отговорил потребителя досега
     Dim questions_order As String = "" 'Последователността от въпроси които са се паднали на произволен принцип
     Dim mark As Double 'Оценка на потребителя
 
@@ -32,7 +32,7 @@
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("klas") = user_class
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ID") = ds.Tables("potrebiteli").Rows.Count - 1
         ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("data_zap") = System.DateTime.Now
-        ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("points") = points
+
         'rs_users.Update(ds, "Potrebiteli")
 
         NextQuestion()
@@ -47,13 +47,12 @@
     End Sub
 
     Private Sub NextQuestion()
-        TextBox1.Text = points
 
         UncheckRadioButtons(Me)
 
         If questions_answered = 10 Then
 
-            questions_answered = 1
+            questions_answered = 0
 
             mark = Math.Round(2 + 4 * points / points_max, 2)
 
@@ -61,6 +60,7 @@
 
 
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("test") = questions_order
+            ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("points") = points
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ocenka") = mark
             rs_users.Update(ds, "Potrebiteli")
 
@@ -80,7 +80,6 @@
         questionID = rand
         question = ds.Tables("test").Rows(rand).Item("question")
 
-
         answers(0) = ds.Tables("test").Rows(rand).Item("ans1")
         answers(1) = ds.Tables("test").Rows(rand).Item("ans2")
         answers(2) = ds.Tables("test").Rows(rand).Item("ans3")
@@ -88,18 +87,17 @@
         correct_answer = ds.Tables("test").Rows(rand).Item("correct")
         answer_points = ds.Tables("test").Rows(rand).Item("points")
 
+        'If opt_answ1.Checked = True Then user_answer = 1
+        'If opt_answ2.Checked = True Then user_answer = 2
+        'If opt_answ3.Checked = True Then user_answer = 3
 
+        'If user_answer = correct_answer Then
 
-        If opt_answ1.Checked = True Then user_answer = 1
-        If opt_answ2.Checked = True Then user_answer = 2
-        If opt_answ3.Checked = True Then user_answer = 3
+        '    points = points + answer_points
+        'Else : points = points + 0
+        'End If
 
-        If user_answer = correct_answer Then
-
-            points = points + answer_points
-        End If
-
-        points_max = points_max + answer_points
+        'points_max = points_max + answer_points
 
         opt_answ1.Text = answers(0).ToString
         opt_answ2.Text = answers(1).ToString
@@ -107,11 +105,13 @@
 
         lblQuestion.Text = question
 
-        lbl_question_number.Text = questions_answered & "/10 въпроса"
+        lbl_question_number.Text = questions_answered + 1 & "/10 въпроса"
 
         questions_answered = questions_answered + 1
 
         questions_order = questions_order & questionID & ","
+
+
 
 
     End Sub
@@ -140,6 +140,14 @@
             Exit Sub
         End If
 
+        If user_answer = correct_answer Then
+
+            points = points + answer_points
+        Else : points = points + 0
+        End If
+
+        points_max = points_max + answer_points
+
         NextQuestion()
         TextBox1.Text = points
 
@@ -159,5 +167,17 @@
             End If
         Next
 
+    End Sub
+
+    Private Sub opt_answ1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles opt_answ1.CheckedChanged
+        user_answer = opt_answ1.Text
+    End Sub
+
+    Private Sub opt_answ2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles opt_answ2.CheckedChanged
+        user_answer = opt_answ2.Text
+    End Sub
+
+    Private Sub opt_answ3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles opt_answ3.CheckedChanged
+        user_answer = opt_answ3.Text
     End Sub
 End Class
