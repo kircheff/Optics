@@ -100,6 +100,30 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAdminSplash.Designer.vb">
+      <DependentUpon>frmAdminSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGallery.Designer.vb">
+      <DependentUpon>frmGallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGallery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGallerySplash.Designer.vb">
+      <DependentUpon>frmGallerySplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGallerySplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTestPast.Designer.vb">
       <DependentUpon>frmTestPast.vb</DependentUpon>
     </Compile>
@@ -173,6 +197,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAdminSplash.resx">
+      <DependentUpon>frmAdminSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGallery.resx">
+      <DependentUpon>frmGallery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGallerySplash.resx">
+      <DependentUpon>frmGallerySplash.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTestAdmin.resx">
       <DependentUpon>frmTestAdmin.vb</DependentUpon>
     </EmbeddedResource>

@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdmin.Click
-        frmDictionaryAdmin.Show()
+        frmAdminSplash.Show()
 
     End Sub
 
@@ -27,5 +27,9 @@
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         frmTestAdmin.Show()
 
+    End Sub
+
+    Private Sub cmdGallery_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGallery.Click
+        frmGallerySplash.Show()
     End Sub
 End Class

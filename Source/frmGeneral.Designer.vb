@@ -28,6 +28,7 @@ Partial Class frmGeneral
         Me.btnCrossword = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmdGallery = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalc
@@ -84,11 +85,21 @@ Partial Class frmGeneral
         Me.Button1.Text = "Тест2"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'cmdGallery
+        '
+        Me.cmdGallery.Location = New System.Drawing.Point(276, 47)
+        Me.cmdGallery.Name = "cmdGallery"
+        Me.cmdGallery.Size = New System.Drawing.Size(104, 29)
+        Me.cmdGallery.TabIndex = 7
+        Me.cmdGallery.Text = "Галерия"
+        Me.cmdGallery.UseVisualStyleBackColor = True
+        '
         'frmGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(390, 222)
+        Me.Controls.Add(Me.cmdGallery)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnCrossword)
@@ -106,5 +117,6 @@ Partial Class frmGeneral
     Friend WithEvents btnCrossword As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmdGallery As System.Windows.Forms.Button
 
 End Class

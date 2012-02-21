@@ -54,3 +54,9 @@ C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTestSplash.resources
 C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTestSplash.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTestAdmin.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTestPast.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmAdminSplash.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmChangePassword.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmGallery.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmGallerySplash.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTestAdmin.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTestPast.resources
