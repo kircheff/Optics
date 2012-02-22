@@ -7,6 +7,8 @@
         con.Open()
         rs.Fill(ds, "Potrebiteli")
 
+
+
         For i = 0 To ds.Tables("potrebiteli").Rows.Count - 1
             lst_users.Items.Add(ds.Tables("potrebiteli").Rows(i).Item("username"))
         Next
@@ -23,6 +25,7 @@
 
         'Присвояване на стойността на глобалната променлива за подреждане на въпросите в теста
         question_order = ds.Tables("potrebiteli").Rows(lst_users.SelectedIndex).Item("test")
+        question_answers = ds.Tables("potrebiteli").Rows(lst_users.SelectedIndex).Item("otgovori")
 
     End Sub
 

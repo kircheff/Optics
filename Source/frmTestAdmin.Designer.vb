@@ -24,17 +24,18 @@ Partial Class frmTestAdmin
     Private Sub InitializeComponent()
         Me.lst_users = New System.Windows.Forms.ListBox()
         Me.fra_info = New System.Windows.Forms.GroupBox()
+        Me.lbl_class_base = New System.Windows.Forms.Label()
+        Me.lbl_mark_base = New System.Windows.Forms.Label()
+        Me.lbl_points_base = New System.Windows.Forms.Label()
+        Me.lbl_date_base = New System.Windows.Forms.Label()
+        Me.lbl_name_base = New System.Windows.Forms.Label()
         Me.cmd_show_test = New System.Windows.Forms.Button()
         Me.lbl_class = New System.Windows.Forms.Label()
         Me.lbl_mark = New System.Windows.Forms.Label()
         Me.lbl_points = New System.Windows.Forms.Label()
         Me.lbl_date = New System.Windows.Forms.Label()
         Me.lbl_name = New System.Windows.Forms.Label()
-        Me.lbl_class_base = New System.Windows.Forms.Label()
-        Me.lbl_mark_base = New System.Windows.Forms.Label()
-        Me.lbl_points_base = New System.Windows.Forms.Label()
-        Me.lbl_date_base = New System.Windows.Forms.Label()
-        Me.lbl_name_base = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.fra_info.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,14 +62,59 @@ Partial Class frmTestAdmin
         Me.fra_info.Controls.Add(Me.lbl_name)
         Me.fra_info.Location = New System.Drawing.Point(173, 12)
         Me.fra_info.Name = "fra_info"
-        Me.fra_info.Size = New System.Drawing.Size(385, 225)
+        Me.fra_info.Size = New System.Drawing.Size(385, 193)
         Me.fra_info.TabIndex = 7
         Me.fra_info.TabStop = False
         Me.fra_info.Text = "Данни"
         '
+        'lbl_class_base
+        '
+        Me.lbl_class_base.AutoSize = True
+        Me.lbl_class_base.Location = New System.Drawing.Point(137, 57)
+        Me.lbl_class_base.Name = "lbl_class_base"
+        Me.lbl_class_base.Size = New System.Drawing.Size(31, 13)
+        Me.lbl_class_base.TabIndex = 17
+        Me.lbl_class_base.Text = "клас"
+        '
+        'lbl_mark_base
+        '
+        Me.lbl_mark_base.AutoSize = True
+        Me.lbl_mark_base.Location = New System.Drawing.Point(68, 166)
+        Me.lbl_mark_base.Name = "lbl_mark_base"
+        Me.lbl_mark_base.Size = New System.Drawing.Size(43, 13)
+        Me.lbl_mark_base.TabIndex = 16
+        Me.lbl_mark_base.Text = "оценка"
+        '
+        'lbl_points_base
+        '
+        Me.lbl_points_base.AutoSize = True
+        Me.lbl_points_base.Location = New System.Drawing.Point(105, 131)
+        Me.lbl_points_base.Name = "lbl_points_base"
+        Me.lbl_points_base.Size = New System.Drawing.Size(35, 13)
+        Me.lbl_points_base.TabIndex = 15
+        Me.lbl_points_base.Text = "точки"
+        '
+        'lbl_date_base
+        '
+        Me.lbl_date_base.AutoSize = True
+        Me.lbl_date_base.Location = New System.Drawing.Point(197, 95)
+        Me.lbl_date_base.Name = "lbl_date_base"
+        Me.lbl_date_base.Size = New System.Drawing.Size(59, 13)
+        Me.lbl_date_base.TabIndex = 14
+        Me.lbl_date_base.Text = "дата и час"
+        '
+        'lbl_name_base
+        '
+        Me.lbl_name_base.AutoSize = True
+        Me.lbl_name_base.Location = New System.Drawing.Point(137, 18)
+        Me.lbl_name_base.Name = "lbl_name_base"
+        Me.lbl_name_base.Size = New System.Drawing.Size(27, 13)
+        Me.lbl_name_base.TabIndex = 13
+        Me.lbl_name_base.Text = "име"
+        '
         'cmd_show_test
         '
-        Me.cmd_show_test.Location = New System.Drawing.Point(140, 192)
+        Me.cmd_show_test.Location = New System.Drawing.Point(277, 159)
         Me.cmd_show_test.Name = "cmd_show_test"
         Me.cmd_show_test.Size = New System.Drawing.Size(102, 27)
         Me.cmd_show_test.TabIndex = 12
@@ -120,56 +166,21 @@ Partial Class frmTestAdmin
         Me.lbl_name.TabIndex = 7
         Me.lbl_name.Text = "Име на потребителя: "
         '
-        'lbl_class_base
+        'Button1
         '
-        Me.lbl_class_base.AutoSize = True
-        Me.lbl_class_base.Location = New System.Drawing.Point(137, 57)
-        Me.lbl_class_base.Name = "lbl_class_base"
-        Me.lbl_class_base.Size = New System.Drawing.Size(31, 13)
-        Me.lbl_class_base.TabIndex = 17
-        Me.lbl_class_base.Text = "клас"
-        '
-        'lbl_mark_base
-        '
-        Me.lbl_mark_base.AutoSize = True
-        Me.lbl_mark_base.Location = New System.Drawing.Point(68, 166)
-        Me.lbl_mark_base.Name = "lbl_mark_base"
-        Me.lbl_mark_base.Size = New System.Drawing.Size(43, 13)
-        Me.lbl_mark_base.TabIndex = 16
-        Me.lbl_mark_base.Text = "оценка"
-        '
-        'lbl_points_base
-        '
-        Me.lbl_points_base.AutoSize = True
-        Me.lbl_points_base.Location = New System.Drawing.Point(105, 131)
-        Me.lbl_points_base.Name = "lbl_points_base"
-        Me.lbl_points_base.Size = New System.Drawing.Size(35, 13)
-        Me.lbl_points_base.TabIndex = 15
-        Me.lbl_points_base.Text = "точки"
-        '
-        'lbl_date_base
-        '
-        Me.lbl_date_base.AutoSize = True
-        Me.lbl_date_base.Location = New System.Drawing.Point(197, 95)
-        Me.lbl_date_base.Name = "lbl_date_base"
-        Me.lbl_date_base.Size = New System.Drawing.Size(59, 13)
-        Me.lbl_date_base.TabIndex = 14
-        Me.lbl_date_base.Text = "дата и час"
-        '
-        'lbl_name_base
-        '
-        Me.lbl_name_base.AutoSize = True
-        Me.lbl_name_base.Location = New System.Drawing.Point(137, 18)
-        Me.lbl_name_base.Name = "lbl_name_base"
-        Me.lbl_name_base.Size = New System.Drawing.Size(27, 13)
-        Me.lbl_name_base.TabIndex = 13
-        Me.lbl_name_base.Text = "име"
+        Me.Button1.Location = New System.Drawing.Point(173, 211)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(385, 27)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Промяна, добавяне или изтриване на въпроси"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmTestAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(570, 249)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.fra_info)
         Me.Controls.Add(Me.lst_users)
         Me.Name = "frmTestAdmin"
@@ -192,4 +203,5 @@ Partial Class frmTestAdmin
     Friend WithEvents lbl_points_base As System.Windows.Forms.Label
     Friend WithEvents lbl_date_base As System.Windows.Forms.Label
     Friend WithEvents lbl_name_base As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

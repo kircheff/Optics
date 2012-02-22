@@ -14,6 +14,7 @@
     Dim points_max As Byte = 0 'Максимален брой точки, които потребителя може да получи
     Dim answer_points As Byte 'Колко точки е текущият въпрос
     Dim user_answer As String 'Избран отговор от потребителя
+    Dim selected_answers As String = "" 'Избрани отговори, които ще се записват в базата данни
     Dim questions_answered As Byte = 0 'На колко въпроса е отговорил потребителя досега
     Dim questions_order As String = "" 'Последователността от въпроси които са се паднали на произволен принцип
     Dim mark As Double 'Оценка на потребителя
@@ -62,6 +63,7 @@
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("test") = questions_order
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("points") = points
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("ocenka") = mark
+            ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("otgovori") = selected_answers
             rs_users.Update(ds, "Potrebiteli")
 
             End
@@ -112,8 +114,6 @@
         questions_order = questions_order & questionID & ","
 
 
-
-
     End Sub
 
     Public Function RandomNumber(ByVal MaxNumber As Integer, Optional ByVal MinNumber As Integer = 0) As Integer
@@ -147,6 +147,18 @@
         End If
 
         points_max = points_max + answer_points
+
+        If opt_answ1.Checked = True Then
+            selected_answers = selected_answers & 1 & ","
+        End If
+
+        If opt_answ2.Checked = True Then
+            selected_answers = selected_answers & 2 & ","
+        End If
+
+        If opt_answ3.Checked = True Then
+            selected_answers = selected_answers & 3 & ","
+        End If
 
         NextQuestion()
         TextBox1.Text = points
