@@ -66,11 +66,7 @@
         For i = 0 To ds.Tables("rechnik").Rows.Count - 1
             lstWords.Items.Add(ds.Tables("rechnik").Rows(i).Item("duma"))
         Next i
-        MsgBox("Думата е добавена в базата данни.", , "Честито!")
+        MsgBox("Думата е изтрита от базата данни.", , "Честито!")
     End Sub
 
-
-    Private Sub TabPage1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage1.Click
-
-    End Sub
 End Class

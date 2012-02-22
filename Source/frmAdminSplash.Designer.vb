@@ -26,6 +26,7 @@ Partial Class frmAdminSplash
         Me.cmdCheck = New System.Windows.Forms.Button()
         Me.cmdDictAdmin = New System.Windows.Forms.Button()
         Me.cmdChangePass = New System.Windows.Forms.Button()
+        Me.cmdResetDB = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtPassword
@@ -65,11 +66,22 @@ Partial Class frmAdminSplash
         Me.cmdChangePass.Text = "Смяна на паролата"
         Me.cmdChangePass.UseVisualStyleBackColor = True
         '
+        'cmdResetDB
+        '
+        Me.cmdResetDB.Enabled = False
+        Me.cmdResetDB.Location = New System.Drawing.Point(33, 144)
+        Me.cmdResetDB.Name = "cmdResetDB"
+        Me.cmdResetDB.Size = New System.Drawing.Size(231, 41)
+        Me.cmdResetDB.TabIndex = 4
+        Me.cmdResetDB.Text = "Връщане на базата данни в начално състояние"
+        Me.cmdResetDB.UseVisualStyleBackColor = True
+        '
         'frmAdminSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(350, 167)
+        Me.ClientSize = New System.Drawing.Size(300, 259)
+        Me.Controls.Add(Me.cmdResetDB)
         Me.Controls.Add(Me.cmdChangePass)
         Me.Controls.Add(Me.cmdDictAdmin)
         Me.Controls.Add(Me.cmdCheck)
@@ -84,4 +96,5 @@ Partial Class frmAdminSplash
     Friend WithEvents cmdCheck As System.Windows.Forms.Button
     Friend WithEvents cmdDictAdmin As System.Windows.Forms.Button
     Friend WithEvents cmdChangePass As System.Windows.Forms.Button
+    Friend WithEvents cmdResetDB As System.Windows.Forms.Button
 End Class

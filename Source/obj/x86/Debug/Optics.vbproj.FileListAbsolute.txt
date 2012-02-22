@@ -65,3 +65,4 @@ C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmChangePassword.resource
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmGallery.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmGallerySplash.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmTestChange.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmTestChange.resources
