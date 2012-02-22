@@ -32,4 +32,8 @@
     Private Sub cmd_show_test_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_show_test.Click
         frmTestPast.Show()
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        frmTestChange.Show()
+    End Sub
 End Class
