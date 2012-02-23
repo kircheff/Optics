@@ -27,7 +27,7 @@
         Dim j = 1
         For i = 0 To questionID.Count - 1
 
-            questions(i) = ds.Tables("test").Rows(questionID(i) - 1).Item("question")
+            questions(i) = ds.Tables("test").Rows(questionID(i)).Item("question")
 
         Next
 
@@ -54,15 +54,15 @@
 
         lbl_question.Text = questions(lst_questions.SelectedIndex)
 
-        answers(0) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex) - 1).Item("ans1")
-        answers(1) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex) - 1).Item("ans2")
-        answers(2) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex) - 1).Item("ans3")
+        answers(0) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex)).Item("ans1")
+        answers(1) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex)).Item("ans2")
+        answers(2) = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex)).Item("ans3")
 
         lbl_ans1.Text = "1. " & answers(0)
         lbl_ans2.Text = "2. " & answers(1)
         lbl_ans3.Text = "3. " & answers(2)
 
-        answer_correct = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex) - 1).Item("correct")
+        answer_correct = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex)).Item("correct")
 
         'Оцветяване на потребителския отговор
         If answer_selected(lst_questions.SelectedIndex) = "1" Then
