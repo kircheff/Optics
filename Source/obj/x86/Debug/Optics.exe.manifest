@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Optics.exe" size="128512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Optics.exe" size="132096">
       <assemblyIdentity name="Optics" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>dJ9RT/MfsxmIw4jrO1pV/Cea73I=</dsig:DigestValue>
+        <dsig:DigestValue>el3DUGD+4qCY7UjEhooIjQJoxKY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

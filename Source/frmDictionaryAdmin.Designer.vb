@@ -191,13 +191,13 @@ Partial Class frmDictionaryAdmin
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'frmAdmin
+        'frmDictionaryAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(523, 403)
         Me.Controls.Add(Me.TabControl1)
-        Me.Name = "frmAdmin"
+        Me.Name = "frmDictionaryAdmin"
         Me.Text = "Администраторски панел"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
