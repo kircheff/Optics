@@ -30,40 +30,41 @@ Partial Class frmGeneral
         Me.Button1 = New System.Windows.Forms.Button()
         Me.cmdGallery = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalc
         '
         Me.btnCalc.Location = New System.Drawing.Point(12, 12)
         Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(84, 29)
+        Me.btnCalc.Size = New System.Drawing.Size(126, 29)
         Me.btnCalc.TabIndex = 0
         Me.btnCalc.Text = "Калкулатор"
         Me.btnCalc.UseVisualStyleBackColor = True
         '
         'btnDiction
         '
-        Me.btnDiction.Location = New System.Drawing.Point(102, 12)
+        Me.btnDiction.Location = New System.Drawing.Point(144, 12)
         Me.btnDiction.Name = "btnDiction"
-        Me.btnDiction.Size = New System.Drawing.Size(84, 29)
+        Me.btnDiction.Size = New System.Drawing.Size(126, 29)
         Me.btnDiction.TabIndex = 1
         Me.btnDiction.Text = "Речник"
         Me.btnDiction.UseVisualStyleBackColor = True
         '
         'btnAdmin
         '
-        Me.btnAdmin.Location = New System.Drawing.Point(296, 12)
+        Me.btnAdmin.Location = New System.Drawing.Point(276, 82)
         Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.Size = New System.Drawing.Size(84, 29)
+        Me.btnAdmin.Size = New System.Drawing.Size(104, 29)
         Me.btnAdmin.TabIndex = 2
         Me.btnAdmin.Text = "Админ"
         Me.btnAdmin.UseVisualStyleBackColor = True
         '
         'btnCrossword
         '
-        Me.btnCrossword.Location = New System.Drawing.Point(192, 12)
+        Me.btnCrossword.Location = New System.Drawing.Point(276, 12)
         Me.btnCrossword.Name = "btnCrossword"
-        Me.btnCrossword.Size = New System.Drawing.Size(98, 29)
+        Me.btnCrossword.Size = New System.Drawing.Size(104, 29)
         Me.btnCrossword.TabIndex = 3
         Me.btnCrossword.Text = "Кръстословица"
         Me.btnCrossword.UseVisualStyleBackColor = True
@@ -97,18 +98,28 @@ Partial Class frmGeneral
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(143, 97)
+        Me.Button3.Location = New System.Drawing.Point(12, 82)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(104, 29)
+        Me.Button3.Size = New System.Drawing.Size(126, 29)
         Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Галерия"
+        Me.Button3.Text = "Информация"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(144, 82)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(126, 29)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "Търсене"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'frmGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(390, 222)
+        Me.ClientSize = New System.Drawing.Size(399, 128)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.cmdGallery)
         Me.Controls.Add(Me.Button1)
@@ -130,5 +141,6 @@ Partial Class frmGeneral
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents cmdGallery As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 
 End Class

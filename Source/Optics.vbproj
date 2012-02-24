@@ -106,6 +106,12 @@
     <Compile Include="frmInformation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTestChange.Designer.vb">
       <DependentUpon>frmTestChange.vb</DependentUpon>
     </Compile>
@@ -211,6 +217,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmInformation.resx">
       <DependentUpon>frmInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTestChange.resx">
       <DependentUpon>frmTestChange.vb</DependentUpon>
