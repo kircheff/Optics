@@ -29,6 +29,7 @@ Partial Class frmGeneral
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.cmdGallery = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalc
@@ -94,11 +95,21 @@ Partial Class frmGeneral
         Me.cmdGallery.Text = "Галерия"
         Me.cmdGallery.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(143, 97)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(104, 29)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Галерия"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'frmGeneral
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(390, 222)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.cmdGallery)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
@@ -118,5 +129,6 @@ Partial Class frmGeneral
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents cmdGallery As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class
