@@ -25,7 +25,7 @@ Partial Class frmInformation
         Me.components = New System.ComponentModel.Container()
         Me.txt_1 = New System.Windows.Forms.TextBox()
         Me.txt_2 = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.rtb_info = New System.Windows.Forms.RichTextBox()
         Me.pnl_menu = New System.Windows.Forms.Panel()
         Me.trv_info = New System.Windows.Forms.TreeView()
         Me.tmrMovePanelIn = New System.Windows.Forms.Timer(Me.components)
@@ -49,13 +49,13 @@ Partial Class frmInformation
         Me.txt_2.Size = New System.Drawing.Size(100, 30)
         Me.txt_2.TabIndex = 2
         '
-        'RichTextBox1
+        'rtb_info
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(401, 12)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(316, 295)
-        Me.RichTextBox1.TabIndex = 3
-        Me.RichTextBox1.Text = ""
+        Me.rtb_info.Location = New System.Drawing.Point(401, 12)
+        Me.rtb_info.Name = "rtb_info"
+        Me.rtb_info.Size = New System.Drawing.Size(316, 295)
+        Me.rtb_info.TabIndex = 3
+        Me.rtb_info.Text = ""
         '
         'pnl_menu
         '
@@ -63,7 +63,7 @@ Partial Class frmInformation
         Me.pnl_menu.Controls.Add(Me.trv_info)
         Me.pnl_menu.Location = New System.Drawing.Point(-240, 0)
         Me.pnl_menu.Name = "pnl_menu"
-        Me.pnl_menu.Size = New System.Drawing.Size(291, 360)
+        Me.pnl_menu.Size = New System.Drawing.Size(290, 360)
         Me.pnl_menu.TabIndex = 7
         '
         'trv_info
@@ -76,7 +76,7 @@ Partial Class frmInformation
         Me.trv_info.Location = New System.Drawing.Point(0, 0)
         Me.trv_info.Name = "trv_info"
         Me.trv_info.ShowPlusMinus = False
-        Me.trv_info.Size = New System.Drawing.Size(239, 360)
+        Me.trv_info.Size = New System.Drawing.Size(238, 360)
         Me.trv_info.TabIndex = 7
         '
         'tmrMovePanelIn
@@ -93,7 +93,7 @@ Partial Class frmInformation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 355)
         Me.Controls.Add(Me.pnl_menu)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.rtb_info)
         Me.Controls.Add(Me.txt_2)
         Me.Controls.Add(Me.txt_1)
         Me.Name = "frmInformation"
@@ -104,7 +104,7 @@ Partial Class frmInformation
     End Sub
     Friend WithEvents txt_1 As System.Windows.Forms.TextBox
     Friend WithEvents txt_2 As System.Windows.Forms.TextBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents rtb_info As System.Windows.Forms.RichTextBox
     Friend WithEvents pnl_menu As System.Windows.Forms.Panel
     Friend WithEvents trv_info As System.Windows.Forms.TreeView
     Friend WithEvents tmrMovePanelIn As System.Windows.Forms.Timer

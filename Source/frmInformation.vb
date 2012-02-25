@@ -8,6 +8,9 @@
     Dim opened As Boolean = False
 
 
+    Dim custRow As DataRow
+    Dim orderRow As DataRow
+
 
 
     Private Sub frmInformation_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -20,22 +23,18 @@
                       ds.Tables("information").Columns("ID"), _
                       ds.Tables("tochki").Columns("tochka_urok"))
 
-        Dim custRow As DataRow
-        Dim orderRow As DataRow
         Dim i As Byte = 0
-        For Each custRow In ds.Tables("information").Rows
+        For Each Me.custRow In ds.Tables("information").Rows
 
             trv_info.Nodes.Add(custRow.Item("statia"))
-            For Each orderRow In custRow.GetChildRows(datarel)
+            For Each Me.orderRow In custRow.GetChildRows(datarel)
                 trv_info.Nodes(custRow.Item("Id") - 1).Nodes.Add(orderRow.Item("tochka_ime"))
             Next
 
         Next
     End Sub
 
-    Private Sub trv_info_AfterSelect(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs)
 
-    End Sub
 
     Private Sub pnl_menu_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pnl_menu.MouseHover
         If opened = False Then
@@ -81,5 +80,26 @@
         If opened = True Then
             tmrMovePanelOut.Start()
         End If
+    End Sub
+
+
+    Private Sub trv_info_AfterSelect_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles trv_info.AfterSelect
+        Dim datarel As DataRelation = ds.Relations.Item("Infotochka")
+
+        Try
+            Dim selected_node As String
+            selected_node = trv_info.SelectedNode.Text.ToString()
+            For Each Me.custRow In ds.Tables("information").Rows
+                For Each Me.orderRow In custRow.GetChildRows(datarel)
+                    If selected_node = Me.orderRow.Item("tochka_ime") Then
+                        rtb_info.LoadFile(AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & ".rtf")
+                    End If
+                Next
+
+            Next
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
