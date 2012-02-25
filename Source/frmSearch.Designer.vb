@@ -26,14 +26,15 @@ Partial Class frmSearch
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'ListBox1
         '
-        Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Location = New System.Drawing.Point(41, 63)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(657, 82)
+        Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 0
         '
         'RichTextBox1
@@ -61,11 +62,19 @@ Partial Class frmSearch
         Me.TextBox1.Size = New System.Drawing.Size(176, 36)
         Me.TextBox1.TabIndex = 3
         '
+        'ListBox2
+        '
+        Me.ListBox2.Location = New System.Drawing.Point(41, 63)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(657, 82)
+        Me.ListBox2.TabIndex = 4
+        '
         'frmSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(736, 428)
+        Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RichTextBox1)
@@ -80,4 +89,5 @@ Partial Class frmSearch
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
 End Class
