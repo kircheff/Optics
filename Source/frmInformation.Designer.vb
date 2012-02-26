@@ -23,7 +23,6 @@ Partial Class frmInformation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.rtb_info = New System.Windows.Forms.RichTextBox()
         Me.pnl_menu = New System.Windows.Forms.Panel()
         Me.trv_info = New System.Windows.Forms.TreeView()
         Me.tmrMovePanelIn = New System.Windows.Forms.Timer(Me.components)
@@ -31,16 +30,9 @@ Partial Class frmInformation
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.rtb_info = New Optics.TransparentRichTextBox()
         Me.pnl_menu.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'rtb_info
-        '
-        Me.rtb_info.Location = New System.Drawing.Point(401, 12)
-        Me.rtb_info.Name = "rtb_info"
-        Me.rtb_info.Size = New System.Drawing.Size(316, 295)
-        Me.rtb_info.TabIndex = 3
-        Me.rtb_info.Text = ""
         '
         'pnl_menu
         '
@@ -90,21 +82,29 @@ Partial Class frmInformation
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'rtb_info
+        '
+        Me.rtb_info.Location = New System.Drawing.Point(376, 30)
+        Me.rtb_info.Name = "rtb_info"
+        Me.rtb_info.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
+        Me.rtb_info.Size = New System.Drawing.Size(325, 262)
+        Me.rtb_info.TabIndex = 10
+        Me.rtb_info.Text = ""
+        '
         'frmInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 355)
+        Me.Controls.Add(Me.rtb_info)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnl_menu)
-        Me.Controls.Add(Me.rtb_info)
         Me.Name = "frmInformation"
         Me.pnl_menu.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents rtb_info As System.Windows.Forms.RichTextBox
     Friend WithEvents pnl_menu As System.Windows.Forms.Panel
     Friend WithEvents trv_info As System.Windows.Forms.TreeView
     Friend WithEvents tmrMovePanelIn As System.Windows.Forms.Timer
@@ -112,4 +112,5 @@ Partial Class frmInformation
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents rtb_info As Optics.TransparentRichTextBox
 End Class
