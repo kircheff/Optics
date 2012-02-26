@@ -1,4 +1,8 @@
-﻿Public Class frmInformation
+﻿Imports System.IO
+
+Public Class frmInformation
+    Inherits System.Windows.Forms.Form
+
     'Променливи за връзка с базата данни
     Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Base.accdb")
     Dim ds As New DataSet
@@ -6,10 +10,11 @@
     Dim rs_tochki As New OleDb.OleDbDataAdapter("SELECT * FROM tochki", con)
     Dim numOfMoves As Byte = 0
     Dim opened As Boolean = False
-
+    Dim openedFile As String
 
     Dim custRow As DataRow
     Dim orderRow As DataRow
+    Private m_nFirstCharOnPage As Integer
 
 
 
@@ -18,7 +23,7 @@
 
         rs_information.Fill(ds, "information")
         rs_tochki.Fill(ds, "tochki")
-       
+
         Dim datarel As DataRelation = ds.Relations.Add("Infotochka", _
                       ds.Tables("information").Columns("ID"), _
                       ds.Tables("tochki").Columns("tochka_urok"))
@@ -92,7 +97,8 @@
             For Each Me.custRow In ds.Tables("information").Rows
                 For Each Me.orderRow In custRow.GetChildRows(datarel)
                     If selected_node = Me.orderRow.Item("tochka_ime") Then
-                        rtb_info.LoadFile(AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & ".rtf")
+                        openedFile = AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & ".rtf"
+                        rtb_info.LoadFile(openedFile)
                     End If
                 Next
 
@@ -101,5 +107,35 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub PrintDocument1_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs)
+        ' Start at the beginning of the text
+        m_nFirstCharOnPage = 0
+    End Sub
+
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        ' Create object, passing in text
+        Dim MyPrintObject As New TextPrint(rtb_info.Text)
+        ' Set font, if required
+        MyPrintObject.Font = New Font("Tahoma", 8)
+        ' Issue print command
+        MyPrintObject.Print()
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+        Dim saveFileDialog1 As New SaveFileDialog()
+
+        saveFileDialog1.Filter = "rtf files (*.rtf)|*.rtf"
+        saveFileDialog1.FilterIndex = 2
+        saveFileDialog1.RestoreDirectory = True
+
+        If saveFileDialog1.ShowDialog() = DialogResult.OK Then
+            File.Copy(openedFile, saveFileDialog1.FileName, True)
+
+        End If
     End Sub
 End Class

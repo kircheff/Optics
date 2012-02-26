@@ -23,31 +23,16 @@ Partial Class frmInformation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.txt_1 = New System.Windows.Forms.TextBox()
-        Me.txt_2 = New System.Windows.Forms.TextBox()
         Me.rtb_info = New System.Windows.Forms.RichTextBox()
         Me.pnl_menu = New System.Windows.Forms.Panel()
         Me.trv_info = New System.Windows.Forms.TreeView()
         Me.tmrMovePanelIn = New System.Windows.Forms.Timer(Me.components)
         Me.tmrMovePanelOut = New System.Windows.Forms.Timer(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.pnl_menu.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'txt_1
-        '
-        Me.txt_1.Location = New System.Drawing.Point(401, 313)
-        Me.txt_1.Multiline = True
-        Me.txt_1.Name = "txt_1"
-        Me.txt_1.Size = New System.Drawing.Size(100, 30)
-        Me.txt_1.TabIndex = 1
-        '
-        'txt_2
-        '
-        Me.txt_2.Location = New System.Drawing.Point(617, 313)
-        Me.txt_2.Multiline = True
-        Me.txt_2.Name = "txt_2"
-        Me.txt_2.Size = New System.Drawing.Size(100, 30)
-        Me.txt_2.TabIndex = 2
         '
         'rtb_info
         '
@@ -87,26 +72,44 @@ Partial Class frmInformation
         '
         Me.tmrMovePanelOut.Interval = 50
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(401, 313)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(482, 313)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 355)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnl_menu)
         Me.Controls.Add(Me.rtb_info)
-        Me.Controls.Add(Me.txt_2)
-        Me.Controls.Add(Me.txt_1)
         Me.Name = "frmInformation"
         Me.pnl_menu.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txt_1 As System.Windows.Forms.TextBox
-    Friend WithEvents txt_2 As System.Windows.Forms.TextBox
     Friend WithEvents rtb_info As System.Windows.Forms.RichTextBox
     Friend WithEvents pnl_menu As System.Windows.Forms.Panel
     Friend WithEvents trv_info As System.Windows.Forms.TreeView
     Friend WithEvents tmrMovePanelIn As System.Windows.Forms.Timer
     Friend WithEvents tmrMovePanelOut As System.Windows.Forms.Timer
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 End Class
