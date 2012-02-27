@@ -28,8 +28,6 @@ Partial Class frmInformation
         Me.trv_info = New System.Windows.Forms.TreeView()
         Me.tmrMovePanelIn = New System.Windows.Forms.Timer(Me.components)
         Me.tmrMovePanelOut = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.rtb_info = New System.Windows.Forms.RichTextBox()
         Me.pic_notes = New System.Windows.Forms.PictureBox()
@@ -42,6 +40,9 @@ Partial Class frmInformation
         Me.pic_circle = New System.Windows.Forms.PictureBox()
         Me.pic_up = New System.Windows.Forms.PictureBox()
         Me.pic_down = New System.Windows.Forms.PictureBox()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnl_menu.SuspendLayout()
         CType(Me.pic_notes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_save, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,14 +58,14 @@ Partial Class frmInformation
         '
         'pnl_menu
         '
-        Me.pnl_menu.BackColor = System.Drawing.Color.Transparent
+        Me.pnl_menu.BackColor = System.Drawing.Color.CadetBlue
         Me.pnl_menu.BackgroundImage = CType(resources.GetObject("pnl_menu.BackgroundImage"), System.Drawing.Image)
         Me.pnl_menu.Controls.Add(Me.trv_info)
         Me.pnl_menu.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pnl_menu.Location = New System.Drawing.Point(-240, 17)
         Me.pnl_menu.Name = "pnl_menu"
         Me.pnl_menu.Size = New System.Drawing.Size(290, 514)
-        Me.pnl_menu.TabIndex = 7
+        Me.pnl_menu.TabIndex = 312
         '
         'trv_info
         '
@@ -82,6 +83,7 @@ Partial Class frmInformation
         Me.trv_info.ShowPlusMinus = False
         Me.trv_info.Size = New System.Drawing.Size(240, 479)
         Me.trv_info.TabIndex = 7
+        Me.trv_info.TabStop = False
         '
         'tmrMovePanelIn
         '
@@ -91,33 +93,15 @@ Partial Class frmInformation
         '
         Me.tmrMovePanelOut.Interval = 50
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(180, 63)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(99, 63)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'rtb_info
         '
         Me.rtb_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.rtb_info.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.rtb_info.Location = New System.Drawing.Point(326, 92)
+        Me.rtb_info.Location = New System.Drawing.Point(326, 83)
         Me.rtb_info.Name = "rtb_info"
         Me.rtb_info.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.rtb_info.Size = New System.Drawing.Size(341, 268)
-        Me.rtb_info.TabIndex = 11
+        Me.rtb_info.Size = New System.Drawing.Size(341, 277)
+        Me.rtb_info.TabIndex = 0
         Me.rtb_info.Text = ""
         '
         'pic_notes
@@ -246,8 +230,6 @@ Partial Class frmInformation
         Me.Controls.Add(Me.pic_save)
         Me.Controls.Add(Me.pic_notes)
         Me.Controls.Add(Me.rtb_info)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Name = "frmInformation"
         Me.Text = "Информация"
         Me.pnl_menu.ResumeLayout(False)
@@ -268,8 +250,6 @@ Partial Class frmInformation
     Friend WithEvents trv_info As System.Windows.Forms.TreeView
     Friend WithEvents tmrMovePanelIn As System.Windows.Forms.Timer
     Friend WithEvents tmrMovePanelOut As System.Windows.Forms.Timer
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents rtb_info As System.Windows.Forms.RichTextBox
     Friend WithEvents pic_notes As System.Windows.Forms.PictureBox
@@ -282,4 +262,7 @@ Partial Class frmInformation
     Friend WithEvents pic_circle As System.Windows.Forms.PictureBox
     Friend WithEvents pic_up As System.Windows.Forms.PictureBox
     Friend WithEvents pic_down As System.Windows.Forms.PictureBox
+    Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
+    Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class
