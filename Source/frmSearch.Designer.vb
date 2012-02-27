@@ -22,66 +22,80 @@ Partial Class frmSearch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSearch))
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.rtb_file = New System.Windows.Forms.RichTextBox()
+        Me.cmd_search = New System.Windows.Forms.Button()
+        Me.txt_search = New System.Windows.Forms.TextBox()
+        Me.lst_results = New System.Windows.Forms.ListBox()
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_search = New System.Windows.Forms.Label()
         Me.Menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBox1
         '
-        Me.ListBox1.Location = New System.Drawing.Point(41, 63)
+        Me.ListBox1.Location = New System.Drawing.Point(56, 127)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(657, 82)
+        Me.ListBox1.Size = New System.Drawing.Size(627, 82)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 0
         '
-        'RichTextBox1
+        'rtb_file
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(41, 151)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(657, 208)
-        Me.RichTextBox1.TabIndex = 1
-        Me.RichTextBox1.Text = ""
+        Me.rtb_file.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.rtb_file.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.rtb_file.ForeColor = System.Drawing.SystemColors.Info
+        Me.rtb_file.Location = New System.Drawing.Point(56, 290)
+        Me.rtb_file.Name = "rtb_file"
+        Me.rtb_file.Size = New System.Drawing.Size(627, 226)
+        Me.rtb_file.TabIndex = 1
+        Me.rtb_file.Text = ""
         '
-        'Button1
+        'cmd_search
         '
-        Me.Button1.Location = New System.Drawing.Point(41, 365)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(657, 51)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmd_search.Location = New System.Drawing.Point(526, 28)
+        Me.cmd_search.Name = "cmd_search"
+        Me.cmd_search.Size = New System.Drawing.Size(157, 29)
+        Me.cmd_search.TabIndex = 2
+        Me.cmd_search.Text = "Търси"
+        Me.cmd_search.UseVisualStyleBackColor = True
+        Me.cmd_search.Visible = False
         '
-        'TextBox1
+        'txt_search
         '
-        Me.TextBox1.Location = New System.Drawing.Point(41, 27)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 30)
-        Me.TextBox1.TabIndex = 3
+        Me.txt_search.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.txt_search.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txt_search.ForeColor = System.Drawing.SystemColors.Info
+        Me.txt_search.Location = New System.Drawing.Point(56, 91)
+        Me.txt_search.Multiline = True
+        Me.txt_search.Name = "txt_search"
+        Me.txt_search.Size = New System.Drawing.Size(427, 30)
+        Me.txt_search.TabIndex = 3
+        Me.txt_search.Text = "Въведете дума за търсене..."
         '
-        'ListBox2
+        'lst_results
         '
-        Me.ListBox2.Location = New System.Drawing.Point(41, 63)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(657, 82)
-        Me.ListBox2.TabIndex = 4
+        Me.lst_results.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.lst_results.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lst_results.ForeColor = System.Drawing.SystemColors.Info
+        Me.lst_results.ItemHeight = 16
+        Me.lst_results.Location = New System.Drawing.Point(56, 127)
+        Me.lst_results.Name = "lst_results"
+        Me.lst_results.Size = New System.Drawing.Size(627, 148)
+        Me.lst_results.TabIndex = 4
         '
         'Menu
         '
         Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ПомощToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(736, 24)
+        Me.Menu.Size = New System.Drawing.Size(750, 24)
         Me.Menu.TabIndex = 14
         Me.Menu.Text = "MenuStrip1"
         '
@@ -116,16 +130,31 @@ Partial Class frmSearch
         Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
+        'lbl_search
+        '
+        Me.lbl_search.AutoSize = True
+        Me.lbl_search.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_search.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_search.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lbl_search.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_search.Location = New System.Drawing.Point(532, 72)
+        Me.lbl_search.Name = "lbl_search"
+        Me.lbl_search.Size = New System.Drawing.Size(168, 19)
+        Me.lbl_search.TabIndex = 15
+        Me.lbl_search.Text = "           Търси                "
+        '
         'frmSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(736, 428)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(750, 576)
+        Me.Controls.Add(Me.lbl_search)
         Me.Controls.Add(Me.Menu)
-        Me.Controls.Add(Me.ListBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.lst_results)
+        Me.Controls.Add(Me.txt_search)
+        Me.Controls.Add(Me.cmd_search)
+        Me.Controls.Add(Me.rtb_file)
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "frmSearch"
         Me.Text = "Form1"
@@ -136,14 +165,15 @@ Partial Class frmSearch
 
     End Sub
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
+    Friend WithEvents rtb_file As System.Windows.Forms.RichTextBox
+    Friend WithEvents cmd_search As System.Windows.Forms.Button
+    Friend WithEvents txt_search As System.Windows.Forms.TextBox
+    Friend WithEvents lst_results As System.Windows.Forms.ListBox
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lbl_search As System.Windows.Forms.Label
 End Class

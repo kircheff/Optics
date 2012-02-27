@@ -285,6 +285,7 @@ Partial Class frmInformation
         Me.Controls.Add(Me.pic_save)
         Me.Controls.Add(Me.pic_notes)
         Me.Controls.Add(Me.rtb_info)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmInformation"
         Me.Text = "Информация"
         Me.pnl_menu.ResumeLayout(False)

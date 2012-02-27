@@ -22,6 +22,7 @@ Partial Class frmTestSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTestSplash))
         Me.txt_username = New System.Windows.Forms.TextBox()
         Me.txt_klas = New System.Windows.Forms.TextBox()
         Me.cmd_forward = New System.Windows.Forms.Button()
@@ -35,14 +36,16 @@ Partial Class frmTestSplash
         Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pic_submit = New System.Windows.Forms.PictureBox()
         Me.Menu.SuspendLayout()
+        CType(Me.pic_submit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_username
         '
         Me.txt_username.Location = New System.Drawing.Point(53, 54)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(341, 20)
+        Me.txt_username.Size = New System.Drawing.Size(308, 20)
         Me.txt_username.TabIndex = 0
         '
         'txt_klas
@@ -54,37 +57,47 @@ Partial Class frmTestSplash
         '
         'cmd_forward
         '
-        Me.cmd_forward.Location = New System.Drawing.Point(400, 51)
+        Me.cmd_forward.Location = New System.Drawing.Point(367, 97)
         Me.cmd_forward.Name = "cmd_forward"
         Me.cmd_forward.Size = New System.Drawing.Size(75, 23)
         Me.cmd_forward.TabIndex = 2
         Me.cmd_forward.Text = "Напред"
         Me.cmd_forward.UseVisualStyleBackColor = True
+        Me.cmd_forward.Visible = False
         '
         'lbl_username
         '
         Me.lbl_username.AutoSize = True
-        Me.lbl_username.Location = New System.Drawing.Point(12, 61)
+        Me.lbl_username.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_username.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lbl_username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_username.Location = New System.Drawing.Point(12, 59)
         Me.lbl_username.Name = "lbl_username"
-        Me.lbl_username.Size = New System.Drawing.Size(32, 13)
+        Me.lbl_username.Size = New System.Drawing.Size(36, 20)
         Me.lbl_username.TabIndex = 3
         Me.lbl_username.Text = "Име:"
         '
         'lbl_klas
         '
         Me.lbl_klas.AutoSize = True
-        Me.lbl_klas.Location = New System.Drawing.Point(12, 83)
+        Me.lbl_klas.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_klas.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lbl_klas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_klas.Location = New System.Drawing.Point(12, 81)
         Me.lbl_klas.Name = "lbl_klas"
-        Me.lbl_klas.Size = New System.Drawing.Size(35, 13)
+        Me.lbl_klas.Size = New System.Drawing.Size(40, 20)
         Me.lbl_klas.TabIndex = 4
         Me.lbl_klas.Text = "Клас:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(159, 83)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(159, 81)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 13)
+        Me.Label1.Size = New System.Drawing.Size(127, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "(не е задължителен)"
         '
@@ -134,11 +147,24 @@ Partial Class frmTestSplash
         Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
+        'pic_submit
+        '
+        Me.pic_submit.BackColor = System.Drawing.Color.Transparent
+        Me.pic_submit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_submit.Image = CType(resources.GetObject("pic_submit.Image"), System.Drawing.Image)
+        Me.pic_submit.Location = New System.Drawing.Point(367, 45)
+        Me.pic_submit.Name = "pic_submit"
+        Me.pic_submit.Size = New System.Drawing.Size(106, 46)
+        Me.pic_submit.TabIndex = 22
+        Me.pic_submit.TabStop = False
+        '
         'frmTestSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(487, 132)
+        Me.Controls.Add(Me.pic_submit)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_klas)
@@ -146,10 +172,12 @@ Partial Class frmTestSplash
         Me.Controls.Add(Me.cmd_forward)
         Me.Controls.Add(Me.txt_klas)
         Me.Controls.Add(Me.txt_username)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmTestSplash"
-        Me.Text = "Form1"
+        Me.Text = "Тест Вход"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
+        CType(Me.pic_submit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -167,4 +195,5 @@ Partial Class frmTestSplash
     Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents pic_submit As System.Windows.Forms.PictureBox
 End Class

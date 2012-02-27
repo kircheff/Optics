@@ -38,4 +38,7 @@
         frmInfoLit.show()
     End Sub
 
+    Private Sub pic_submit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_submit.Click
+        cmd_forward_Click(sender, e)
+    End Sub
 End Class

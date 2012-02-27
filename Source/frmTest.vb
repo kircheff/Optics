@@ -161,7 +161,6 @@
         End If
 
         NextQuestion()
-        TextBox1.Text = points
 
        
     End Sub
@@ -215,4 +214,7 @@
         frmInfoLit.show()
     End Sub
 
+    Private Sub pic_next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_next.Click
+        cmd_next_Click(sender, e)
+    End Sub
 End Class

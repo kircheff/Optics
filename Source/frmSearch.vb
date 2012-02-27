@@ -25,15 +25,21 @@
                             nameOfArticle = nameOfArticle & "Дисперсия"
 
 
+
                     End Select
-                    ListBox2.Items.Add(nameOfArticle)
+                    lst_results.Items.Add(nameOfArticle)
                     ListBox1.Items.Add(f)
                     Exit For
+
 
                 End If
             Next
 
         Next
+        If lst_results.Items.Count = 0 Then
+            MsgBox("Съжаляваме, не бяха намерени резултати с дадената от вас дума", , "Няма намерени резултати")
+            txt_search.Text = ""
+        End If
         'RemoveDuplicateItem(ListBox1)
         'RemoveDuplicateItem(ListBox2)
     End Sub
@@ -75,15 +81,32 @@
         frmInfoLit.show()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub cmd_search_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_search.Click
+        If txt_search.Text = "" Then
+            MsgBox("Моля въведете текст в полето за търсене!", , "Грешка")
+            txt_search.Text = "Въведете дума за търсене..."
+            Exit Sub
+        End If
+
         ListBox1.Items.Clear()
-        ListBox2.Items.Clear()
-        FindText(TextBox1.Text, AppDomain.CurrentDomain.BaseDirectory & "Info")
+        lst_results.Items.Clear()
+        FindText(txt_search.Text, AppDomain.CurrentDomain.BaseDirectory & "Info")
     End Sub
 
-    Private Sub ListBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListBox2.SelectedIndexChanged
-        RichTextBox1.Text = My.Computer.FileSystem.ReadAllText(ListBox1.Items(ListBox2.SelectedIndex))
+    Private Sub ListBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lst_results.SelectedIndexChanged
+        rtb_file.Text = My.Computer.FileSystem.ReadAllText(ListBox1.Items(lst_results.SelectedIndex))
     End Sub
 
 
+    Private Sub lbl_search_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lbl_search.Click
+        cmd_search_Click(sender, e)
+    End Sub
+
+    Private Sub txt_search_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles txt_search.GotFocus
+        txt_search.Text = ""
+    End Sub
+
+    Private Sub txt_search_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_search.TextChanged
+
+    End Sub
 End Class
