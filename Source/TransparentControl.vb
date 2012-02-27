@@ -24,7 +24,7 @@ Class TransparentRichTextBox
         End Get
     End Property
 
-    Protected Overrides Sub OnPaintBackground(ByVal e As PaintEventArgs)
+    ''Protected Overrides Sub OnPaintBackground(ByVal e As PaintEventArgs)
 
-    End Sub
+    ''End Sub
 End Class

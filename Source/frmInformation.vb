@@ -23,7 +23,8 @@ Public Class frmInformation
 
         rs_information.Fill(ds, "information")
         rs_tochki.Fill(ds, "tochki")
-
+        'pnl_menu.Parent = Me
+        'pnl_menu.BackColor = Color.Transparent
         Dim datarel As DataRelation = ds.Relations.Add("Infotochka", _
                       ds.Tables("information").Columns("ID"), _
                       ds.Tables("tochki").Columns("tochka_urok"))
@@ -91,14 +92,21 @@ Public Class frmInformation
     Private Sub trv_info_AfterSelect_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles trv_info.AfterSelect
         Dim datarel As DataRelation = ds.Relations.Item("Infotochka")
 
+
         Try
+
+
             Dim selected_node As String
             selected_node = trv_info.SelectedNode.Text.ToString()
             For Each Me.custRow In ds.Tables("information").Rows
                 For Each Me.orderRow In custRow.GetChildRows(datarel)
                     If selected_node = Me.orderRow.Item("tochka_ime") Then
+                        Me.Refresh()
+
                         openedFile = AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & ".rtf"
                         rtb_info.LoadFile(openedFile)
+
+
                     End If
                 Next
 
@@ -110,17 +118,17 @@ Public Class frmInformation
     End Sub
 
     Private Sub PrintDocument1_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs)
-        ' Start at the beginning of the text
+        'Започване от началото на текста
         m_nFirstCharOnPage = 0
     End Sub
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        ' Create object, passing in text
+        'Създаване на обекта за принтиране
         Dim MyPrintObject As New TextPrint(rtb_info.Text)
-        ' Set font, if required
+        'Промяна на шрифта със стандартен
         MyPrintObject.Font = New Font("Tahoma", 8)
-        ' Issue print command
+        'Издаване на командата за принтиране
         MyPrintObject.Print()
     End Sub
 

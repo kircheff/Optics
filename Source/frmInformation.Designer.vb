@@ -23,6 +23,7 @@ Partial Class frmInformation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInformation))
         Me.pnl_menu = New System.Windows.Forms.Panel()
         Me.trv_info = New System.Windows.Forms.TreeView()
         Me.tmrMovePanelIn = New System.Windows.Forms.Timer(Me.components)
@@ -36,11 +37,12 @@ Partial Class frmInformation
         '
         'pnl_menu
         '
-        Me.pnl_menu.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pnl_menu.BackColor = System.Drawing.Color.Transparent
+        Me.pnl_menu.BackgroundImage = CType(resources.GetObject("pnl_menu.BackgroundImage"), System.Drawing.Image)
         Me.pnl_menu.Controls.Add(Me.trv_info)
         Me.pnl_menu.Location = New System.Drawing.Point(-240, 0)
         Me.pnl_menu.Name = "pnl_menu"
-        Me.pnl_menu.Size = New System.Drawing.Size(290, 360)
+        Me.pnl_menu.Size = New System.Drawing.Size(290, 552)
         Me.pnl_menu.TabIndex = 7
         '
         'trv_info
@@ -50,10 +52,10 @@ Partial Class frmInformation
         Me.trv_info.Indent = 13
         Me.trv_info.ItemHeight = 27
         Me.trv_info.LabelEdit = True
-        Me.trv_info.Location = New System.Drawing.Point(0, 0)
+        Me.trv_info.Location = New System.Drawing.Point(0, 12)
         Me.trv_info.Name = "trv_info"
         Me.trv_info.ShowPlusMinus = False
-        Me.trv_info.Size = New System.Drawing.Size(238, 360)
+        Me.trv_info.Size = New System.Drawing.Size(240, 525)
         Me.trv_info.TabIndex = 7
         '
         'tmrMovePanelIn
@@ -66,7 +68,7 @@ Partial Class frmInformation
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(401, 313)
+        Me.Button1.Location = New System.Drawing.Point(321, 453)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -75,7 +77,7 @@ Partial Class frmInformation
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(482, 313)
+        Me.Button2.Location = New System.Drawing.Point(402, 453)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -84,10 +86,11 @@ Partial Class frmInformation
         '
         'rtb_info
         '
-        Me.rtb_info.Location = New System.Drawing.Point(376, 30)
+        Me.rtb_info.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtb_info.Location = New System.Drawing.Point(304, 68)
         Me.rtb_info.Name = "rtb_info"
         Me.rtb_info.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.rtb_info.Size = New System.Drawing.Size(325, 262)
+        Me.rtb_info.Size = New System.Drawing.Size(386, 317)
         Me.rtb_info.TabIndex = 10
         Me.rtb_info.Text = ""
         '
@@ -95,12 +98,14 @@ Partial Class frmInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(731, 355)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(750, 549)
         Me.Controls.Add(Me.rtb_info)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnl_menu)
         Me.Name = "frmInformation"
+        Me.Text = "w"
         Me.pnl_menu.ResumeLayout(False)
         Me.ResumeLayout(False)
 
