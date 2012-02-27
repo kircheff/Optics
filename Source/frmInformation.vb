@@ -145,5 +145,79 @@ Public Class frmInformation
             File.Copy(openedFile, saveFileDialog1.FileName, True)
 
         End If
+
+
+    End Sub
+
+
+
+
+    Private Sub pic_color_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_color.MouseHover
+        pic_color.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_color_hover.png")
+    End Sub
+
+    Private Sub pic_color_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_color.MouseLeave
+        pic_color.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_color.png")
+    End Sub
+
+    Private Sub pic_font_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_font.MouseHover
+        pic_font.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_font_hover.png")
+    End Sub
+
+    Private Sub pic_font_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_font.MouseLeave
+        pic_font.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_font.png")
+    End Sub
+
+    Private Sub pic_notes_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_notes.MouseHover
+        pic_notes.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_notes_hover.png")
+    End Sub
+
+    Private Sub pic_notes_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_notes.MouseLeave
+        pic_notes.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_notes.png")
+    End Sub
+
+    Private Sub pic_print_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_print.MouseHover
+        pic_print.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_print_hover.png")
+    End Sub
+
+    Private Sub pic_print_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_print.MouseLeave
+        pic_print.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_print.png")
+    End Sub
+
+    Private Sub pic_save_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_save.MouseHover
+        pic_save.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_save_hover.png")
+    End Sub
+
+    Private Sub pic_save_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_save.MouseLeave
+        pic_save.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\icon_save.png")
+    End Sub
+
+
+    Private Sub pic_circle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_circle.Click
+
+    End Sub
+
+    Private Sub pic_circle_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_circle.MouseHover
+        pic_circle.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_circle_hover.png")
+    End Sub
+
+    Private Sub pic_circle_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_circle.MouseLeave
+        pic_circle.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_circle.png")
+    End Sub
+
+    Private Sub pic_waves_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_waves.MouseHover
+        pic_waves.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_waves_hover.png")
+    End Sub
+
+    Private Sub pic_waves_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_waves.MouseLeave
+        pic_waves.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_waves.png")
+    End Sub
+
+    Private Sub pic_gallery_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_gallery.MouseHover
+        pic_gallery.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_gallery_hover.png")
+    End Sub
+
+    Private Sub pic_gallery_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles pic_gallery.MouseLeave
+        pic_gallery.Image = System.Drawing.Bitmap.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Images\Info\button_gallery.png")
     End Sub
 End Class

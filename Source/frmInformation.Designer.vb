@@ -31,8 +31,28 @@ Partial Class frmInformation
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.rtb_info = New Optics.TransparentRichTextBox()
+        Me.rtb_info = New System.Windows.Forms.RichTextBox()
+        Me.pic_notes = New System.Windows.Forms.PictureBox()
+        Me.pic_save = New System.Windows.Forms.PictureBox()
+        Me.pic_font = New System.Windows.Forms.PictureBox()
+        Me.pic_color = New System.Windows.Forms.PictureBox()
+        Me.pic_print = New System.Windows.Forms.PictureBox()
+        Me.pic_gallery = New System.Windows.Forms.PictureBox()
+        Me.pic_waves = New System.Windows.Forms.PictureBox()
+        Me.pic_circle = New System.Windows.Forms.PictureBox()
+        Me.pic_up = New System.Windows.Forms.PictureBox()
+        Me.pic_down = New System.Windows.Forms.PictureBox()
         Me.pnl_menu.SuspendLayout()
+        CType(Me.pic_notes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_save, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_font, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_color, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_print, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_gallery, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_waves, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_circle, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_up, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_down, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnl_menu
@@ -40,22 +60,27 @@ Partial Class frmInformation
         Me.pnl_menu.BackColor = System.Drawing.Color.Transparent
         Me.pnl_menu.BackgroundImage = CType(resources.GetObject("pnl_menu.BackgroundImage"), System.Drawing.Image)
         Me.pnl_menu.Controls.Add(Me.trv_info)
-        Me.pnl_menu.Location = New System.Drawing.Point(-240, 0)
+        Me.pnl_menu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pnl_menu.Location = New System.Drawing.Point(-240, 17)
         Me.pnl_menu.Name = "pnl_menu"
-        Me.pnl_menu.Size = New System.Drawing.Size(290, 552)
+        Me.pnl_menu.Size = New System.Drawing.Size(290, 514)
         Me.pnl_menu.TabIndex = 7
         '
         'trv_info
         '
+        Me.trv_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.trv_info.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.trv_info.ForeColor = System.Drawing.SystemColors.Info
         Me.trv_info.FullRowSelect = True
         Me.trv_info.Indent = 13
         Me.trv_info.ItemHeight = 27
         Me.trv_info.LabelEdit = True
-        Me.trv_info.Location = New System.Drawing.Point(0, 12)
+        Me.trv_info.LineColor = System.Drawing.Color.White
+        Me.trv_info.Location = New System.Drawing.Point(0, 19)
         Me.trv_info.Name = "trv_info"
+        Me.trv_info.Scrollable = False
         Me.trv_info.ShowPlusMinus = False
-        Me.trv_info.Size = New System.Drawing.Size(240, 525)
+        Me.trv_info.Size = New System.Drawing.Size(240, 479)
         Me.trv_info.TabIndex = 7
         '
         'tmrMovePanelIn
@@ -68,7 +93,7 @@ Partial Class frmInformation
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(321, 453)
+        Me.Button1.Location = New System.Drawing.Point(180, 63)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -77,7 +102,7 @@ Partial Class frmInformation
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(402, 453)
+        Me.Button2.Location = New System.Drawing.Point(99, 63)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -86,13 +111,122 @@ Partial Class frmInformation
         '
         'rtb_info
         '
+        Me.rtb_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.rtb_info.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.rtb_info.Location = New System.Drawing.Point(304, 68)
+        Me.rtb_info.Location = New System.Drawing.Point(326, 92)
         Me.rtb_info.Name = "rtb_info"
         Me.rtb_info.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.rtb_info.Size = New System.Drawing.Size(386, 317)
-        Me.rtb_info.TabIndex = 10
+        Me.rtb_info.Size = New System.Drawing.Size(341, 268)
+        Me.rtb_info.TabIndex = 11
         Me.rtb_info.Text = ""
+        '
+        'pic_notes
+        '
+        Me.pic_notes.BackColor = System.Drawing.Color.Transparent
+        Me.pic_notes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_notes.Image = CType(resources.GetObject("pic_notes.Image"), System.Drawing.Image)
+        Me.pic_notes.Location = New System.Drawing.Point(312, 445)
+        Me.pic_notes.Name = "pic_notes"
+        Me.pic_notes.Size = New System.Drawing.Size(65, 61)
+        Me.pic_notes.TabIndex = 12
+        Me.pic_notes.TabStop = False
+        '
+        'pic_save
+        '
+        Me.pic_save.BackColor = System.Drawing.Color.Transparent
+        Me.pic_save.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_save.Image = CType(resources.GetObject("pic_save.Image"), System.Drawing.Image)
+        Me.pic_save.Location = New System.Drawing.Point(474, 445)
+        Me.pic_save.Name = "pic_save"
+        Me.pic_save.Size = New System.Drawing.Size(71, 61)
+        Me.pic_save.TabIndex = 14
+        Me.pic_save.TabStop = False
+        '
+        'pic_font
+        '
+        Me.pic_font.BackColor = System.Drawing.Color.Transparent
+        Me.pic_font.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_font.Image = CType(resources.GetObject("pic_font.Image"), System.Drawing.Image)
+        Me.pic_font.Location = New System.Drawing.Point(616, 445)
+        Me.pic_font.Name = "pic_font"
+        Me.pic_font.Size = New System.Drawing.Size(73, 61)
+        Me.pic_font.TabIndex = 15
+        Me.pic_font.TabStop = False
+        '
+        'pic_color
+        '
+        Me.pic_color.BackColor = System.Drawing.Color.Transparent
+        Me.pic_color.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_color.Image = CType(resources.GetObject("pic_color.Image"), System.Drawing.Image)
+        Me.pic_color.Location = New System.Drawing.Point(551, 445)
+        Me.pic_color.Name = "pic_color"
+        Me.pic_color.Size = New System.Drawing.Size(59, 61)
+        Me.pic_color.TabIndex = 16
+        Me.pic_color.TabStop = False
+        '
+        'pic_print
+        '
+        Me.pic_print.BackColor = System.Drawing.Color.Transparent
+        Me.pic_print.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_print.Image = CType(resources.GetObject("pic_print.Image"), System.Drawing.Image)
+        Me.pic_print.Location = New System.Drawing.Point(383, 445)
+        Me.pic_print.Name = "pic_print"
+        Me.pic_print.Size = New System.Drawing.Size(85, 61)
+        Me.pic_print.TabIndex = 17
+        Me.pic_print.TabStop = False
+        '
+        'pic_gallery
+        '
+        Me.pic_gallery.BackColor = System.Drawing.Color.Transparent
+        Me.pic_gallery.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_gallery.Image = CType(resources.GetObject("pic_gallery.Image"), System.Drawing.Image)
+        Me.pic_gallery.Location = New System.Drawing.Point(43, 296)
+        Me.pic_gallery.Name = "pic_gallery"
+        Me.pic_gallery.Size = New System.Drawing.Size(248, 77)
+        Me.pic_gallery.TabIndex = 20
+        Me.pic_gallery.TabStop = False
+        '
+        'pic_waves
+        '
+        Me.pic_waves.BackColor = System.Drawing.Color.Transparent
+        Me.pic_waves.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_waves.Image = CType(resources.GetObject("pic_waves.Image"), System.Drawing.Image)
+        Me.pic_waves.Location = New System.Drawing.Point(43, 192)
+        Me.pic_waves.Name = "pic_waves"
+        Me.pic_waves.Size = New System.Drawing.Size(248, 76)
+        Me.pic_waves.TabIndex = 19
+        Me.pic_waves.TabStop = False
+        '
+        'pic_circle
+        '
+        Me.pic_circle.BackColor = System.Drawing.Color.Transparent
+        Me.pic_circle.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_circle.Image = CType(resources.GetObject("pic_circle.Image"), System.Drawing.Image)
+        Me.pic_circle.Location = New System.Drawing.Point(43, 92)
+        Me.pic_circle.Name = "pic_circle"
+        Me.pic_circle.Size = New System.Drawing.Size(248, 75)
+        Me.pic_circle.TabIndex = 18
+        Me.pic_circle.TabStop = False
+        '
+        'pic_up
+        '
+        Me.pic_up.BackColor = System.Drawing.Color.Transparent
+        Me.pic_up.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_up.Location = New System.Drawing.Point(433, 392)
+        Me.pic_up.Name = "pic_up"
+        Me.pic_up.Size = New System.Drawing.Size(62, 41)
+        Me.pic_up.TabIndex = 21
+        Me.pic_up.TabStop = False
+        '
+        'pic_down
+        '
+        Me.pic_down.BackColor = System.Drawing.Color.Transparent
+        Me.pic_down.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pic_down.Location = New System.Drawing.Point(499, 392)
+        Me.pic_down.Name = "pic_down"
+        Me.pic_down.Size = New System.Drawing.Size(62, 41)
+        Me.pic_down.TabIndex = 22
+        Me.pic_down.TabStop = False
         '
         'frmInformation
         '
@@ -100,13 +234,33 @@ Partial Class frmInformation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(750, 549)
+        Me.Controls.Add(Me.pic_down)
+        Me.Controls.Add(Me.pic_up)
+        Me.Controls.Add(Me.pnl_menu)
+        Me.Controls.Add(Me.pic_gallery)
+        Me.Controls.Add(Me.pic_waves)
+        Me.Controls.Add(Me.pic_circle)
+        Me.Controls.Add(Me.pic_print)
+        Me.Controls.Add(Me.pic_color)
+        Me.Controls.Add(Me.pic_font)
+        Me.Controls.Add(Me.pic_save)
+        Me.Controls.Add(Me.pic_notes)
         Me.Controls.Add(Me.rtb_info)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.pnl_menu)
         Me.Name = "frmInformation"
-        Me.Text = "w"
+        Me.Text = "Информация"
         Me.pnl_menu.ResumeLayout(False)
+        CType(Me.pic_notes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_save, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_font, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_color, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_print, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_gallery, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_waves, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_circle, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_up, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_down, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -117,5 +271,15 @@ Partial Class frmInformation
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents rtb_info As Optics.TransparentRichTextBox
+    Friend WithEvents rtb_info As System.Windows.Forms.RichTextBox
+    Friend WithEvents pic_notes As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_save As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_font As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_color As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_print As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_gallery As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_waves As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_circle As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_up As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_down As System.Windows.Forms.PictureBox
 End Class
