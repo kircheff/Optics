@@ -43,6 +43,13 @@ Partial Class frmInformation
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnl_menu.SuspendLayout()
         CType(Me.pic_notes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_save, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +61,7 @@ Partial Class frmInformation
         CType(Me.pic_circle, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_up, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_down, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnl_menu
@@ -62,7 +70,7 @@ Partial Class frmInformation
         Me.pnl_menu.BackgroundImage = CType(resources.GetObject("pnl_menu.BackgroundImage"), System.Drawing.Image)
         Me.pnl_menu.Controls.Add(Me.trv_info)
         Me.pnl_menu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pnl_menu.Location = New System.Drawing.Point(-240, 17)
+        Me.pnl_menu.Location = New System.Drawing.Point(-240, 47)
         Me.pnl_menu.Name = "pnl_menu"
         Me.pnl_menu.Size = New System.Drawing.Size(290, 514)
         Me.pnl_menu.TabIndex = 312
@@ -97,7 +105,7 @@ Partial Class frmInformation
         '
         Me.rtb_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.rtb_info.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.rtb_info.Location = New System.Drawing.Point(326, 83)
+        Me.rtb_info.Location = New System.Drawing.Point(326, 113)
         Me.rtb_info.Name = "rtb_info"
         Me.rtb_info.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
         Me.rtb_info.Size = New System.Drawing.Size(341, 277)
@@ -109,7 +117,7 @@ Partial Class frmInformation
         Me.pic_notes.BackColor = System.Drawing.Color.Transparent
         Me.pic_notes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_notes.Image = CType(resources.GetObject("pic_notes.Image"), System.Drawing.Image)
-        Me.pic_notes.Location = New System.Drawing.Point(312, 445)
+        Me.pic_notes.Location = New System.Drawing.Point(312, 475)
         Me.pic_notes.Name = "pic_notes"
         Me.pic_notes.Size = New System.Drawing.Size(65, 61)
         Me.pic_notes.TabIndex = 12
@@ -120,7 +128,7 @@ Partial Class frmInformation
         Me.pic_save.BackColor = System.Drawing.Color.Transparent
         Me.pic_save.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_save.Image = CType(resources.GetObject("pic_save.Image"), System.Drawing.Image)
-        Me.pic_save.Location = New System.Drawing.Point(474, 445)
+        Me.pic_save.Location = New System.Drawing.Point(474, 475)
         Me.pic_save.Name = "pic_save"
         Me.pic_save.Size = New System.Drawing.Size(71, 61)
         Me.pic_save.TabIndex = 14
@@ -131,7 +139,7 @@ Partial Class frmInformation
         Me.pic_font.BackColor = System.Drawing.Color.Transparent
         Me.pic_font.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_font.Image = CType(resources.GetObject("pic_font.Image"), System.Drawing.Image)
-        Me.pic_font.Location = New System.Drawing.Point(616, 445)
+        Me.pic_font.Location = New System.Drawing.Point(616, 475)
         Me.pic_font.Name = "pic_font"
         Me.pic_font.Size = New System.Drawing.Size(73, 61)
         Me.pic_font.TabIndex = 15
@@ -142,7 +150,7 @@ Partial Class frmInformation
         Me.pic_color.BackColor = System.Drawing.Color.Transparent
         Me.pic_color.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_color.Image = CType(resources.GetObject("pic_color.Image"), System.Drawing.Image)
-        Me.pic_color.Location = New System.Drawing.Point(551, 445)
+        Me.pic_color.Location = New System.Drawing.Point(551, 475)
         Me.pic_color.Name = "pic_color"
         Me.pic_color.Size = New System.Drawing.Size(59, 61)
         Me.pic_color.TabIndex = 16
@@ -153,7 +161,7 @@ Partial Class frmInformation
         Me.pic_print.BackColor = System.Drawing.Color.Transparent
         Me.pic_print.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_print.Image = CType(resources.GetObject("pic_print.Image"), System.Drawing.Image)
-        Me.pic_print.Location = New System.Drawing.Point(383, 445)
+        Me.pic_print.Location = New System.Drawing.Point(383, 475)
         Me.pic_print.Name = "pic_print"
         Me.pic_print.Size = New System.Drawing.Size(85, 61)
         Me.pic_print.TabIndex = 17
@@ -164,7 +172,7 @@ Partial Class frmInformation
         Me.pic_gallery.BackColor = System.Drawing.Color.Transparent
         Me.pic_gallery.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_gallery.Image = CType(resources.GetObject("pic_gallery.Image"), System.Drawing.Image)
-        Me.pic_gallery.Location = New System.Drawing.Point(43, 296)
+        Me.pic_gallery.Location = New System.Drawing.Point(43, 326)
         Me.pic_gallery.Name = "pic_gallery"
         Me.pic_gallery.Size = New System.Drawing.Size(248, 77)
         Me.pic_gallery.TabIndex = 20
@@ -175,7 +183,7 @@ Partial Class frmInformation
         Me.pic_waves.BackColor = System.Drawing.Color.Transparent
         Me.pic_waves.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_waves.Image = CType(resources.GetObject("pic_waves.Image"), System.Drawing.Image)
-        Me.pic_waves.Location = New System.Drawing.Point(43, 192)
+        Me.pic_waves.Location = New System.Drawing.Point(43, 222)
         Me.pic_waves.Name = "pic_waves"
         Me.pic_waves.Size = New System.Drawing.Size(248, 76)
         Me.pic_waves.TabIndex = 19
@@ -186,7 +194,7 @@ Partial Class frmInformation
         Me.pic_circle.BackColor = System.Drawing.Color.Transparent
         Me.pic_circle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pic_circle.Image = CType(resources.GetObject("pic_circle.Image"), System.Drawing.Image)
-        Me.pic_circle.Location = New System.Drawing.Point(43, 92)
+        Me.pic_circle.Location = New System.Drawing.Point(43, 122)
         Me.pic_circle.Name = "pic_circle"
         Me.pic_circle.Size = New System.Drawing.Size(248, 75)
         Me.pic_circle.TabIndex = 18
@@ -196,7 +204,7 @@ Partial Class frmInformation
         '
         Me.pic_up.BackColor = System.Drawing.Color.Transparent
         Me.pic_up.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pic_up.Location = New System.Drawing.Point(433, 392)
+        Me.pic_up.Location = New System.Drawing.Point(433, 422)
         Me.pic_up.Name = "pic_up"
         Me.pic_up.Size = New System.Drawing.Size(62, 41)
         Me.pic_up.TabIndex = 21
@@ -206,18 +214,65 @@ Partial Class frmInformation
         '
         Me.pic_down.BackColor = System.Drawing.Color.Transparent
         Me.pic_down.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pic_down.Location = New System.Drawing.Point(499, 392)
+        Me.pic_down.Location = New System.Drawing.Point(499, 422)
         Me.pic_down.Name = "pic_down"
         Me.pic_down.Size = New System.Drawing.Size(62, 41)
         Me.pic_down.TabIndex = 22
         Me.pic_down.TabStop = False
+        '
+        'Menu
+        '
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Menu.Location = New System.Drawing.Point(0, 0)
+        Me.Menu.Name = "Menu"
+        Me.Menu.Size = New System.Drawing.Size(750, 24)
+        Me.Menu.TabIndex = 313
+        Me.Menu.Text = "MenuStrip1"
+        '
+        'НачалнаСтаницаToolStripMenuItem
+        '
+        Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
+        '
+        'ТърсенеToolStripMenuItem
+        '
+        Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Text = "Търсене"
+        '
+        'ПомощToolStripMenuItem
+        '
+        Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
+        Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Text = "Помощ"
+        '
+        'ЗаПрограматаToolStripMenuItem
+        '
+        Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
+        '
+        'ЗаАвторитеToolStripMenuItem
+        '
+        Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
+        '
+        'ИзползванаЛитератураToolStripMenuItem
+        '
+        Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
         'frmInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(750, 549)
+        Me.ClientSize = New System.Drawing.Size(750, 576)
+        Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.pic_down)
         Me.Controls.Add(Me.pic_up)
         Me.Controls.Add(Me.pnl_menu)
@@ -243,7 +298,10 @@ Partial Class frmInformation
         CType(Me.pic_circle, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic_up, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic_down, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Menu.ResumeLayout(False)
+        Me.Menu.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents pnl_menu As System.Windows.Forms.Panel
@@ -265,4 +323,11 @@ Partial Class frmInformation
     Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
     Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

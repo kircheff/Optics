@@ -287,10 +287,12 @@ Public Class frmInformation
     End Sub
 
     Private Sub pic_up_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_up.Click
+        rtb_info.Focus()
         SendKeys.Send("{UP}{UP}{UP}{UP}{UP}{UP}{UP}{UP}{UP}{UP}{UP}{UP}")
     End Sub
 
     Private Sub pic_down_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_down.Click
+        rtb_info.Focus()
         SendKeys.Send("{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}{DOWN}")
     End Sub
 
