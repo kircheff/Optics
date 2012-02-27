@@ -42,4 +42,64 @@
     End Sub
 
 
+    Private Sub УрочниСтатииToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles УрочниСтатииToolStripMenuItem.Click
+
+        frmInformation.Show()
+
+    End Sub
+
+    Private Sub РечникToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles РечникToolStripMenuItem.Click
+        frmDictionary.Show()
+
+    End Sub
+
+    Private Sub ТестToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ТестToolStripMenuItem.Click
+        frmTest.Show()
+
+    End Sub
+
+    Private Sub КръстословицаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles КръстословицаToolStripMenuItem.Click
+        frmCrossword.Show()
+
+    End Sub
+
+    Private Sub ИграToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИграToolStripMenuItem.Click
+        frmGame.Show()
+
+    End Sub
+
+    Private Sub ГалерияToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ГалерияToolStripMenuItem.Click
+        frmGallery.Show()
+
+    End Sub
+
+    Private Sub КалкулаторToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles КалкулаторToolStripMenuItem.Click
+        frmCalculator.Show()
+
+    End Sub
+
+    Private Sub АдминПанелToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles АдминПанелToolStripMenuItem.Click
+        frmAdminSplash.Show()
+
+    End Sub
+
+    Private Sub ТърсенеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ТърсенеToolStripMenuItem.Click
+        frmSearch.Show()
+
+    End Sub
+
+    Private Sub ЗаПрограматаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаПрограматаToolStripMenuItem.Click
+        frmInfoProgram.Show()
+
+    End Sub
+
+    Private Sub ЗаАвторитеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаАвторитеToolStripMenuItem.Click
+        frmInfoUs.Show()
+
+    End Sub
+
+    Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
+        frmInfoLit.Show()
+
+    End Sub
 End Class

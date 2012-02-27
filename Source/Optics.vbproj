@@ -100,10 +100,34 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGame.Designer.vb">
+      <DependentUpon>frmGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoLit.Designer.vb">
+      <DependentUpon>frmInfoLit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoLit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoProgram.Designer.vb">
+      <DependentUpon>frmInfoProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmInformation.Designer.vb">
       <DependentUpon>frmInformation.vb</DependentUpon>
     </Compile>
     <Compile Include="frmInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoUs.Designer.vb">
+      <DependentUpon>frmInfoUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoUs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSearch.Designer.vb">
@@ -214,9 +238,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="TextPrint.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TransparentControl.vb">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

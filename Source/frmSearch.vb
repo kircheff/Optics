@@ -55,8 +55,24 @@
             Next
         End If
     End Sub
-    Private Sub frmSearch_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub НачалнаСтаницаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles НачалнаСтаницаToolStripMenuItem.Click
+        frmGeneral.Show()
+        Me.Close()
+    End Sub
 
+
+
+
+    Private Sub ЗаПрограматаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаПрограматаToolStripMenuItem.Click
+        frmInfoProgram.show()
+    End Sub
+
+    Private Sub ЗаАвторитеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаАвторитеToolStripMenuItem.Click
+        frmInfoUs.show()
+    End Sub
+
+    Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
+        frmInfoLit.show()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -68,4 +84,6 @@
     Private Sub ListBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListBox2.SelectedIndexChanged
         RichTextBox1.Text = My.Computer.FileSystem.ReadAllText(ListBox1.Items(ListBox2.SelectedIndex))
     End Sub
+
+
 End Class

@@ -29,12 +29,20 @@ Partial Class frmChangePassword
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtPass2
         '
         Me.txtPass2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtPass2.Location = New System.Drawing.Point(16, 165)
+        Me.txtPass2.Location = New System.Drawing.Point(16, 176)
         Me.txtPass2.Name = "txtPass2"
         Me.txtPass2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass2.Size = New System.Drawing.Size(220, 29)
@@ -43,7 +51,7 @@ Partial Class frmChangePassword
         'txtPass1
         '
         Me.txtPass1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtPass1.Location = New System.Drawing.Point(16, 106)
+        Me.txtPass1.Location = New System.Drawing.Point(16, 117)
         Me.txtPass1.Name = "txtPass1"
         Me.txtPass1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass1.Size = New System.Drawing.Size(220, 29)
@@ -52,7 +60,7 @@ Partial Class frmChangePassword
         'cmdChange
         '
         Me.cmdChange.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.cmdChange.Location = New System.Drawing.Point(12, 200)
+        Me.cmdChange.Location = New System.Drawing.Point(12, 211)
         Me.cmdChange.Name = "cmdChange"
         Me.cmdChange.Size = New System.Drawing.Size(224, 37)
         Me.cmdChange.TabIndex = 2
@@ -62,7 +70,7 @@ Partial Class frmChangePassword
         'txtOldPass
         '
         Me.txtOldPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtOldPass.Location = New System.Drawing.Point(16, 47)
+        Me.txtOldPass.Location = New System.Drawing.Point(16, 58)
         Me.txtOldPass.Name = "txtOldPass"
         Me.txtOldPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtOldPass.Size = New System.Drawing.Size(220, 29)
@@ -72,7 +80,7 @@ Partial Class frmChangePassword
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 20)
+        Me.Label1.Location = New System.Drawing.Point(12, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(132, 24)
         Me.Label1.TabIndex = 4
@@ -82,7 +90,7 @@ Partial Class frmChangePassword
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 79)
+        Me.Label2.Location = New System.Drawing.Point(12, 90)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(123, 24)
         Me.Label2.TabIndex = 5
@@ -92,17 +100,64 @@ Partial Class frmChangePassword
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 138)
+        Me.Label3.Location = New System.Drawing.Point(12, 149)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(224, 24)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Повтори новата парола"
+        '
+        'Menu
+        '
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Menu.Location = New System.Drawing.Point(0, 0)
+        Me.Menu.Name = "Menu"
+        Me.Menu.Size = New System.Drawing.Size(255, 24)
+        Me.Menu.TabIndex = 14
+        Me.Menu.Text = "MenuStrip1"
+        '
+        'НачалнаСтаницаToolStripMenuItem
+        '
+        Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
+        '
+        'ТърсенеToolStripMenuItem
+        '
+        Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Text = "Търсене"
+        '
+        'ПомощToolStripMenuItem
+        '
+        Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
+        Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Text = "Помощ"
+        '
+        'ЗаПрограматаToolStripMenuItem
+        '
+        Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
+        '
+        'ЗаАвторитеToolStripMenuItem
+        '
+        Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
+        '
+        'ИзползванаЛитератураToolStripMenuItem
+        '
+        Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
         'frmChangePassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(255, 260)
+        Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -112,6 +167,8 @@ Partial Class frmChangePassword
         Me.Controls.Add(Me.txtPass2)
         Me.Name = "frmChangePassword"
         Me.Text = "Смяна на паролата"
+        Me.Menu.ResumeLayout(False)
+        Me.Menu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -123,4 +180,11 @@ Partial Class frmChangePassword
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

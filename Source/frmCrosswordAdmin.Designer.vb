@@ -35,6 +35,14 @@ Partial Class frmCrossword
         Me.cmdCheckCrossword = New System.Windows.Forms.Button()
         Me.txtHints = New System.Windows.Forms.TextBox()
         Me.tmrCombo = New System.Windows.Forms.Timer(Me.components)
+        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'lstWords
@@ -48,7 +56,7 @@ Partial Class frmCrossword
         '
         'cmdMakeCrossword
         '
-        Me.cmdMakeCrossword.Location = New System.Drawing.Point(29, 23)
+        Me.cmdMakeCrossword.Location = New System.Drawing.Point(29, 41)
         Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
         Me.cmdMakeCrossword.Size = New System.Drawing.Size(186, 31)
         Me.cmdMakeCrossword.TabIndex = 11
@@ -120,7 +128,7 @@ Partial Class frmCrossword
         '
         'cmdCheckCrossword
         '
-        Me.cmdCheckCrossword.Location = New System.Drawing.Point(221, 23)
+        Me.cmdCheckCrossword.Location = New System.Drawing.Point(221, 41)
         Me.cmdCheckCrossword.Name = "cmdCheckCrossword"
         Me.cmdCheckCrossword.Size = New System.Drawing.Size(182, 31)
         Me.cmdCheckCrossword.TabIndex = 20
@@ -143,11 +151,58 @@ Partial Class frmCrossword
         '
         Me.tmrCombo.Interval = 1
         '
-        'frmCrosswordSplash
+        'Menu
+        '
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Menu.Location = New System.Drawing.Point(0, 0)
+        Me.Menu.Name = "Menu"
+        Me.Menu.Size = New System.Drawing.Size(849, 24)
+        Me.Menu.TabIndex = 22
+        Me.Menu.Text = "MenuStrip1"
+        '
+        'НачалнаСтаницаToolStripMenuItem
+        '
+        Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
+        '
+        'ТърсенеToolStripMenuItem
+        '
+        Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Text = "Търсене"
+        '
+        'ПомощToolStripMenuItem
+        '
+        Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
+        Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Text = "Помощ"
+        '
+        'ЗаПрограматаToolStripMenuItem
+        '
+        Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
+        '
+        'ЗаАвторитеToolStripMenuItem
+        '
+        Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
+        '
+        'ИзползванаЛитератураToolStripMenuItem
+        '
+        Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
+        '
+        'frmCrossword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(849, 466)
+        Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.txtHints)
         Me.Controls.Add(Me.cmdCheckCrossword)
         Me.Controls.Add(Me.txtMeanings)
@@ -161,9 +216,11 @@ Partial Class frmCrossword
         Me.Controls.Add(Me.lstWords)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.Name = "frmCrosswordSplash"
+        Me.Name = "frmCrossword"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Кръстословица"
+        Me.Menu.ResumeLayout(False)
+        Me.Menu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -180,4 +237,11 @@ Partial Class frmCrossword
     Friend WithEvents cmdCheckCrossword As System.Windows.Forms.Button
     Friend WithEvents txtHints As System.Windows.Forms.TextBox
     Friend WithEvents tmrCombo As System.Windows.Forms.Timer
+    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

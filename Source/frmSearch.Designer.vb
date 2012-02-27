@@ -27,6 +27,13 @@ Partial Class frmSearch
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Menu.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBox1
@@ -56,10 +63,10 @@ Partial Class frmSearch
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(41, 21)
+        Me.TextBox1.Location = New System.Drawing.Point(41, 27)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(176, 30)
         Me.TextBox1.TabIndex = 3
         '
         'ListBox2
@@ -69,11 +76,52 @@ Partial Class frmSearch
         Me.ListBox2.Size = New System.Drawing.Size(657, 82)
         Me.ListBox2.TabIndex = 4
         '
+        'Menu
+        '
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Menu.Location = New System.Drawing.Point(0, 0)
+        Me.Menu.Name = "Menu"
+        Me.Menu.Size = New System.Drawing.Size(736, 24)
+        Me.Menu.TabIndex = 14
+        Me.Menu.Text = "MenuStrip1"
+        '
+        'НачалнаСтаницаToolStripMenuItem
+        '
+        Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
+        '
+        'ПомощToolStripMenuItem
+        '
+        Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
+        Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Text = "Помощ"
+        '
+        'ЗаПрограматаToolStripMenuItem
+        '
+        Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
+        '
+        'ЗаАвторитеToolStripMenuItem
+        '
+        Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
+        '
+        'ИзползванаЛитератураToolStripMenuItem
+        '
+        Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
+        '
         'frmSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(736, 428)
+        Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
@@ -81,6 +129,8 @@ Partial Class frmSearch
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "frmSearch"
         Me.Text = "Form1"
+        Me.Menu.ResumeLayout(False)
+        Me.Menu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -90,4 +140,10 @@ Partial Class frmSearch
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
+    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

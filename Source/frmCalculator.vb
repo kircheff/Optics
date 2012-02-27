@@ -168,13 +168,21 @@
             ElseIf multBit = 1 Then
                 variable1 = variable1 * variable2
             ElseIf divBit = 1 Then
-                variable1 = variable1 / variable2
+                If variable2 = 0 Then
+                    MsgBox("На нула не се дели!!", vbCritical + vbOKOnly, "Внимание!")
+                Else
+                    variable1 = variable1 / variable2
+                End If
             ElseIf modBit = 1 Then
-                variable1 = variable1 Mod variable2
+                If variable2 = 0 Then
+                    MsgBox("На нула не се дели!!", vbCritical + vbOKOnly, "Внимание!")
+                Else
+                    variable1 = variable1 Mod variable2
+                End If
             ElseIf powerBit = 1 Then
-                variable1 = Math.Pow(variable1, variable2)
+                    variable1 = Math.Pow(variable1, variable2)
             Else
-                variable1 = variable2
+                    variable1 = variable2
             End If
             displayText.Text = CStr(variable1)
 
@@ -421,5 +429,28 @@
         End If
 
         sign_Indicator = 1
+    End Sub
+
+    Private Sub НачалнаСтаницаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles НачалнаСтаницаToolStripMenuItem.Click
+        frmGeneral.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ТърсенеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ТърсенеToolStripMenuItem.Click
+        frmSearch.Show()
+
+    End Sub
+
+
+    Private Sub ЗаПрограматаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаПрограматаToolStripMenuItem.Click
+        frmInfoProgram.show()
+    End Sub
+
+    Private Sub ЗаАвторитеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаАвторитеToolStripMenuItem.Click
+        frmInfoUs.show()
+    End Sub
+
+    Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
+        frmInfoLit.show()
     End Sub
 End Class
