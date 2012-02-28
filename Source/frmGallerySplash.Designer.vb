@@ -147,6 +147,7 @@ Partial Class frmGallerySplash
         Me.Controls.Add(Me.pic_razprost)
         Me.Controls.Add(Me.Menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmGallerySplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

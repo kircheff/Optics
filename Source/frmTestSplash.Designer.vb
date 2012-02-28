@@ -173,6 +173,7 @@ Partial Class frmTestSplash
         Me.Controls.Add(Me.txt_klas)
         Me.Controls.Add(Me.txt_username)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTestSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

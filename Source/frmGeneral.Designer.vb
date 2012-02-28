@@ -327,6 +327,7 @@ Partial Class frmGeneral
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.Menu
         Me.MaximizeBox = False
         Me.Name = "frmGeneral"

@@ -22,6 +22,7 @@ Partial Class frmDictionaryAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDictionaryAdmin))
         Me.cmdDelete = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmdAdd = New System.Windows.Forms.Button()
@@ -217,6 +218,7 @@ Partial Class frmDictionaryAdmin
         Me.Controls.Add(Me.txtMeaning)
         Me.Controls.Add(Me.txtWord)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmDictionaryAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

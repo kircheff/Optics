@@ -239,6 +239,7 @@ Partial Class frmTest
         Me.Controls.Add(Me.opt_answ1)
         Me.Controls.Add(Me.lblQuestion)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTest"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

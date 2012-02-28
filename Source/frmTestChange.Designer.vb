@@ -22,6 +22,7 @@ Partial Class frmTestChange
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTestChange))
         Me.lst_questions = New System.Windows.Forms.ListBox()
         Me.cmd_change = New System.Windows.Forms.Button()
         Me.cmd_save = New System.Windows.Forms.Button()
@@ -217,6 +218,7 @@ Partial Class frmTestChange
         Me.Controls.Add(Me.cmd_change)
         Me.Controls.Add(Me.lst_questions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTestChange"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

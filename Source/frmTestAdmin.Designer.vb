@@ -22,6 +22,7 @@ Partial Class frmTestAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTestAdmin))
         Me.lst_users = New System.Windows.Forms.ListBox()
         Me.fra_info = New System.Windows.Forms.GroupBox()
         Me.lbl_class_base = New System.Windows.Forms.Label()
@@ -228,6 +229,7 @@ Partial Class frmTestAdmin
         Me.Controls.Add(Me.fra_info)
         Me.Controls.Add(Me.lst_users)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTestAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

@@ -22,6 +22,7 @@ Partial Class frmInfoProgram
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInfoProgram))
         Me.rtb_info = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
@@ -38,9 +39,11 @@ Partial Class frmInfoProgram
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(329, 319)
         Me.Controls.Add(Me.rtb_info)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmInfoProgram"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

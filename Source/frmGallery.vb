@@ -33,19 +33,19 @@ Public Class frmGallery
         End Try
         
 
-        Button2.Visible = False
+        cmd_back.Visible = False
     End Sub
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub cmd_next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_next.Click
         visibleImageIndex = visibleImageIndex + 1
         tmrMove.Start()
         destination = "Right"
-        Button2.Enabled = False
-        Button1.Enabled = False
-        Button2.Visible = True
+        cmd_back.Enabled = False
+        cmd_next.Enabled = False
+        cmd_back.Visible = True
         If visibleImageIndex = 4 Then
-            Button1.Visible = False
+            cmd_next.Visible = False
         End If
     End Sub
     Sub moveImages(ByVal destination As String)
@@ -68,21 +68,21 @@ Public Class frmGallery
 
             numOfMoves = 0
             tmrMove.Stop()
-            Button2.Enabled = True
-            Button1.Enabled = True
+            cmd_back.Enabled = True
+            cmd_next.Enabled = True
         End If
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-  
+    Private Sub cmd_back_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_back.Click
+
         visibleImageIndex = visibleImageIndex - 1
         tmrMove.Start()
         destination = "Left"
-        Button2.Enabled = False
-        Button1.Enabled = False
-        Button1.Visible = True
+        cmd_back.Enabled = False
+        cmd_next.Enabled = False
+        cmd_next.Visible = True
         If visibleImageIndex = 0 Then
-            Button2.Visible = False
+            cmd_back.Visible = False
         End If
     End Sub
     Private Sub НачалнаСтаницаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles НачалнаСтаницаToolStripMenuItem.Click

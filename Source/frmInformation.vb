@@ -244,8 +244,14 @@ Public Class frmInformation
         Dim MyPrintObject As New TextPrint(rtb_info.Text)
 
         MyPrintObject.Font = New Font("Tahoma", 8)
+        Try
+            MyPrintObject.Print()
+        Catch ex As Exception
+            MsgBox("Не е намерен принтер", , "Грешка")
+        End Try
 
-        MyPrintObject.Print()
+
+
     End Sub
 
     Private Sub pic_save_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_save.Click

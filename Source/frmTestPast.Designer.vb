@@ -22,6 +22,7 @@ Partial Class frmTestPast
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTestPast))
         Me.lst_questions = New System.Windows.Forms.ListBox()
         Me.lbl_question = New System.Windows.Forms.Label()
         Me.lbl_ans1 = New System.Windows.Forms.Label()
@@ -139,6 +140,7 @@ Partial Class frmTestPast
         Me.Controls.Add(Me.lbl_question)
         Me.Controls.Add(Me.lst_questions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmTestPast"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

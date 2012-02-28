@@ -23,6 +23,7 @@ Partial Class frmCalculator
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCalculator))
         Me.displayText = New System.Windows.Forms.TextBox()
         Me.btn1 = New System.Windows.Forms.Button()
         Me.btn2 = New System.Windows.Forms.Button()
@@ -660,6 +661,7 @@ Partial Class frmCalculator
         Me.Controls.Add(Me.displayText)
         Me.Controls.Add(Me.btne)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmCalculator"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

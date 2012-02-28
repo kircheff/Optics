@@ -98,6 +98,7 @@ Partial Class frmGame
         Me.Controls.Add(Me.AxShockwaveFlash1)
         Me.Controls.Add(Me.Menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmGame"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

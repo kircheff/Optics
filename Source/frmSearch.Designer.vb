@@ -157,6 +157,7 @@ Partial Class frmSearch
         Me.Controls.Add(Me.rtb_file)
         Me.Controls.Add(Me.ListBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmSearch"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

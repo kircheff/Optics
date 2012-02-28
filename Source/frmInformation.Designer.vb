@@ -270,6 +270,7 @@ Partial Class frmInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(750, 576)
         Me.Controls.Add(Me.Menu)
@@ -286,6 +287,7 @@ Partial Class frmInformation
         Me.Controls.Add(Me.pic_notes)
         Me.Controls.Add(Me.rtb_info)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmInformation"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

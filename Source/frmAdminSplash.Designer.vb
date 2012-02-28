@@ -22,6 +22,7 @@ Partial Class frmAdminSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdminSplash))
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.cmdCheck = New System.Windows.Forms.Button()
         Me.cmdDictAdmin = New System.Windows.Forms.Button()
@@ -184,6 +185,7 @@ Partial Class frmAdminSplash
         Me.Controls.Add(Me.cmdCheck)
         Me.Controls.Add(Me.txtPassword)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmAdminSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

@@ -98,6 +98,7 @@ Partial Class frmCircle
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.AxShockwaveFlash1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "frmCircle"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
