@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmGame
+Partial Class frmCircle
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmGame
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGame))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCircle))
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,8 +40,8 @@ Partial Class frmGame
         Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(501, 24)
-        Me.Menu.TabIndex = 15
+        Me.Menu.Size = New System.Drawing.Size(502, 24)
+        Me.Menu.TabIndex = 17
         Me.Menu.Text = "MenuStrip1"
         '
         'НачалнаСтаницаToolStripMenuItem
@@ -87,18 +87,18 @@ Partial Class frmGame
         Me.AxShockwaveFlash1.Location = New System.Drawing.Point(0, 27)
         Me.AxShockwaveFlash1.Name = "AxShockwaveFlash1"
         Me.AxShockwaveFlash1.OcxState = CType(resources.GetObject("AxShockwaveFlash1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxShockwaveFlash1.Size = New System.Drawing.Size(501, 363)
+        Me.AxShockwaveFlash1.Size = New System.Drawing.Size(503, 364)
         Me.AxShockwaveFlash1.TabIndex = 16
         '
-        'frmGame
+        'frmCircle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(501, 388)
-        Me.Controls.Add(Me.AxShockwaveFlash1)
+        Me.ClientSize = New System.Drawing.Size(502, 390)
         Me.Controls.Add(Me.Menu)
-        Me.Name = "frmGame"
-        Me.Text = "frmGame"
+        Me.Controls.Add(Me.AxShockwaveFlash1)
+        Me.Name = "frmCircle"
+        Me.Text = "frmCircle"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -106,7 +106,6 @@ Partial Class frmGame
         Me.PerformLayout()
 
     End Sub
-
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

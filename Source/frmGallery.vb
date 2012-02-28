@@ -16,7 +16,7 @@ Public Class frmGallery
 
                 picBoxes(i) = New PictureBox
 
-                picBoxes(i).Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory & "Info\" & chosenGallery & "\" & i & ".jpg")
+                picBoxes(i).Image = Image.FromFile(AppDomain.CurrentDomain.BaseDirectory & chosenGallery & "\" & i & ".jpg")
                 picBoxes(i).Height = Me.Height - 100
                 picBoxes(i).Width = Me.Width
                 picBoxes(i).SizeMode = PictureBoxSizeMode.StretchImage

@@ -1,7 +1,4 @@
-﻿Public Class frmGame
-
-
-
+﻿Public Class frmCircle
     Private Sub НачалнаСтаницаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles НачалнаСтаницаToolStripMenuItem.Click
         frmGeneral.Show()
         Me.Close()
@@ -27,9 +24,7 @@
 
     Private Sub frmGame_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         AxShockwaveFlash1.Stop()
-        AxShockwaveFlash1.Movie = AppDomain.CurrentDomain.BaseDirectory & "\Info\Flash\game.swf"
+        AxShockwaveFlash1.Movie = AppDomain.CurrentDomain.BaseDirectory & "\Info\Flash\circle.swf"
 
     End Sub
-
- 
 End Class

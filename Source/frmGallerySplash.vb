@@ -1,31 +1,31 @@
 ﻿Public Class frmGallerySplash
 
     Private Sub cmdGoRazprostranenie_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGoRazprostranenie.Click
-        chosenGallery = "Razprostranenie"
+        chosenGallery = "Info\Razprostranenie"
         frmGallery.Show()
         Me.Close()
     End Sub
 
     Private Sub cmdGoOtrajenie_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGoOtrajenie.Click
-        chosenGallery = "Otrajenie"
+        chosenGallery = "Info\Otrajenie"
         frmGallery.Show()
         Me.Close()
     End Sub
 
     Private Sub cmdGoDispersiq_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGoDispersiq.Click
-        chosenGallery = "Dispersiq"
+        chosenGallery = "Info\Dispersiq"
         frmGallery.Show()
         Me.Close()
     End Sub
 
     Private Sub cmdGoInterferenciq_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGoInterferenciq.Click
-        chosenGallery = "Interferenciq"
+        chosenGallery = "Info\Interferenciq"
         frmGallery.Show()
         Me.Close()
     End Sub
 
     Private Sub cmdGoDifrakciq_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdGoDifrakciq.Click
-        chosenGallery = "Difrakciq"
+        chosenGallery = "Info\Difrakciq"
         frmGallery.Show()
         Me.Close()
     End Sub

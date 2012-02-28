@@ -100,3 +100,11 @@ C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmSearch.resources
 C:\Users\petri4kov\Optics\Source\obj\x86\Debug\Optics.frmSearch.resources
 C:\Users\Viko\Desktop\Source\obj\x86\Debug\Optics.frmInformation.resources
 C:\Users\Viko\Desktop\Source\obj\x86\Debug\Optics.frmSearch.resources
+C:\Users\Viko\Optics\Source\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Viko\Optics\Source\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\Viko\Optics\Source\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.vbproj.ResolveComReference.cache
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmGame.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmCircle.resources
+C:\Users\Viko\Optics\Source\obj\x86\Debug\Optics.frmWaves.resources

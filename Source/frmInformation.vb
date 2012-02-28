@@ -8,10 +8,12 @@ Public Class frmInformation
     Dim ds As New DataSet
     Dim rs_information As New OleDb.OleDbDataAdapter("SELECT * FROM information", con)
     Dim rs_tochki As New OleDb.OleDbDataAdapter("SELECT * FROM tochki", con)
+
     Dim numOfMoves As Byte = 0
     Dim opened As Boolean = False
     Dim openedFile As String = AppDomain.CurrentDomain.BaseDirectory & "Info\Razprostranenie\1.rtf"
-    Dim notesFile As String = AppDomain.CurrentDomain.BaseDirectory & "\Info\Razprostranenie\1_temp.rtf"
+    Dim notesFile As String = AppDomain.CurrentDomain.BaseDirectory & "Info\Razprostranenie\1_temp.rtf"
+
     Dim notesSelected As Boolean = False
     Dim custRow As DataRow
     Dim orderRow As DataRow
@@ -56,6 +58,7 @@ Public Class frmInformation
 
         Next
         rtb_info.LoadFile(openedFile)
+        chosenGallery = "Info\Razprostranenie"
     End Sub
 
 
@@ -138,6 +141,7 @@ Public Class frmInformation
                         End If
                         notesFile = AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & "_temp.rtf"
                         openedFile = AppDomain.CurrentDomain.BaseDirectory & custRow.Item("Directory").ToString & "\" & orderRow.Item("tochka_podredba") & ".rtf"
+                        chosenGallery = custRow.Item("Directory").ToString
                         rtb_info.LoadFile(openedFile)
                         rtb_info.ReadOnly = True
                         rtb_info.Focus()
@@ -305,4 +309,15 @@ Public Class frmInformation
     End Sub
 
 
+    Private Sub pic_circle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_circle.Click
+        frmCircle.Show()
+    End Sub
+
+    Private Sub pic_waves_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_waves.Click
+        frmWaves.Show()
+    End Sub
+
+    Private Sub pic_gallery_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_gallery.Click
+        frmGallery.Show()
+    End Sub
 End Class

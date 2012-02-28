@@ -100,6 +100,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCircle.Designer.vb">
+      <DependentUpon>frmCircle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCircle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGame.Designer.vb">
       <DependentUpon>frmGame.vb</DependentUpon>
     </Compile>
@@ -221,6 +227,12 @@
     <Compile Include="frmTestSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmWaves.designer.vb">
+      <DependentUpon>frmWaves.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaves.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mdlDeclarations.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -242,6 +254,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCircle.resx">
+      <DependentUpon>frmCircle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame.resx">
+      <DependentUpon>frmGame.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInformation.resx">
       <DependentUpon>frmInformation.vb</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +308,9 @@
     <EmbeddedResource Include="frmTestSplash.resx">
       <DependentUpon>frmTestSplash.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmWaves.resx">
+      <DependentUpon>frmWaves.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -329,6 +350,25 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
