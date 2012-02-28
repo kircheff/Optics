@@ -260,8 +260,17 @@
     <EmbeddedResource Include="frmGame.resx">
       <DependentUpon>frmGame.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoLit.resx">
+      <DependentUpon>frmInfoLit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoProgram.resx">
+      <DependentUpon>frmInfoProgram.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInformation.resx">
       <DependentUpon>frmInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoUs.resx">
+      <DependentUpon>frmInfoUs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearch.resx">
       <DependentUpon>frmSearch.vb</DependentUpon>

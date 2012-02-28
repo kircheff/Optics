@@ -97,8 +97,11 @@ Partial Class frmCircle
         Me.ClientSize = New System.Drawing.Size(502, 390)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.AxShockwaveFlash1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MinimizeBox = False
         Me.Name = "frmCircle"
-        Me.Text = "frmCircle"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Кръг на Хъртъл"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -216,8 +216,11 @@ Partial Class frmDictionaryAdmin
         Me.Controls.Add(Me.cmdSave)
         Me.Controls.Add(Me.txtMeaning)
         Me.Controls.Add(Me.txtWord)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmDictionaryAdmin"
-        Me.Text = "Администраторски панел"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Администраторски панел - Речник"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         Me.ResumeLayout(False)

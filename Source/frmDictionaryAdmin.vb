@@ -3,6 +3,8 @@
     Dim ds As New DataSet
     Dim rs As New OleDb.OleDbDataAdapter("SELECT * FROM rechnik", con)
     Private Sub frmAdmin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Top = 0
+        Me.Left = 0
         con.Open()
 
         rs.Fill(ds, "Rechnik")

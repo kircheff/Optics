@@ -23,6 +23,8 @@
     End Sub
 
     Private Sub frmGame_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Top = 0
+        Me.Left = 0
         AxShockwaveFlash1.Stop()
         AxShockwaveFlash1.Movie = AppDomain.CurrentDomain.BaseDirectory & "\Info\Flash\circle.swf"
 

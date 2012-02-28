@@ -286,7 +286,9 @@ Partial Class frmInformation
         Me.Controls.Add(Me.pic_notes)
         Me.Controls.Add(Me.rtb_info)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmInformation"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Информация"
         Me.pnl_menu.ResumeLayout(False)
         CType(Me.pic_notes, System.ComponentModel.ISupportInitialize).EndInit()

@@ -51,9 +51,8 @@ Partial Class frmTestPast
         Me.lbl_question.Location = New System.Drawing.Point(138, 46)
         Me.lbl_question.MaximumSize = New System.Drawing.Size(350, 0)
         Me.lbl_question.Name = "lbl_question"
-        Me.lbl_question.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_question.Size = New System.Drawing.Size(0, 13)
         Me.lbl_question.TabIndex = 1
-        Me.lbl_question.Text = "Въпрос"
         '
         'lbl_ans1
         '
@@ -61,9 +60,8 @@ Partial Class frmTestPast
         Me.lbl_ans1.Location = New System.Drawing.Point(138, 141)
         Me.lbl_ans1.MaximumSize = New System.Drawing.Size(350, 0)
         Me.lbl_ans1.Name = "lbl_ans1"
-        Me.lbl_ans1.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_ans1.Size = New System.Drawing.Size(0, 13)
         Me.lbl_ans1.TabIndex = 2
-        Me.lbl_ans1.Text = "Въпрос"
         '
         'lbl_ans2
         '
@@ -71,9 +69,8 @@ Partial Class frmTestPast
         Me.lbl_ans2.Location = New System.Drawing.Point(138, 154)
         Me.lbl_ans2.MaximumSize = New System.Drawing.Size(350, 0)
         Me.lbl_ans2.Name = "lbl_ans2"
-        Me.lbl_ans2.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_ans2.Size = New System.Drawing.Size(0, 13)
         Me.lbl_ans2.TabIndex = 3
-        Me.lbl_ans2.Text = "Въпрос"
         '
         'lbl_ans3
         '
@@ -81,9 +78,8 @@ Partial Class frmTestPast
         Me.lbl_ans3.Location = New System.Drawing.Point(138, 167)
         Me.lbl_ans3.MaximumSize = New System.Drawing.Size(350, 0)
         Me.lbl_ans3.Name = "lbl_ans3"
-        Me.lbl_ans3.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_ans3.Size = New System.Drawing.Size(0, 13)
         Me.lbl_ans3.TabIndex = 4
-        Me.lbl_ans3.Text = "Въпрос"
         '
         'Menu
         '
@@ -142,8 +138,11 @@ Partial Class frmTestPast
         Me.Controls.Add(Me.lbl_ans1)
         Me.Controls.Add(Me.lbl_question)
         Me.Controls.Add(Me.lst_questions)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmTestPast"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Хронология на теста"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         Me.ResumeLayout(False)

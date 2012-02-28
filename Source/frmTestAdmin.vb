@@ -30,7 +30,11 @@
     End Sub
 
     Private Sub cmd_show_test_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_show_test.Click
-        frmTestPast.Show()
+        If lst_users.SelectedIndex = -1 Then
+            MsgBox("Моля, изберете потребител.", vbOKOnly, "Oпаа!")
+        Else
+            frmTestPast.Show()
+        End If
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)

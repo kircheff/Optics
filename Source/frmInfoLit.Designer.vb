@@ -40,8 +40,11 @@ Partial Class frmInfoLit
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(325, 317)
         Me.Controls.Add(Me.rtb_info)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmInfoLit"
-        Me.Text = "frmInfoLit"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Използвана литература"
         Me.ResumeLayout(False)
 
     End Sub

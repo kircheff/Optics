@@ -326,8 +326,11 @@ Partial Class frmGeneral
         Me.Controls.Add(Me.pic_diction)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.Menu
+        Me.MaximizeBox = False
         Me.Name = "frmGeneral"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Начална страница"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

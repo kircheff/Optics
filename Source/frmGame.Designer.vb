@@ -97,8 +97,11 @@ Partial Class frmGame
         Me.ClientSize = New System.Drawing.Size(501, 388)
         Me.Controls.Add(Me.AxShockwaveFlash1)
         Me.Controls.Add(Me.Menu)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmGame"
-        Me.Text = "frmGame"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Игра"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()

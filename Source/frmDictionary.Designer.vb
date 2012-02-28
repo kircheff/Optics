@@ -165,7 +165,10 @@ Partial Class frmDictionary
         Me.Controls.Add(Me.lblMeaning)
         Me.Controls.Add(Me.lblWord)
         Me.Controls.Add(Me.lstWords)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmDictionary"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Речник"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

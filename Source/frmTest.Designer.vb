@@ -239,7 +239,9 @@ Partial Class frmTest
         Me.Controls.Add(Me.opt_answ1)
         Me.Controls.Add(Me.lblQuestion)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmTest"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Тест"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

@@ -21,6 +21,8 @@ Public Class frmAdminSplash
         Return strResult
     End Function
     Private Sub frmAdminSplash_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Top = 0
+        Me.Left = 0
         con.Open()
 
         rs.Fill(dt)
@@ -39,7 +41,8 @@ Public Class frmAdminSplash
             cmdDictAdmin.Enabled = True
             cmdChangePass.Enabled = True
             cmdResetDB.Enabled = True
-
+            cmdTestAdm.Enabled = True
+            cmdHistory.Enabled = True
         Else
             MsgBox("Грешна парола!! Пробвай се пак!", , "Опаа!")
         End If
@@ -91,5 +94,13 @@ Public Class frmAdminSplash
 
     Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
         frmInfoLit.show()
+    End Sub
+
+    Private Sub cmdTestAdm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdTestAdm.Click
+        frmTestChange.Show()
+    End Sub
+
+    Private Sub cmdHistory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdHistory.Click
+        frmTestAdmin.Show()
     End Sub
 End Class

@@ -61,19 +61,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wOG8XRQnE6z42JdtkZSEtyqelNk=</dsig:DigestValue>
+        <dsig:DigestValue>7OuSAaS/TCS+VQVhSULXM2qIvkY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Optics.exe" size="2117632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Optics.exe" size="2120704">
       <assemblyIdentity name="Optics" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>AoJlseKugSDGf4HtAIWHxShwGTE=</dsig:DigestValue>
+        <dsig:DigestValue>4ezJrubL/4WV5M1kP0pfbMKm8RQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

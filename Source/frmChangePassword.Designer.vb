@@ -41,68 +41,75 @@ Partial Class frmChangePassword
         '
         'txtPass2
         '
-        Me.txtPass2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtPass2.Location = New System.Drawing.Point(16, 176)
+        Me.txtPass2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtPass2.Location = New System.Drawing.Point(21, 217)
+        Me.txtPass2.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass2.Name = "txtPass2"
         Me.txtPass2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPass2.Size = New System.Drawing.Size(220, 29)
+        Me.txtPass2.Size = New System.Drawing.Size(292, 22)
         Me.txtPass2.TabIndex = 0
         '
         'txtPass1
         '
-        Me.txtPass1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtPass1.Location = New System.Drawing.Point(16, 117)
+        Me.txtPass1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtPass1.Location = New System.Drawing.Point(21, 144)
+        Me.txtPass1.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass1.Name = "txtPass1"
         Me.txtPass1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPass1.Size = New System.Drawing.Size(220, 29)
+        Me.txtPass1.Size = New System.Drawing.Size(292, 22)
         Me.txtPass1.TabIndex = 1
         '
         'cmdChange
         '
-        Me.cmdChange.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.cmdChange.Location = New System.Drawing.Point(12, 211)
+        Me.cmdChange.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.cmdChange.Location = New System.Drawing.Point(16, 260)
+        Me.cmdChange.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdChange.Name = "cmdChange"
-        Me.cmdChange.Size = New System.Drawing.Size(224, 37)
+        Me.cmdChange.Size = New System.Drawing.Size(299, 46)
         Me.cmdChange.TabIndex = 2
         Me.cmdChange.Text = "Смени паролата"
         Me.cmdChange.UseVisualStyleBackColor = True
         '
         'txtOldPass
         '
-        Me.txtOldPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtOldPass.Location = New System.Drawing.Point(16, 58)
+        Me.txtOldPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtOldPass.Location = New System.Drawing.Point(21, 71)
+        Me.txtOldPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtOldPass.Name = "txtOldPass"
         Me.txtOldPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtOldPass.Size = New System.Drawing.Size(220, 29)
+        Me.txtOldPass.Size = New System.Drawing.Size(292, 22)
         Me.txtOldPass.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 31)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label1.Location = New System.Drawing.Point(16, 38)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 24)
+        Me.Label1.Size = New System.Drawing.Size(99, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Стара парола"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 90)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label2.Location = New System.Drawing.Point(16, 111)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 24)
+        Me.Label2.Size = New System.Drawing.Size(93, 16)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Нова парола"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 149)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label3.Location = New System.Drawing.Point(16, 183)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(224, 24)
+        Me.Label3.Size = New System.Drawing.Size(166, 16)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Повтори новата парола"
         '
@@ -111,7 +118,8 @@ Partial Class frmChangePassword
         Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(255, 24)
+        Me.Menu.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.Menu.Size = New System.Drawing.Size(340, 24)
         Me.Menu.TabIndex = 14
         Me.Menu.Text = "MenuStrip1"
         '
@@ -154,9 +162,9 @@ Partial Class frmChangePassword
         '
         'frmChangePassword
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(255, 260)
+        Me.ClientSize = New System.Drawing.Size(340, 320)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -165,7 +173,12 @@ Partial Class frmChangePassword
         Me.Controls.Add(Me.cmdChange)
         Me.Controls.Add(Me.txtPass1)
         Me.Controls.Add(Me.txtPass2)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "frmChangePassword"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Смяна на паролата"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

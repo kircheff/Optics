@@ -69,7 +69,7 @@ Partial Class frmTestAdmin
         Me.fra_info.Controls.Add(Me.lbl_name)
         Me.fra_info.Location = New System.Drawing.Point(173, 40)
         Me.fra_info.Name = "fra_info"
-        Me.fra_info.Size = New System.Drawing.Size(385, 225)
+        Me.fra_info.Size = New System.Drawing.Size(385, 206)
         Me.fra_info.TabIndex = 7
         Me.fra_info.TabStop = False
         Me.fra_info.Text = "Данни"
@@ -121,7 +121,7 @@ Partial Class frmTestAdmin
         '
         'cmd_show_test
         '
-        Me.cmd_show_test.Location = New System.Drawing.Point(277, 192)
+        Me.cmd_show_test.Location = New System.Drawing.Point(277, 172)
         Me.cmd_show_test.Name = "cmd_show_test"
         Me.cmd_show_test.Size = New System.Drawing.Size(102, 27)
         Me.cmd_show_test.TabIndex = 12
@@ -227,7 +227,10 @@ Partial Class frmTestAdmin
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.fra_info)
         Me.Controls.Add(Me.lst_users)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmTestAdmin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Администрация Тест"
         Me.fra_info.ResumeLayout(False)
         Me.fra_info.PerformLayout()

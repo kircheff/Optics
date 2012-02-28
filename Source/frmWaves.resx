@@ -120,6 +120,74 @@
   <metadata name="Menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="НачалнаСтаницаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="НачалнаСтаницаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Начална станица</value>
+  </data>
+  <data name="ТърсенеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="ТърсенеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Търсене</value>
+  </data>
+  <data name="ЗаПрограматаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="ЗаПрограматаToolStripMenuItem.Text" xml:space="preserve">
+    <value>За програмата</value>
+  </data>
+  <data name="ЗаАвторитеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="ЗаАвторитеToolStripMenuItem.Text" xml:space="preserve">
+    <value>За авторите</value>
+  </data>
+  <data name="ИзползванаЛитератураToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="ИзползванаЛитератураToolStripMenuItem.Text" xml:space="preserve">
+    <value>Използвана литература</value>
+  </data>
+  <data name="ПомощToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="ПомощToolStripMenuItem.Text" xml:space="preserve">
+    <value>Помощ</value>
+  </data>
+  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Menu.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AxShockwaveFlash1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AxShockwaveFlash1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
   <data name="AxShockwaveFlash1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
@@ -132,5 +200,81 @@
         AAAIAAQAAAAwAAAACAAAAAAACAAEAAAAMAAAAAgACAAAAGEAbABsAAAACAAMAAAAZgBhAGwAcwBlAAAA
         Cw==
 </value>
+  </data>
+  <data name="AxShockwaveFlash1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 364</value>
+  </data>
+  <data name="AxShockwaveFlash1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;AxShockwaveFlash1.Name" xml:space="preserve">
+    <value>AxShockwaveFlash1</value>
+  </data>
+  <data name="&gt;&gt;AxShockwaveFlash1.Type" xml:space="preserve">
+    <value>AxShockwaveFlashObjects.AxShockwaveFlash, AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AxShockwaveFlash1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AxShockwaveFlash1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>500, 390</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Вълни</value>
+  </data>
+  <data name="&gt;&gt;НачалнаСтаницаToolStripMenuItem.Name" xml:space="preserve">
+    <value>НачалнаСтаницаToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;НачалнаСтаницаToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ТърсенеToolStripMenuItem.Name" xml:space="preserve">
+    <value>ТърсенеToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ТърсенеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ПомощToolStripMenuItem.Name" xml:space="preserve">
+    <value>ПомощToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ПомощToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ЗаПрограматаToolStripMenuItem.Name" xml:space="preserve">
+    <value>ЗаПрограматаToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ЗаПрограматаToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ЗаАвторитеToolStripMenuItem.Name" xml:space="preserve">
+    <value>ЗаАвторитеToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ЗаАвторитеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ИзползванаЛитератураToolStripMenuItem.Name" xml:space="preserve">
+    <value>ИзползванаЛитератураToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ИзползванаЛитератураToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmWaves</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

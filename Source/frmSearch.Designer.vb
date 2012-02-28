@@ -156,8 +156,11 @@ Partial Class frmSearch
         Me.Controls.Add(Me.cmd_search)
         Me.Controls.Add(Me.rtb_file)
         Me.Controls.Add(Me.ListBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmSearch"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Търсене"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         Me.ResumeLayout(False)

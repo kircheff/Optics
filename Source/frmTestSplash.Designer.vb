@@ -173,7 +173,9 @@ Partial Class frmTestSplash
         Me.Controls.Add(Me.txt_klas)
         Me.Controls.Add(Me.txt_username)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmTestSplash"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Тест Вход"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

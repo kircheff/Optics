@@ -38,67 +38,55 @@ Partial Class frmWaves
         'Menu
         '
         Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
+        resources.ApplyResources(Me.Menu, "Menu")
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(500, 24)
-        Me.Menu.TabIndex = 17
-        Me.Menu.Text = "MenuStrip1"
         '
         'НачалнаСтаницаToolStripMenuItem
         '
         Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
-        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
-        Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
+        resources.ApplyResources(Me.НачалнаСтаницаToolStripMenuItem, "НачалнаСтаницаToolStripMenuItem")
         '
         'ТърсенеToolStripMenuItem
         '
         Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
-        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.ТърсенеToolStripMenuItem.Text = "Търсене"
+        resources.ApplyResources(Me.ТърсенеToolStripMenuItem, "ТърсенеToolStripMenuItem")
         '
         'ПомощToolStripMenuItem
         '
         Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
         Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
-        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.ПомощToolStripMenuItem.Text = "Помощ"
+        resources.ApplyResources(Me.ПомощToolStripMenuItem, "ПомощToolStripMenuItem")
         '
         'ЗаПрограматаToolStripMenuItem
         '
         Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
-        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
+        resources.ApplyResources(Me.ЗаПрограматаToolStripMenuItem, "ЗаПрограматаToolStripMenuItem")
         '
         'ЗаАвторитеToolStripMenuItem
         '
         Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
-        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
+        resources.ApplyResources(Me.ЗаАвторитеToolStripMenuItem, "ЗаАвторитеToolStripMenuItem")
         '
         'ИзползванаЛитератураToolStripMenuItem
         '
         Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
-        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
+        resources.ApplyResources(Me.ИзползванаЛитератураToolStripMenuItem, "ИзползванаЛитератураToolStripMenuItem")
         '
         'AxShockwaveFlash1
         '
-        Me.AxShockwaveFlash1.Enabled = True
-        Me.AxShockwaveFlash1.Location = New System.Drawing.Point(0, 27)
+        resources.ApplyResources(Me.AxShockwaveFlash1, "AxShockwaveFlash1")
         Me.AxShockwaveFlash1.Name = "AxShockwaveFlash1"
         Me.AxShockwaveFlash1.OcxState = CType(resources.GetObject("AxShockwaveFlash1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxShockwaveFlash1.Size = New System.Drawing.Size(503, 364)
-        Me.AxShockwaveFlash1.TabIndex = 16
         '
         'frmWaves
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 390)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.AxShockwaveFlash1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmWaves"
-        Me.Text = "frmWaves"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -216,7 +216,10 @@ Partial Class frmTestChange
         Me.Controls.Add(Me.cmd_save)
         Me.Controls.Add(Me.cmd_change)
         Me.Controls.Add(Me.lst_questions)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmTestChange"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Администрация Тест Промяна"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()

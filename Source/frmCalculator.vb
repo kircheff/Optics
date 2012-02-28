@@ -453,4 +453,9 @@
     Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
         frmInfoLit.show()
     End Sub
+
+    Private Sub frmCalculator_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
 End Class

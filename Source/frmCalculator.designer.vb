@@ -659,6 +659,7 @@ Partial Class frmCalculator
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.displayText)
         Me.Controls.Add(Me.btne)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmCalculator"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual

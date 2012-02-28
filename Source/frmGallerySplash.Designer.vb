@@ -146,8 +146,11 @@ Partial Class frmGallerySplash
         Me.Controls.Add(Me.ppic_otraj)
         Me.Controls.Add(Me.pic_razprost)
         Me.Controls.Add(Me.Menu)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmGallerySplash"
-        Me.Text = "frmGallerySplash"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Избор на галерия"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.pic_razprost, System.ComponentModel.ISupportInitialize).EndInit()

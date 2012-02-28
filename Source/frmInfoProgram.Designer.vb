@@ -40,8 +40,11 @@ Partial Class frmInfoProgram
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(329, 319)
         Me.Controls.Add(Me.rtb_info)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmInfoProgram"
-        Me.Text = "frmInfoProgram"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "За програмата"
         Me.ResumeLayout(False)
 
     End Sub

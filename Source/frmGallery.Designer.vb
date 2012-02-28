@@ -118,13 +118,16 @@ Partial Class frmGallery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(492, 392)
+        Me.ClientSize = New System.Drawing.Size(492, 329)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblDescription)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MinimizeBox = False
         Me.Name = "frmGallery"
-        Me.Text = "Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Галерия"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         Me.ResumeLayout(False)
