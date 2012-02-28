@@ -24,15 +24,6 @@ Partial Class frmGeneral
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGeneral))
-        Me.btnCalc = New System.Windows.Forms.Button()
-        Me.btnDiction = New System.Windows.Forms.Button()
-        Me.btnAdmin = New System.Windows.Forms.Button()
-        Me.btnCrossword = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.cmdGallery = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.ТеорияToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.УрочниСтатииToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -75,87 +66,6 @@ Partial Class frmGeneral
         CType(Me.pic_arrow, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic_game, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnCalc
-        '
-        Me.btnCalc.Location = New System.Drawing.Point(591, 27)
-        Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(126, 29)
-        Me.btnCalc.TabIndex = 0
-        Me.btnCalc.Text = "Калкулатор"
-        Me.btnCalc.UseVisualStyleBackColor = True
-        '
-        'btnDiction
-        '
-        Me.btnDiction.Location = New System.Drawing.Point(591, 132)
-        Me.btnDiction.Name = "btnDiction"
-        Me.btnDiction.Size = New System.Drawing.Size(126, 29)
-        Me.btnDiction.TabIndex = 1
-        Me.btnDiction.Text = "Речник"
-        Me.btnDiction.UseVisualStyleBackColor = True
-        '
-        'btnAdmin
-        '
-        Me.btnAdmin.Location = New System.Drawing.Point(591, 307)
-        Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.Size = New System.Drawing.Size(126, 29)
-        Me.btnAdmin.TabIndex = 2
-        Me.btnAdmin.Text = "Админ"
-        Me.btnAdmin.UseVisualStyleBackColor = True
-        '
-        'btnCrossword
-        '
-        Me.btnCrossword.Location = New System.Drawing.Point(591, 237)
-        Me.btnCrossword.Name = "btnCrossword"
-        Me.btnCrossword.Size = New System.Drawing.Size(126, 29)
-        Me.btnCrossword.TabIndex = 3
-        Me.btnCrossword.Text = "Кръстословица"
-        Me.btnCrossword.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(591, 62)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(126, 29)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Тест"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(591, 167)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 29)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Тест2"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'cmdGallery
-        '
-        Me.cmdGallery.Location = New System.Drawing.Point(591, 272)
-        Me.cmdGallery.Name = "cmdGallery"
-        Me.cmdGallery.Size = New System.Drawing.Size(126, 29)
-        Me.cmdGallery.TabIndex = 7
-        Me.cmdGallery.Text = "Галерия"
-        Me.cmdGallery.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(591, 97)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(126, 29)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Информация"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(591, 202)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(126, 29)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Търсене"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Menu
         '
@@ -414,15 +324,6 @@ Partial Class frmGeneral
         Me.Controls.Add(Me.pic_info)
         Me.Controls.Add(Me.pic_crossword)
         Me.Controls.Add(Me.pic_diction)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.cmdGallery)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.btnCrossword)
-        Me.Controls.Add(Me.btnAdmin)
-        Me.Controls.Add(Me.btnDiction)
-        Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.PictureBox1)
         Me.MainMenuStrip = Me.Menu
@@ -445,15 +346,6 @@ Partial Class frmGeneral
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnCalc As System.Windows.Forms.Button
-    Friend WithEvents btnDiction As System.Windows.Forms.Button
-    Friend WithEvents btnAdmin As System.Windows.Forms.Button
-    Friend WithEvents btnCrossword As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents cmdGallery As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
     Friend WithEvents КалкулаторToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents АдминПанелToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
