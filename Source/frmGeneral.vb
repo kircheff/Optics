@@ -217,7 +217,7 @@
     End Sub
 
     Private Sub pic_test_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_test.Click
-        frmTest.Show()
+        frmTestSplash.Show()
     End Sub
 
     Private Sub pic_admin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_admin.Click

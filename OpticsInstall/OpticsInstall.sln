@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OpticsInstall", "OpticsInstall.vdproj", "{C484D4F7-E4CD-44DB-80DD-7DCFA07B0D76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C484D4F7-E4CD-44DB-80DD-7DCFA07B0D76}.Debug|Default.ActiveCfg = Debug
+		{C484D4F7-E4CD-44DB-80DD-7DCFA07B0D76}.Debug|Default.Build.0 = Debug
+		{C484D4F7-E4CD-44DB-80DD-7DCFA07B0D76}.Release|Default.ActiveCfg = Release
+		{C484D4F7-E4CD-44DB-80DD-7DCFA07B0D76}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

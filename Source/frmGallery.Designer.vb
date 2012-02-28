@@ -25,7 +25,6 @@ Partial Class frmGallery
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGallery))
         Me.tmrMove = New System.Windows.Forms.Timer(Me.components)
-        Me.lblDescription = New System.Windows.Forms.Label()
         Me.cmd_next = New System.Windows.Forms.Button()
         Me.cmd_back = New System.Windows.Forms.Button()
         Me.Menu = New System.Windows.Forms.MenuStrip()
@@ -41,15 +40,6 @@ Partial Class frmGallery
         'tmrMove
         '
         Me.tmrMove.Interval = 50
-        '
-        'lblDescription
-        '
-        Me.lblDescription.BackColor = System.Drawing.Color.Transparent
-        Me.lblDescription.Location = New System.Drawing.Point(-4, 329)
-        Me.lblDescription.Name = "lblDescription"
-        Me.lblDescription.Size = New System.Drawing.Size(499, 66)
-        Me.lblDescription.TabIndex = 0
-        Me.lblDescription.Text = "Label1"
         '
         'cmd_next
         '
@@ -121,11 +111,10 @@ Partial Class frmGallery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(492, 329)
+        Me.ClientSize = New System.Drawing.Size(492, 411)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.cmd_back)
         Me.Controls.Add(Me.cmd_next)
-        Me.Controls.Add(Me.lblDescription)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
@@ -139,7 +128,6 @@ Partial Class frmGallery
 
     End Sub
     Friend WithEvents tmrMove As System.Windows.Forms.Timer
-    Friend WithEvents lblDescription As System.Windows.Forms.Label
     Friend WithEvents cmd_next As System.Windows.Forms.Button
     Friend WithEvents cmd_back As System.Windows.Forms.Button
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
