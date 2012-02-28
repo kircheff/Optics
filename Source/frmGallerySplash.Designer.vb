@@ -22,11 +22,7 @@ Partial Class frmGallerySplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.cmdGoRazprostranenie = New System.Windows.Forms.Button()
-        Me.cmdGoOtrajenie = New System.Windows.Forms.Button()
-        Me.cmdGoDispersiq = New System.Windows.Forms.Button()
-        Me.cmdGoInterferenciq = New System.Windows.Forms.Button()
-        Me.cmdGoDifrakciq = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGallerySplash))
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,60 +30,25 @@ Partial Class frmGallerySplash
         Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pic_razprost = New System.Windows.Forms.PictureBox()
+        Me.ppic_otraj = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pic_difrak = New System.Windows.Forms.PictureBox()
+        Me.pic_inter = New System.Windows.Forms.PictureBox()
         Me.Menu.SuspendLayout()
+        CType(Me.pic_razprost, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ppic_otraj, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_difrak, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pic_inter, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'cmdGoRazprostranenie
-        '
-        Me.cmdGoRazprostranenie.Location = New System.Drawing.Point(53, 52)
-        Me.cmdGoRazprostranenie.Name = "cmdGoRazprostranenie"
-        Me.cmdGoRazprostranenie.Size = New System.Drawing.Size(116, 28)
-        Me.cmdGoRazprostranenie.TabIndex = 0
-        Me.cmdGoRazprostranenie.Text = "Разпространение"
-        Me.cmdGoRazprostranenie.UseVisualStyleBackColor = True
-        '
-        'cmdGoOtrajenie
-        '
-        Me.cmdGoOtrajenie.Location = New System.Drawing.Point(170, 52)
-        Me.cmdGoOtrajenie.Name = "cmdGoOtrajenie"
-        Me.cmdGoOtrajenie.Size = New System.Drawing.Size(113, 28)
-        Me.cmdGoOtrajenie.TabIndex = 1
-        Me.cmdGoOtrajenie.Text = "Отражение"
-        Me.cmdGoOtrajenie.UseVisualStyleBackColor = True
-        '
-        'cmdGoDispersiq
-        '
-        Me.cmdGoDispersiq.Location = New System.Drawing.Point(109, 81)
-        Me.cmdGoDispersiq.Name = "cmdGoDispersiq"
-        Me.cmdGoDispersiq.Size = New System.Drawing.Size(117, 28)
-        Me.cmdGoDispersiq.TabIndex = 2
-        Me.cmdGoDispersiq.Text = "Дисперсия"
-        Me.cmdGoDispersiq.UseVisualStyleBackColor = True
-        '
-        'cmdGoInterferenciq
-        '
-        Me.cmdGoInterferenciq.Location = New System.Drawing.Point(53, 110)
-        Me.cmdGoInterferenciq.Name = "cmdGoInterferenciq"
-        Me.cmdGoInterferenciq.Size = New System.Drawing.Size(116, 28)
-        Me.cmdGoInterferenciq.TabIndex = 3
-        Me.cmdGoInterferenciq.Text = "Интерференция"
-        Me.cmdGoInterferenciq.UseVisualStyleBackColor = True
-        '
-        'cmdGoDifrakciq
-        '
-        Me.cmdGoDifrakciq.Location = New System.Drawing.Point(170, 110)
-        Me.cmdGoDifrakciq.Name = "cmdGoDifrakciq"
-        Me.cmdGoDifrakciq.Size = New System.Drawing.Size(113, 28)
-        Me.cmdGoDifrakciq.TabIndex = 4
-        Me.cmdGoDifrakciq.Text = "Дифракция"
-        Me.cmdGoDifrakciq.UseVisualStyleBackColor = True
         '
         'Menu
         '
         Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(346, 24)
+        Me.Menu.Size = New System.Drawing.Size(401, 24)
         Me.Menu.TabIndex = 14
         Me.Menu.Text = "MenuStrip1"
         '
@@ -128,30 +89,76 @@ Partial Class frmGallerySplash
         Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
+        'pic_razprost
+        '
+        Me.pic_razprost.BackColor = System.Drawing.Color.Transparent
+        Me.pic_razprost.Location = New System.Drawing.Point(28, 52)
+        Me.pic_razprost.Name = "pic_razprost"
+        Me.pic_razprost.Size = New System.Drawing.Size(349, 34)
+        Me.pic_razprost.TabIndex = 15
+        Me.pic_razprost.TabStop = False
+        '
+        'ppic_otraj
+        '
+        Me.ppic_otraj.BackColor = System.Drawing.Color.Transparent
+        Me.ppic_otraj.Location = New System.Drawing.Point(28, 88)
+        Me.ppic_otraj.Name = "ppic_otraj"
+        Me.ppic_otraj.Size = New System.Drawing.Size(349, 34)
+        Me.ppic_otraj.TabIndex = 16
+        Me.ppic_otraj.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 124)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(349, 34)
+        Me.PictureBox1.TabIndex = 17
+        Me.PictureBox1.TabStop = False
+        '
+        'pic_difrak
+        '
+        Me.pic_difrak.BackColor = System.Drawing.Color.Transparent
+        Me.pic_difrak.Location = New System.Drawing.Point(26, 161)
+        Me.pic_difrak.Name = "pic_difrak"
+        Me.pic_difrak.Size = New System.Drawing.Size(349, 34)
+        Me.pic_difrak.TabIndex = 18
+        Me.pic_difrak.TabStop = False
+        '
+        'pic_inter
+        '
+        Me.pic_inter.BackColor = System.Drawing.Color.Transparent
+        Me.pic_inter.Location = New System.Drawing.Point(26, 200)
+        Me.pic_inter.Name = "pic_inter"
+        Me.pic_inter.Size = New System.Drawing.Size(349, 34)
+        Me.pic_inter.TabIndex = 19
+        Me.pic_inter.TabStop = False
+        '
         'frmGallerySplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(346, 168)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(401, 291)
+        Me.Controls.Add(Me.pic_inter)
+        Me.Controls.Add(Me.pic_difrak)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ppic_otraj)
+        Me.Controls.Add(Me.pic_razprost)
         Me.Controls.Add(Me.Menu)
-        Me.Controls.Add(Me.cmdGoDifrakciq)
-        Me.Controls.Add(Me.cmdGoInterferenciq)
-        Me.Controls.Add(Me.cmdGoDispersiq)
-        Me.Controls.Add(Me.cmdGoOtrajenie)
-        Me.Controls.Add(Me.cmdGoRazprostranenie)
         Me.Name = "frmGallerySplash"
         Me.Text = "frmGallerySplash"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
+        CType(Me.pic_razprost, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ppic_otraj, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_difrak, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pic_inter, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents cmdGoRazprostranenie As System.Windows.Forms.Button
-    Friend WithEvents cmdGoOtrajenie As System.Windows.Forms.Button
-    Friend WithEvents cmdGoDispersiq As System.Windows.Forms.Button
-    Friend WithEvents cmdGoInterferenciq As System.Windows.Forms.Button
-    Friend WithEvents cmdGoDifrakciq As System.Windows.Forms.Button
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -159,4 +166,9 @@ Partial Class frmGallerySplash
     Friend WithEvents ЗаПрограматаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ЗаАвторитеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ИзползванаЛитератураToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents pic_razprost As System.Windows.Forms.PictureBox
+    Friend WithEvents ppic_otraj As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_difrak As System.Windows.Forms.PictureBox
+    Friend WithEvents pic_inter As System.Windows.Forms.PictureBox
 End Class

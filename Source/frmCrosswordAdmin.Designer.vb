@@ -23,6 +23,7 @@ Partial Class frmCrossword
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCrossword))
         Me.lstWords = New System.Windows.Forms.ListBox()
         Me.cmdMakeCrossword = New System.Windows.Forms.Button()
         Me.lst_words_vis = New System.Windows.Forms.ListBox()
@@ -56,12 +57,15 @@ Partial Class frmCrossword
         '
         'cmdMakeCrossword
         '
+        Me.cmdMakeCrossword.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.cmdMakeCrossword.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.cmdMakeCrossword.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmdMakeCrossword.Location = New System.Drawing.Point(29, 41)
         Me.cmdMakeCrossword.Name = "cmdMakeCrossword"
         Me.cmdMakeCrossword.Size = New System.Drawing.Size(186, 31)
         Me.cmdMakeCrossword.TabIndex = 11
         Me.cmdMakeCrossword.Text = "Генерирай нова кръстословица"
-        Me.cmdMakeCrossword.UseVisualStyleBackColor = True
+        Me.cmdMakeCrossword.UseVisualStyleBackColor = False
         '
         'lst_words_vis
         '
@@ -108,7 +112,7 @@ Partial Class frmCrossword
         '
         'cmdClearCrossword
         '
-        Me.cmdClearCrossword.Location = New System.Drawing.Point(77, 402)
+        Me.cmdClearCrossword.Location = New System.Drawing.Point(15, 408)
         Me.cmdClearCrossword.Name = "cmdClearCrossword"
         Me.cmdClearCrossword.Size = New System.Drawing.Size(388, 31)
         Me.cmdClearCrossword.TabIndex = 18
@@ -118,22 +122,25 @@ Partial Class frmCrossword
         '
         'txtMeanings
         '
-        Me.txtMeanings.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.txtMeanings.Location = New System.Drawing.Point(524, 21)
+        Me.txtMeanings.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtMeanings.Location = New System.Drawing.Point(524, 41)
         Me.txtMeanings.Multiline = True
         Me.txtMeanings.Name = "txtMeanings"
         Me.txtMeanings.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtMeanings.Size = New System.Drawing.Size(313, 431)
+        Me.txtMeanings.Size = New System.Drawing.Size(313, 411)
         Me.txtMeanings.TabIndex = 19
         '
         'cmdCheckCrossword
         '
+        Me.cmdCheckCrossword.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(152, Byte), Integer))
+        Me.cmdCheckCrossword.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.cmdCheckCrossword.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmdCheckCrossword.Location = New System.Drawing.Point(221, 41)
         Me.cmdCheckCrossword.Name = "cmdCheckCrossword"
         Me.cmdCheckCrossword.Size = New System.Drawing.Size(182, 31)
         Me.cmdCheckCrossword.TabIndex = 20
         Me.cmdCheckCrossword.Text = "Провери кръстословица"
-        Me.cmdCheckCrossword.UseVisualStyleBackColor = True
+        Me.cmdCheckCrossword.UseVisualStyleBackColor = False
         '
         'txtHints
         '
@@ -201,6 +208,7 @@ Partial Class frmCrossword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(849, 466)
         Me.Controls.Add(Me.Menu)
         Me.Controls.Add(Me.txtHints)

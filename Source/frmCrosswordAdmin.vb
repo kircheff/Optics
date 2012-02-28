@@ -167,7 +167,7 @@ Beginning:
                 TextBoxes(i, j).MaxLength = 1
                 TextBoxes(i, j).Width = 28
                 TextBoxes(i, j).TextAlign = HorizontalAlignment.Center
-                TextBoxes(i, j).Font = New Font("Times New Roman", 14)
+                TextBoxes(i, j).Font = New Font("Arial", 14)
                 TextBoxes(i, j).Multiline = True
                 TextBoxes(i, j).Top = i * TextBoxes(i, j).Height + 80
                 TextBoxes(i, j).Left = j * TextBoxes(i, j).Width + 60
@@ -185,7 +185,8 @@ Beginning:
             NumBoxes(i).Left = NumBoxes(i).Width
             NumBoxes(i).Name = "NumBox" & i
             NumBoxes(i).Text = i + 1
-            NumBoxes(i).Font = New Font("Times New Roman", 14)
+            NumBoxes(i).Font = New Font("Arial", 14)
+            NumBoxes(i).BackColor = Color.Transparent
             Controls.Add(NumBoxes(i))
 
         Next i
@@ -394,5 +395,25 @@ Beginning:
 
     Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
         frmInfoLit.show()
+    End Sub
+
+    Private Sub cmdClearCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClearCrossword.Click
+
+    End Sub
+
+    Private Sub pic_new_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        cmdMakeCrossword_Click(sender, e)
+    End Sub
+
+    Private Sub cmdMakeCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdMakeCrossword.Click
+
+    End Sub
+
+    Private Sub pic_check_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        cmdCheckCrossword_Click(sender, e)
+    End Sub
+
+    Private Sub pic_clear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        cmdClearCrossword_Click(sender, e)
     End Sub
 End Class
