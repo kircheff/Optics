@@ -8,14 +8,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Optics.exe.manifest" size="4363">
+    <dependentAssembly dependencyType="install" codebase="Optics.exe.manifest" size="4822">
       <assemblyIdentity name="Optics.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>spSfOzs27KUlAZrWD3bneDHrEZM=</dsig:DigestValue>
+        <dsig:DigestValue>NSiJl5il7yIQnVExkgZQf6kHyXI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

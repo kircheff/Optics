@@ -28,14 +28,14 @@ Partial Class frmTestPast
         Me.lbl_ans1 = New System.Windows.Forms.Label()
         Me.lbl_ans2 = New System.Windows.Forms.Label()
         Me.lbl_ans3 = New System.Windows.Forms.Label()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Mnu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаПрограматаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Menu.SuspendLayout()
+        Me.Mnu.SuspendLayout()
         Me.SuspendLayout()
         '
         'lst_questions
@@ -82,50 +82,50 @@ Partial Class frmTestPast
         Me.lbl_ans3.Size = New System.Drawing.Size(0, 13)
         Me.lbl_ans3.TabIndex = 4
         '
-        'Menu
+        'Mnu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(492, 24)
-        Me.Menu.TabIndex = 14
-        Me.Menu.Text = "MenuStrip1"
+        Me.Mnu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Mnu.Location = New System.Drawing.Point(0, 0)
+        Me.Mnu.Name = "Mnu"
+        Me.Mnu.Size = New System.Drawing.Size(492, 24)
+        Me.Mnu.TabIndex = 14
+        Me.Mnu.Text = "MenuStrip1"
         '
         'НачалнаСтаницаToolStripMenuItem
         '
         Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
-        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
         Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
         '
         'ТърсенеToolStripMenuItem
         '
         Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
-        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ТърсенеToolStripMenuItem.Text = "Търсене"
         '
         'ПомощToolStripMenuItem
         '
         Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
         Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
-        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ПомощToolStripMenuItem.Text = "Помощ"
         '
         'ЗаПрограматаToolStripMenuItem
         '
         Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
-        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
         '
         'ЗаАвторитеToolStripMenuItem
         '
         Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
-        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
         '
         'ИзползванаЛитератураToolStripMenuItem
         '
         Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
-        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
         'frmTestPast
@@ -133,7 +133,7 @@ Partial Class frmTestPast
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(492, 301)
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.Mnu)
         Me.Controls.Add(Me.lbl_ans3)
         Me.Controls.Add(Me.lbl_ans2)
         Me.Controls.Add(Me.lbl_ans1)
@@ -145,8 +145,8 @@ Partial Class frmTestPast
         Me.Name = "frmTestPast"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Хронология на теста"
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Mnu.ResumeLayout(False)
+        Me.Mnu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -156,7 +156,7 @@ Partial Class frmTestPast
     Friend WithEvents lbl_ans1 As System.Windows.Forms.Label
     Friend WithEvents lbl_ans2 As System.Windows.Forms.Label
     Friend WithEvents lbl_ans3 As System.Windows.Forms.Label
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents Mnu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

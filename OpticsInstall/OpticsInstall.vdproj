@@ -249,12 +249,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3FDF72C31A6EEA111D9A74DAB7400058"
-        "OwnerKey" = "8:_A11B441E36AD26CF2289CACF0E83D5A4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_41531024754349AC9223F8196A667F84"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -339,12 +333,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_54F706CE3FFE41CEA27F98B20DC9743C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_55613373EF144BC995C1829678D8E537"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -364,6 +352,12 @@
         "Entry"
         {
         "MsmKey" = "8:_65035DD7D4B3497284ED02EEB6B158B4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_662C100742744ED4BB99136D6D37B414"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -489,12 +483,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8A5583A1895141CD83F2BD952065C899"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_8C8CF374B2A14F2BA805AF79D2FB6726"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -561,18 +549,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A11B441E36AD26CF2289CACF0E83D5A4"
-        "OwnerKey" = "8:_A7841CCDE30F043688EE04F84AA9AFDC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A11B441E36AD26CF2289CACF0E83D5A4"
-        "OwnerKey" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A17EFCD7D51542C69A2A80F49271FC96"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -587,12 +563,6 @@
         {
         "MsmKey" = "8:_A42BD250E05D4B85AC0B1F1DD801D1C8"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A7841CCDE30F043688EE04F84AA9AFDC"
-        "OwnerKey" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -718,6 +688,12 @@
         "Entry"
         {
         "MsmKey" = "8:_C694B9F0BCEA46A1ABCBD93828C2ED14"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C827B67FE8DA4A6DA62A795009C3BDEF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -856,7 +832,7 @@
         "Entry"
         {
         "MsmKey" = "8:_F40FB2F23ADC2C140E19A26C4F45DD6D"
-        "OwnerKey" = "8:_A11B441E36AD26CF2289CACF0E83D5A4"
+        "OwnerKey" = "8:_4F5EE14AB02B29D89D9BE962201D89BB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -874,12 +850,6 @@
         "Entry"
         {
         "MsmKey" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FAA7BC6373D141D88394D1D3CD89F899"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -904,19 +874,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A7841CCDE30F043688EE04F84AA9AFDC"
+        "OwnerKey" = "8:_4F5EE14AB02B29D89D9BE962201D89BB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A11B441E36AD26CF2289CACF0E83D5A4"
+        "OwnerKey" = "8:_0D745A9B02B0B9E1D66E8C4E8CBB0F13"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F40FB2F23ADC2C140E19A26C4F45DD6D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -981,6 +963,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -1109,6 +1104,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0D745A9B02B0B9E1D66E8C4E8CBB0F13"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0D745A9B02B0B9E1D66E8C4E8CBB0F13"
+                    {
+                    "Name" = "8:AxInterop.ShockwaveFlashObjects.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:AxInterop.ShockwaveFlashObjects.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0DBB4DD248E644D1A064E5B80429E5A9"
@@ -1791,26 +1817,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3FDF72C31A6EEA111D9A74DAB7400058"
-            {
-            "SourcePath" = "8:Flash11e.ocx"
-            "TargetName" = "8:Flash11e.ocx"
-            "Tag" = "8:"
-            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_41531024754349AC9223F8196A667F84"
             {
             "SourcePath" = "8:..\\Source\\Info\\Dispersiq\\4.rtf"
@@ -2011,6 +2017,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4F5EE14AB02B29D89D9BE962201D89BB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_4F5EE14AB02B29D89D9BE962201D89BB"
+                    {
+                    "Name" = "8:Interop.ShockwaveFlashObjects.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.ShockwaveFlashObjects.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4F7A7050A37348FD976B701266D0F051"
             {
             "SourcePath" = "8:..\\Source\\bin\\Debug\\Info\\Flash\\circle.swf"
@@ -2057,26 +2094,6 @@
             "TargetName" = "8:4.jpg"
             "Tag" = "8:"
             "Folder" = "8:_553B7C1A14CE4006857F447C48FF3126"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_54F706CE3FFE41CEA27F98B20DC9743C"
-            {
-            "SourcePath" = "8:..\\..\\Desktop\\uninstal.bat"
-            "TargetName" = "8:uninstal.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2157,6 +2174,26 @@
             "TargetName" = "8:waves.swf"
             "Tag" = "8:"
             "Folder" = "8:_D8274B822E8F4CBC9567BF14A070C73C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_662C100742744ED4BB99136D6D37B414"
+            {
+            "SourcePath" = "8:..\\uninstall.bat"
+            "TargetName" = "8:uninstall.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2571,26 +2608,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8A5583A1895141CD83F2BD952065C899"
-            {
-            "SourcePath" = "8:..\\..\\Desktop\\uninstal.bat"
-            "TargetName" = "8:uninstal.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_44587E7B10274963BB8A1C91E134A03F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8C8CF374B2A14F2BA805AF79D2FB6726"
             {
             "SourcePath" = "8:..\\Source\\Info\\Razprostranenie\\2.jpg"
@@ -2811,37 +2828,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A11B441E36AD26CF2289CACF0E83D5A4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_A11B441E36AD26CF2289CACF0E83D5A4"
-                    {
-                    "Name" = "8:Interop.ShockwaveFlashObjects.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Interop.ShockwaveFlashObjects.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A17EFCD7D51542C69A2A80F49271FC96"
             {
             "SourcePath" = "8:..\\Source\\Info\\Razprostranenie\\1_temp.rtf"
@@ -2900,37 +2886,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A7841CCDE30F043688EE04F84AA9AFDC"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_A7841CCDE30F043688EE04F84AA9AFDC"
-                    {
-                    "Name" = "8:AxInterop.ShockwaveFlashObjects.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:AxInterop.ShockwaveFlashObjects.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A829DBA175BC4F17AEE7B7577EEE3E0A"
@@ -3339,6 +3294,26 @@
             "TargetName" = "8:3.jpg"
             "Tag" = "8:"
             "Folder" = "8:_34253D2C0C19475B9F5FE89CEA05A04A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C827B67FE8DA4A6DA62A795009C3BDEF"
+            {
+            "SourcePath" = "8:..\\Source\\Optics.ico"
+            "TargetName" = "8:Optics.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3864,26 +3839,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FAA7BC6373D141D88394D1D3CD89F899"
-            {
-            "SourcePath" = "8:..\\..\\Downloads\\Optics.ico"
-            "TargetName" = "8:Optics.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FE6145F8BF6D489AA7661BF3EACC2425"
             {
             "SourcePath" = "8:..\\Source\\Info\\Difrakciq\\1.jpg"
@@ -4113,7 +4068,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Optics"
         "ProductCode" = "8:{549F36B5-4E2F-4F0A-AA24-C231EC2F1D6C}"
-        "PackageCode" = "8:{86A0066B-E190-43FE-BCB0-F71AEA10F10D}"
+        "PackageCode" = "8:{2ACA7F95-1560-4A35-844A-D6365E1C27CC}"
         "UpgradeCode" = "8:{92006555-92D1-4340-8DCD-41A000232020}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -4130,7 +4085,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_FAA7BC6373D141D88394D1D3CD89F899"
+        "ARPPRODUCTICON" = "8:_C827B67FE8DA4A6DA62A795009C3BDEF"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -4244,7 +4199,7 @@
             "Target" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
             "Folder" = "8:_B3E56E91F1624A3980CC76B8B0EDC407"
             "WorkingFolder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Icon" = "8:_FAA7BC6373D141D88394D1D3CD89F899"
+            "Icon" = "8:_C827B67FE8DA4A6DA62A795009C3BDEF"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_870A9904C27341EBBA9DC20EE1E64C17"
@@ -4258,7 +4213,7 @@
             "Target" = "8:_F74BBED69DF44D408463A4CEF1AFB1D1"
             "Folder" = "8:_44587E7B10274963BB8A1C91E134A03F"
             "WorkingFolder" = "8:_9FBB1A6DB79141E6B380A5D0B4399793"
-            "Icon" = "8:_FAA7BC6373D141D88394D1D3CD89F899"
+            "Icon" = "8:_C827B67FE8DA4A6DA62A795009C3BDEF"
             "Feature" = "8:"
             }
         }

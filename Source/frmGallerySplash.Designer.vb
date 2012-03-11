@@ -23,7 +23,7 @@ Partial Class frmGallerySplash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGallerySplash))
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Mnu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,7 +35,7 @@ Partial Class frmGallerySplash
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pic_difrak = New System.Windows.Forms.PictureBox()
         Me.pic_inter = New System.Windows.Forms.PictureBox()
-        Me.Menu.SuspendLayout()
+        Me.Mnu.SuspendLayout()
         CType(Me.pic_razprost, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ppic_otraj, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,50 +43,50 @@ Partial Class frmGallerySplash
         CType(Me.pic_inter, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Menu
+        'Mnu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(401, 24)
-        Me.Menu.TabIndex = 14
-        Me.Menu.Text = "MenuStrip1"
+        Me.Mnu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Mnu.Location = New System.Drawing.Point(0, 0)
+        Me.Mnu.Name = "Mnu"
+        Me.Mnu.Size = New System.Drawing.Size(401, 24)
+        Me.Mnu.TabIndex = 14
+        Me.Mnu.Text = "MenuStrip1"
         '
         'НачалнаСтаницаToolStripMenuItem
         '
         Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
-        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
         Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
         '
         'ТърсенеToolStripMenuItem
         '
         Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
-        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ТърсенеToolStripMenuItem.Text = "Търсене"
         '
         'ПомощToolStripMenuItem
         '
         Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
         Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
-        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ПомощToolStripMenuItem.Text = "Помощ"
         '
         'ЗаПрограматаToolStripMenuItem
         '
         Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
-        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
         '
         'ЗаАвторитеToolStripMenuItem
         '
         Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
-        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
         '
         'ИзползванаЛитератураToolStripMenuItem
         '
         Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
-        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
         'pic_razprost
@@ -145,15 +145,15 @@ Partial Class frmGallerySplash
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ppic_otraj)
         Me.Controls.Add(Me.pic_razprost)
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.Mnu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmGallerySplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Избор на галерия"
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Mnu.ResumeLayout(False)
+        Me.Mnu.PerformLayout()
         CType(Me.pic_razprost, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ppic_otraj, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -163,7 +163,7 @@ Partial Class frmGallerySplash
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents Mnu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

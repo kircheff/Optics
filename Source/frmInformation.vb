@@ -59,6 +59,8 @@ Public Class frmInformation
         Next
         rtb_info.LoadFile(openedFile)
         chosenGallery = "Info\Razprostranenie"
+        rtb_info.ReadOnly = True
+
     End Sub
 
 
@@ -284,6 +286,7 @@ Public Class frmInformation
     Private Sub pic_notes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pic_notes.Click
         If notesSelected = False Then
             rtb_info.LoadFile(notesFile)
+
             rtb_info.ReadOnly = False
 
             notesSelected = True

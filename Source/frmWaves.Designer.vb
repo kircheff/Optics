@@ -23,7 +23,7 @@ Partial Class frmWaves
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWaves))
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Mnu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -31,15 +31,15 @@ Partial Class frmWaves
         Me.ЗаАвторитеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ИзползванаЛитератураToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AxShockwaveFlash1 = New AxShockwaveFlashObjects.AxShockwaveFlash()
-        Me.Menu.SuspendLayout()
+        Me.Mnu.SuspendLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Menu
+        'Mnu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
-        resources.ApplyResources(Me.Menu, "Menu")
-        Me.Menu.Name = "Menu"
+        Me.Mnu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        resources.ApplyResources(Me.Mnu, "Mnu")
+        Me.Mnu.Name = "Mnu"
         '
         'НачалнаСтаницаToolStripMenuItem
         '
@@ -82,19 +82,19 @@ Partial Class frmWaves
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.Mnu)
         Me.Controls.Add(Me.AxShockwaveFlash1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmWaves"
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Mnu.ResumeLayout(False)
+        Me.Mnu.PerformLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents Mnu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

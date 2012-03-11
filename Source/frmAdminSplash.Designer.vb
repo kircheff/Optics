@@ -28,7 +28,7 @@ Partial Class frmAdminSplash
         Me.cmdDictAdmin = New System.Windows.Forms.Button()
         Me.cmdChangePass = New System.Windows.Forms.Button()
         Me.cmdResetDB = New System.Windows.Forms.Button()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Mnu = New System.Windows.Forms.MenuStrip()
         Me.НачалнаСтаницаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ТърсенеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПомощToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,7 +38,7 @@ Partial Class frmAdminSplash
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdHistory = New System.Windows.Forms.Button()
         Me.cmdTestAdm = New System.Windows.Forms.Button()
-        Me.Menu.SuspendLayout()
+        Me.Mnu.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtPassword
@@ -92,50 +92,50 @@ Partial Class frmAdminSplash
         Me.cmdResetDB.Text = "Връщане на базата данни в начално състояние"
         Me.cmdResetDB.UseVisualStyleBackColor = True
         '
-        'Menu
+        'Mnu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(300, 24)
-        Me.Menu.TabIndex = 14
-        Me.Menu.Text = "MenuStrip1"
+        Me.Mnu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.НачалнаСтаницаToolStripMenuItem, Me.ТърсенеToolStripMenuItem, Me.ПомощToolStripMenuItem})
+        Me.Mnu.Location = New System.Drawing.Point(0, 0)
+        Me.Mnu.Name = "Mnu"
+        Me.Mnu.Size = New System.Drawing.Size(300, 24)
+        Me.Mnu.TabIndex = 14
+        Me.Mnu.Text = "MenuStrip1"
         '
         'НачалнаСтаницаToolStripMenuItem
         '
         Me.НачалнаСтаницаToolStripMenuItem.Name = "НачалнаСтаницаToolStripMenuItem"
-        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.НачалнаСтаницаToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
         Me.НачалнаСтаницаToolStripMenuItem.Text = "Начална станица"
         '
         'ТърсенеToolStripMenuItem
         '
         Me.ТърсенеToolStripMenuItem.Name = "ТърсенеToolStripMenuItem"
-        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.ТърсенеToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ТърсенеToolStripMenuItem.Text = "Търсене"
         '
         'ПомощToolStripMenuItem
         '
         Me.ПомощToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ЗаПрограматаToolStripMenuItem, Me.ЗаАвторитеToolStripMenuItem, Me.ИзползванаЛитератураToolStripMenuItem})
         Me.ПомощToolStripMenuItem.Name = "ПомощToolStripMenuItem"
-        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ПомощToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.ПомощToolStripMenuItem.Text = "Помощ"
         '
         'ЗаПрограматаToolStripMenuItem
         '
         Me.ЗаПрограматаToolStripMenuItem.Name = "ЗаПрограматаToolStripMenuItem"
-        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаПрограматаToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаПрограматаToolStripMenuItem.Text = "За програмата"
         '
         'ЗаАвторитеToolStripMenuItem
         '
         Me.ЗаАвторитеToolStripMenuItem.Name = "ЗаАвторитеToolStripMenuItem"
-        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ЗаАвторитеToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ЗаАвторитеToolStripMenuItem.Text = "За авторите"
         '
         'ИзползванаЛитератураToolStripMenuItem
         '
         Me.ИзползванаЛитератураToolStripMenuItem.Name = "ИзползванаЛитератураToolStripMenuItem"
-        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ИзползванаЛитератураToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ИзползванаЛитератураToolStripMenuItem.Text = "Използвана литература"
         '
         'Label1
@@ -178,7 +178,7 @@ Partial Class frmAdminSplash
         Me.Controls.Add(Me.cmdTestAdm)
         Me.Controls.Add(Me.cmdHistory)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.Mnu)
         Me.Controls.Add(Me.cmdResetDB)
         Me.Controls.Add(Me.cmdChangePass)
         Me.Controls.Add(Me.cmdDictAdmin)
@@ -190,8 +190,8 @@ Partial Class frmAdminSplash
         Me.Name = "frmAdminSplash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Администрация"
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Mnu.ResumeLayout(False)
+        Me.Mnu.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -201,7 +201,7 @@ Partial Class frmAdminSplash
     Friend WithEvents cmdDictAdmin As System.Windows.Forms.Button
     Friend WithEvents cmdChangePass As System.Windows.Forms.Button
     Friend WithEvents cmdResetDB As System.Windows.Forms.Button
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents Mnu As System.Windows.Forms.MenuStrip
     Friend WithEvents НачалнаСтаницаToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ТърсенеToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ПомощToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

@@ -13,7 +13,7 @@
     Dim points As Byte = 0 'Текущи точки на потребителя
     Dim points_max As Byte = 0 'Максимален брой точки, които потребителя може да получи
     Dim answer_points As Byte 'Колко точки е текущият въпрос
-    Dim user_answer As String 'Избран отговор от потребителя
+    Dim user_answer As String = "" 'Избран отговор от потребителя
     Dim selected_answers As String = "" 'Избрани отговори, които ще се записват в базата данни
     Dim questions_answered As Byte = 0 'На колко въпроса е отговорил потребителя досега
     Dim questions_order As String = "" 'Последователността от въпроси които са се паднали на произволен принцип
@@ -44,13 +44,17 @@
         seconds = seconds + 1
         lbl_seconds.Text = 60 - seconds & " / 60"
 
-        If seconds >= 60 Then NextQuestion()
+        If seconds >= 60 Then
+            cmd_next_Click(sender, e)
+            seconds = 0
+        End If
+
     End Sub
 
     Private Sub NextQuestion()
 
         UncheckRadioButtons(Me)
-
+        user_answer = ""
         If questions_answered = 10 Then
 
             questions_answered = 0
@@ -66,7 +70,7 @@
             ds.Tables("potrebiteli").Rows(ds.Tables("potrebiteli").Rows.Count - 1).Item("otgovori") = selected_answers
             rs_users.Update(ds, "Potrebiteli")
 
-            End
+            Me.Close()
         End If
 
         Dim rand As Integer
@@ -135,10 +139,11 @@
     End Function
 
     Private Sub cmd_next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_next.Click
-        If opt_answ1.Checked = False And opt_answ2.Checked = False And opt_answ3.Checked = False Then
+        If opt_answ1.Checked = False And opt_answ2.Checked = False And opt_answ3.Checked = False And user_answer <> "" Then
             MsgBox("Моля изберете отговор на въпроса!", , "Не е избран отговор")
             Exit Sub
         End If
+
 
         If user_answer = correct_answer Then
 
@@ -148,21 +153,28 @@
 
         points_max = points_max + answer_points
 
-        If opt_answ1.Checked = True Then
-            selected_answers = selected_answers & 1 & ","
-        End If
 
-        If opt_answ2.Checked = True Then
-            selected_answers = selected_answers & 2 & ","
-        End If
+        If user_answer = "" Then
 
-        If opt_answ3.Checked = True Then
-            selected_answers = selected_answers & 3 & ","
-        End If
+            selected_answers = selected_answers & 0 & ","
 
+        Else
+
+            If opt_answ1.Checked = True Then
+                selected_answers = selected_answers & 1 & ","
+            End If
+
+            If opt_answ2.Checked = True Then
+                selected_answers = selected_answers & 2 & ","
+            End If
+
+            If opt_answ3.Checked = True Then
+                selected_answers = selected_answers & 3 & ","
+            End If
+        End If
         NextQuestion()
 
-       
+
     End Sub
 
     Private Sub Clear_array(ByVal array As Array)

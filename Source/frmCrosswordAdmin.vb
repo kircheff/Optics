@@ -180,7 +180,7 @@ Beginning:
         For i = 0 To Len(chosenWord) - 1
             NumBoxes(i) = New Label
             NumBoxes(i).Height = 26.3
-            NumBoxes(i).Width = 28
+            NumBoxes(i).Width = 35
             NumBoxes(i).Top = i * NumBoxes(i).Height + 80
             NumBoxes(i).Left = NumBoxes(i).Width
             NumBoxes(i).Name = "NumBox" & i
@@ -401,19 +401,4 @@ Beginning:
 
     End Sub
 
-    Private Sub pic_new_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        cmdMakeCrossword_Click(sender, e)
-    End Sub
-
-    Private Sub cmdMakeCrossword_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdMakeCrossword.Click
-
-    End Sub
-
-    Private Sub pic_check_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        cmdCheckCrossword_Click(sender, e)
-    End Sub
-
-    Private Sub pic_clear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        cmdClearCrossword_Click(sender, e)
-    End Sub
 End Class

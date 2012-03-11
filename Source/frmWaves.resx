@@ -117,69 +117,69 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Mnu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="НачалнаСтаницаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 20</value>
+    <value>114, 20</value>
   </data>
   <data name="НачалнаСтаницаToolStripMenuItem.Text" xml:space="preserve">
     <value>Начална станица</value>
   </data>
   <data name="ТърсенеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
+    <value>65, 20</value>
   </data>
   <data name="ТърсенеToolStripMenuItem.Text" xml:space="preserve">
     <value>Търсене</value>
   </data>
   <data name="ЗаПрограматаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
+    <value>207, 22</value>
   </data>
   <data name="ЗаПрограматаToolStripMenuItem.Text" xml:space="preserve">
     <value>За програмата</value>
   </data>
   <data name="ЗаАвторитеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
+    <value>207, 22</value>
   </data>
   <data name="ЗаАвторитеToolStripMenuItem.Text" xml:space="preserve">
     <value>За авторите</value>
   </data>
   <data name="ИзползванаЛитератураToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
+    <value>207, 22</value>
   </data>
   <data name="ИзползванаЛитератураToolStripMenuItem.Text" xml:space="preserve">
     <value>Използвана литература</value>
   </data>
   <data name="ПомощToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
+    <value>61, 20</value>
   </data>
   <data name="ПомощToolStripMenuItem.Text" xml:space="preserve">
     <value>Помощ</value>
   </data>
-  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Mnu.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Mnu.Size" type="System.Drawing.Size, System.Drawing">
     <value>500, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
+  <data name="Mnu.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="Menu.Text" xml:space="preserve">
+  <data name="Mnu.Text" xml:space="preserve">
     <value>MenuStrip1</value>
   </data>
-  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
-    <value>Menu</value>
+  <data name="&gt;&gt;Mnu.Name" xml:space="preserve">
+    <value>Mnu</value>
   </data>
-  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
+  <data name="&gt;&gt;Mnu.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Mnu.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Mnu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="AxShockwaveFlash1.Enabled" type="System.Boolean, mscorlib">

@@ -17,7 +17,7 @@
     End Sub
 
     Private Sub ТестToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ТестToolStripMenuItem.Click
-        frmTest.Show()
+        frmTestSplash.Show()
 
     End Sub
 
@@ -64,6 +64,10 @@
     Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
         frmInfoLit.Show()
 
+    End Sub
+
+    Private Sub frmGeneral_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.GotFocus
+        Me.Refresh()
     End Sub
 
     Private Sub frmGeneral_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

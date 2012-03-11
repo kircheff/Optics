@@ -26,8 +26,13 @@
         Next
         Dim j = 1
         For i = 0 To questionID.Count - 1
+            Try
+                questions(i) = ds.Tables("test").Rows(questionID(i)).Item("question")
+            Catch ex As Exception
+                MsgBox("Един от въпросите не е намерен в базата. Не може да се прегледа хронология за този потребител.", , "Опаа!")
+                Me.Close()
+            End Try
 
-            questions(i) = ds.Tables("test").Rows(questionID(i)).Item("question")
 
         Next
 
@@ -65,6 +70,10 @@
         answer_correct = ds.Tables("test").Rows(questionID(lst_questions.SelectedIndex)).Item("correct")
 
         'Оцветяване на потребителския отговор
+        If answer_selected(lst_questions.SelectedIndex) = "0" Then
+            MsgBox("На този въпрос не е избран отговор от потребителя.", , "Опаа!")
+        End If
+
         If answer_selected(lst_questions.SelectedIndex) = "1" Then
             lbl_ans1.ForeColor = Color.Red
             lbl_ans1.Text = "1. " & answers(0)
@@ -110,14 +119,14 @@
 
 
     Private Sub ЗаПрограматаToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаПрограматаToolStripMenuItem.Click
-        frmInfoProgram.show()
+        frmInfoProgram.Show()
     End Sub
 
     Private Sub ЗаАвторитеToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ЗаАвторитеToolStripMenuItem.Click
-        frmInfoUs.show()
+        frmInfoUs.Show()
     End Sub
 
     Private Sub ИзползванаЛитератураToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ИзползванаЛитератураToolStripMenuItem.Click
-        frmInfoLit.show()
+        frmInfoLit.Show()
     End Sub
 End Class

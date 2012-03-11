@@ -45,7 +45,7 @@
                 lstWords.Items.Add(ds.Tables("rechnik").Rows(i).Item("duma"))
             Next i
 
-            MsgBox("Думата е добавена в базата данни. За да се запишат промените формата ще се затвори автоматично.", , "Честито!")
+            MsgBox("Думата е добавена в базата данни. За да се запишат промените, формата ще се затвори автоматично.", , "Честито!")
             Me.Close()
         End If
     End Sub
@@ -72,7 +72,8 @@
                 lstWords.Items.Add(ds.Tables("rechnik").Rows(i).Item("duma"))
             Next i
 
-            MsgBox("Информацията е обновена.", , "Честито!")
+            MsgBox("Информацията е обновена. За да се запишат промените, формата ще се затвори автоматично..", , "Честито!")
+            Me.Close()
 
             txtWord.Enabled = False
             txtMeaning.Enabled = False
